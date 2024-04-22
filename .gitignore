@@ -1,0 +1,17 @@
+data/
+ssl_pretraining/
+report/
+clip/
+dino_rn*/
+junk/
+figs*/
+ssl_logs*/
+scripts/
+wandb/
+all_weights/
+pretrained_model/
+zero_shot_eval.py
+__pycache__/
+SatMAE_ScaleMAE_codes/
+embeddings/
+prev_codes/
