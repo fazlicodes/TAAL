@@ -71,9 +71,9 @@ def main(args):
 
     pred_df = pd.DataFrame()
     correct_list = []
-    batch_size = 12144  # Adjusted for better performance
+    batch_size = 4096  # Adjusted for better performance
 
-    dataset = CustomDataset(image_links, targets, preprocess, data_dir)
+    dataset = CustomDataset(image_links, targets, preprocess)
     dataloader = DataLoader(dataset, batch_size=batch_size, shuffle=False, num_workers=4)
 
     for i, (batch_images, batch_targets) in enumerate(dataloader):
@@ -136,7 +136,8 @@ def main(args):
     sub_df = pred_df.copy()
     sub_df = sub_df.rename(columns={'target': 'label'})
 
-    # sub_df.to_csv('{}/{}_meta_faster_sub_df_{}_clip_{}shot.csv'.format(data_dir, args['dataset'], clip_model, 0))
+    sub_df.to_csv('{}/{}_meta_faster_sub_df_{}_clip_{}shot.csv'.format(data_dir, args['dataset'], clip_model, 0))
+    # breakpoint()
 
     pseudo_df = pd.DataFrame()
     for pred_label in predicted_labels:
@@ -191,10 +192,10 @@ def main(args):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--root_data_dir", type=str, default='data/')
-    parser.add_argument('--dataset', choices=['resisc45', 'aid', 'patternnet', 'whurs19', 'ucm', 'optimal31', 'mlrsnet','eurosat',
+    parser.add_argument('--dataset', default='eurosat',choices=['resisc45', 'aid', 'patternnet', 'whurs19', 'ucm', 'optimal31', 'mlrsnet','eurosat',
                                               'oxford_pets', 'oxford_flowers', 'dtd', 'imagenet'], type=str)
     parser.add_argument("--model_subtype", type=str, choices=["ViT-B/32", "ViT-B/16", "ViT-L/14", "RN50"],
-                        default="RN50", help="exact type of clip pretraining backbone")
+                        default="ViT-B/32", help="exact type of clip pretraining backbone")
     parser.add_argument("--confidence_lower_bound", type=float,
                         help='minimum confidence required for a pseudolabel to be kept', default=0.0)
     parser.add_argument("--imgs_per_label", type=int,
