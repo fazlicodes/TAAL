@@ -11,16 +11,17 @@ from torch.utils.data import Dataset, DataLoader
 
 
 class CustomDataset(Dataset):
-    def __init__(self, image_paths, targets, preprocess):
+    def __init__(self, image_paths, targets, preprocess, data_dir):
         self.image_paths = image_paths
         self.targets = targets
         self.preprocess = preprocess
+        self.data_dir = data_dir
 
     def __len__(self):
         return len(self.image_paths)
 
     def __getitem__(self, idx):
-        image_path = self.image_paths[idx]
+        image_path = os.path.join(self.data_dir, self.image_paths[idx])
         image = Image.open(image_path)
         image = self.preprocess(image)
         target = self.targets[idx]
@@ -73,7 +74,7 @@ def main(args):
     correct_list = []
     batch_size = 4096  # Adjusted for better performance
 
-    dataset = CustomDataset(image_links, targets, preprocess)
+    dataset = CustomDataset(image_links, targets, preprocess, data_dir)
     dataloader = DataLoader(dataset, batch_size=batch_size, shuffle=False, num_workers=4)
 
     for i, (batch_images, batch_targets) in enumerate(dataloader):
@@ -136,8 +137,7 @@ def main(args):
     sub_df = pred_df.copy()
     sub_df = sub_df.rename(columns={'target': 'label'})
 
-    sub_df.to_csv('{}/{}_meta_faster_sub_df_{}_clip_{}shot.csv'.format(data_dir, args['dataset'], clip_model, 0))
-    # breakpoint()
+    # sub_df.to_csv('{}/{}_meta_faster_sub_df_{}_clip_{}shot.csv'.format(data_dir, args['dataset'], clip_model, 0))
 
     pseudo_df = pd.DataFrame()
     for pred_label in predicted_labels:
@@ -153,24 +153,8 @@ def main(args):
 
     if len(list_of_classes_without_pseudolabel) > 0:
         print(args['dataset'] + ' NEEDED EXTRA GUESSES')
-        rare_df = pd.DataFrame()
-        for rare_label in list_of_classes_without_pseudolabel:
-            temp_df = pred_df.copy()
-            indices = temp_df.rest_of_pred.apply(lambda x: x.index(rare_label) if rare_label in x else -1).index.to_list()
-            order_of_pred = temp_df.rest_of_pred.apply(lambda x: x.index(rare_label) if rare_label in x else -1).values
-            for idx in indices:
-                if order_of_pred[idx] != -1:
-                    temp_df.loc[idx, 'rare_pred'] = temp_df.loc[idx].rest_of_pred[order_of_pred[idx]]
-                    temp_df.loc[idx, 'rare_pred_prob'] = temp_df.loc[idx].rest_of_pred_probs[order_of_pred[idx]]
+        raise NotImplementedError
 
-            if len(rare_df) > 0:
-                temp_df = temp_df.loc[~temp_df.img_path.isin(set(rare_df.img_path))]
-            rare_df = pd.concat((rare_df, temp_df.dropna(subset=['rare_pred']).sort_values('rare_pred_prob', ascending=False).head(1)))
-            rare_df['pred1'] = rare_df['rare_pred']
-
-        pseudo_full = pseudo_full.loc[~pseudo_full.img_path.isin(set(rare_df.img_path))]
-
-        pseudo_full = pd.concat((pseudo_full, rare_df))
 
     meta_train_replace = meta.loc[meta.img_path.isin(set(pseudo_full.img_path_trimmed))]
     pseudo_full.sort_values('img_path_trimmed', inplace=True)

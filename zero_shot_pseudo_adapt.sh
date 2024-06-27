@@ -3,7 +3,8 @@
 dset="$1"
 model_sub=dino #dino or simclr
 model_subtype=vitb16  #vitb16 or resnet50
-CUDA_VISIBLE_DEVICES=1 python zero_shot_pseudo_adapt.py \
+# CUDA_VISIBLE_DEVICES=1 
+python zero_shot_pseudo_adapt.py \
 --dataset ${dset} \
 --feature_path data/${dset}/pretrained_features/ \
 --pretrained_model ${model_sub}_${model_subtype} \
