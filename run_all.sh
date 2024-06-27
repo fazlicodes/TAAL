@@ -5,16 +5,16 @@ dset="$1"
 num_pl=16
 pseudo_model="ViT-B/32"
 pseudo_model2="ViT-B_32"
-python data_preparation.py --dataset ${dset}
+# python data_preparation.py --dataset ${dset}
 
-python faster_gen_clip_pl.py --dataset ${dset} --model_subtype ${pseudo_model} --imgs_per_label ${num_pl}
+# python faster_gen_clip_pl.py --dataset ${dset} --model_subtype ${pseudo_model} --imgs_per_label ${num_pl}
 
 model_type=dino
 model_subtype=vitb16
-python feature_extraction_clip.py --dataset ${dset} --model_type ${model_type} --model_subtype ${model_subtype} \
---feature_path data/${dset}/pretrained_features/ \
---pseudo_conf ""${num_pl}"shot" \
---pseudolabel_model ${pseudo_model2}
+# python feature_extraction_clip.py --dataset ${dset} --model_type ${model_type} --model_subtype ${model_subtype} \
+# --feature_path data/${dset}/pretrained_features/ \
+# --pseudo_conf ""${num_pl}"shot" \
+# --pseudolabel_model ${pseudo_model2}
 
 
 python zero_shot_pseudo_adapt.py \

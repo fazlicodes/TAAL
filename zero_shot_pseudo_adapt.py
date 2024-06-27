@@ -66,7 +66,6 @@ def main(args):
     pl_model = args['pseudolabel_model']
 
     pseudolabel_type = '{}_pseudolabels_{}'.format(pl_model,args['pseudo_conf']) #clip_RN50_pseudolabels_70
-    bb_model = args['bb']
     train_file = np.load(os.path.join(args['feature_path'],pretrained_feature_folder,'{}_train_features_{}.npz'.format(pretrained_model,pseudolabel_type)))
     train_feature, train_label = train_file["feature_list"], train_file["label_list"]
     val_file = np.load(os.path.join(args['feature_path'],pretrained_feature_folder,'{}_val_features_{}.npz'.format(pretrained_model,pseudolabel_type)))
@@ -198,7 +197,7 @@ if __name__ == "__main__":
     parser.add_argument("--hidden_size", type=int,help='hidden layer dimensions of mlp if finetuning is mlp',default=256)
     parser.add_argument("--device", type=str, default='cuda')
     parser.add_argument("--diff_encoder",type=str, default='')
-    parser.add_argument("--bb", type=str,default='ViT-B_32', required=True, help="backbone model")
+    # parser.add_argument("--bb", type=str,default=, required=True, help="backbone model")
     parser.add_argument('--model_sub', type=str, default='', help='subfolder for model')
     parser.add_argument('--lr', type=float, default=1e-3, help='learning rate')
 
