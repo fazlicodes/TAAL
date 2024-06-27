@@ -11,17 +11,16 @@ from torch.utils.data import Dataset, DataLoader
 
 
 class CustomDataset(Dataset):
-    def __init__(self, image_paths, targets, preprocess, data_dir):
+    def __init__(self, image_paths, targets, preprocess):
         self.image_paths = image_paths
         self.targets = targets
         self.preprocess = preprocess
-        self.data_dir = data_dir
 
     def __len__(self):
         return len(self.image_paths)
 
     def __getitem__(self, idx):
-        image_path = os.path.join(self.data_dir, self.image_paths[idx])
+        image_path = self.image_paths[idx]
         image = Image.open(image_path)
         image = self.preprocess(image)
         target = self.targets[idx]
@@ -63,7 +62,7 @@ def main(args):
 
     ### Load CLIP model
     model, preprocess = clip.load(args['model_subtype'], device=device, jit=False)
-    classifier_weights = torch.load(f'/l/users/sanoojan.baliah/Felix/RS_zero_shot/embeddings/lafter_{dataset}_ZSembeddings.pt').squeeze()
+    classifier_weights = torch.load(f'embeddings/lafter_{dataset}_ZSembeddings.pt').squeeze()
     classifier_weights = classifier_weights[list(cls2id.values())].to(device)
 
     image_links = list(sampled.img_path)
@@ -72,13 +71,13 @@ def main(args):
 
     pred_df = pd.DataFrame()
     correct_list = []
-    batch_size = 64  # Adjusted for better performance
+    batch_size = 12144  # Adjusted for better performance
 
     dataset = CustomDataset(image_links, targets, preprocess, data_dir)
     dataloader = DataLoader(dataset, batch_size=batch_size, shuffle=False, num_workers=4)
 
     for i, (batch_images, batch_targets) in enumerate(dataloader):
-        # print(f'{i * batch_size / N * 100:.2f}% done')
+        print(f'{i * batch_size / N * 100:.2f}% done')
         batch_images = batch_images.to(device)
         batch_targets = np.array(batch_targets)
 
@@ -137,7 +136,7 @@ def main(args):
     sub_df = pred_df.copy()
     sub_df = sub_df.rename(columns={'target': 'label'})
 
-    sub_df.to_csv('{}/{}_meta_faster_sub_df_{}_clip_{}shot.csv'.format(data_dir, args['dataset'], clip_model, 0))
+    # sub_df.to_csv('{}/{}_meta_faster_sub_df_{}_clip_{}shot.csv'.format(data_dir, args['dataset'], clip_model, 0))
 
     pseudo_df = pd.DataFrame()
     for pred_label in predicted_labels:
@@ -192,7 +191,7 @@ def main(args):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--root_data_dir", type=str, default='data/')
-    parser.add_argument('--dataset', choices=['resisc45', 'aid', 'patternnet', 'whurs19', 'ucm', 'optimal31', 'mlrsnet',
+    parser.add_argument('--dataset', choices=['resisc45', 'aid', 'patternnet', 'whurs19', 'ucm', 'optimal31', 'mlrsnet','eurosat',
                                               'oxford_pets', 'oxford_flowers', 'dtd', 'imagenet'], type=str)
     parser.add_argument("--model_subtype", type=str, choices=["ViT-B/32", "ViT-B/16", "ViT-L/14", "RN50"],
                         default="RN50", help="exact type of clip pretraining backbone")

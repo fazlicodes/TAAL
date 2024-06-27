@@ -1,8 +1,8 @@
 #!/bin/bash
 # custom config
 dset="$1"
-CUDA_VISIBLE_DEVICES=1 
-python fastest_gen_clip_pl.py \
+# CUDA_VISIBLE_DEVICES=1 
+python faster_gen_clip_pl.py \
 --dataset ${dset} \
 --model_subtype ViT-B/32 \
 --imgs_per_label 16

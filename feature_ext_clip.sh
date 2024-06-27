@@ -3,7 +3,7 @@
 dset="$1"
 model_type=dino
 model_subtype=vitb16 #vitb16 or resnet50
-CUDA_VISIBLE_DEVICES=0 python feature_extraction_clip.py \
+CUDA_VISIBLE_DEVICES=4 python feature_extraction_clip.py \
 --dataset ${dset} \
 --model_type ${model_type} \
 --model_subtype ${model_subtype} \

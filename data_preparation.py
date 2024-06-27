@@ -7,7 +7,7 @@ from PIL import Image
 import argparse
 
 
-data_dict = {'eurosat':{'img_dir_name':'2750/','split_file':'eurosat_split.json','split_names':['train','val','test']},
+data_dict = {'eurosat':{'img_dir_name':'data/eurosat/2750/','split_file':'split_zhou_EuroSAT.json','split_names':['train','val','test']},
             'resisc45':{'img_dir_name':'NWPU-RESISC45/','split_file':'resisc45_split.json','split_names':['train','val','test']},
             'aid':{'img_dir_name':'AID/','split_file':'aid_split.json','split_names':['train','val','test']},
             'patternnet':{'img_dir_name':'images/','split_file':'patternnet_split.json','split_names':['train','val','test']},
