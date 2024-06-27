@@ -126,17 +126,18 @@ def adapter_train(train_loader,optimizer,adapter,criterion,args, wandb=None):
         torch.save(adapter.state_dict(), f"data/{args['dataset']}/{args['pretrained_model']}_{args['dataset']}_adapter.pt")
     
 
-def adapter_predict(adapter,loader,args,return_logits=False):
+def adapter_predict(adapter, loader, args, return_logits=False):
     '''
-    Utility function that used the tuned MLP adapter to make predictions.
+    Utility function that uses the tuned MLP adapter to make predictions.
     '''
     adapter.eval()
     preds = []
+    true_labels = []
     all_logits = torch.Tensor().to(args['device'])
 
     with torch.no_grad():
         for input_data in loader:
-            if args['finetune_type']!="end_to_end":
+            if args['finetune_type'] != "end_to_end":
                 x, y = input_data
             else:
                 x = input_data['im']
@@ -144,13 +145,15 @@ def adapter_predict(adapter,loader,args,return_logits=False):
             x = x.to(args['device']).float()
             y = y.to(args['device'])
             logits = adapter(x)
-            all_logits=torch.concat((all_logits,logits))
+            all_logits = torch.concat((all_logits, logits))
             output = logits.argmax(dim=1)
-            preds = preds+list(output.cpu().numpy())
+            preds += list(output.cpu().numpy())
+            true_labels += list(y.cpu().numpy())
+    
     if return_logits:
-        return all_logits
+        return all_logits, true_labels
     else:
-        return preds
+        return preds, true_labels
 
     
 '''

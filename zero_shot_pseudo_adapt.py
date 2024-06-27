@@ -95,7 +95,11 @@ def main(args):
 
         adapter_train(train_loader,optimizer,model,criterion,args, wandb)
         breakpoint()
-        pred = adapter_predict(model,test_loader,args)
+        preds, true_labels = adapter_predict(model, test_loader, args)
+        accuracy = accuracy_score(true_labels, preds)
+        print(f"Test set accuracy: {accuracy:.4f}")
+
+        breakpoint()
         if args['finetune_type'] == 'mlp_adapter':
                 
                 logits = adapter_predict(model,test_loader,args,return_logits=True)
@@ -103,7 +107,7 @@ def main(args):
                 # test_feature, test_label = test_file["feature_list"], test_file["label_list"]
                 
 
-                clip_test_file = np.load(os.path.join(args['feature_path'],'clip_{}_feat'.format(args['clip_fusion_model']),'clip_{}_test_features_clip_{}_pseudolabels_16shot.npz'.format(args['clip_fusion_model'], args['clip_fusion_model'])))
+                clip_test_file = np.load(os.path.join(args['feature_path'],'{}_feat'.format(args['pretrained_model']),'{}_test_features_{}_pseudolabels_16shot.npz'.format(args['pretrained_model'], args['pseudolabel_model'])))
                 clip_test_feature, clip_test_label = clip_test_file["feature_list"], clip_test_file["label_list"]
                 clip_test_feature = torch.from_numpy(clip_test_feature).to(args['device']).half()
                 clip_test_features = clip_test_feature # / clip_test_feature.norm(dim=-1,keepdim=True)
@@ -179,12 +183,12 @@ if __name__ == "__main__":
                                               'kenya','cct20','serengeti','icct','fmow','oct'], type=str)
     parser.add_argument("--feature_path", type=str, default='',help="directory with extracted features")
     
-    parser.add_argument("--pretrained_model", type=str, choices=['clip_ViT-B_32','dino_vitb16','dino_resnet50','clip_pretrained_model_GeoRSCLIP_RS5M_ViT-B-32.pt','clip_pretrained_model_GeoRSCLIP_RS5M_ViT-L-14.pt','simclr_RN50','triplet_RN50', 'clip_RN50','imagenet_RN50','clip_ViT-L14'],help='type of pretrained model')
+    parser.add_argument("--pretrained_model", type=str, default='dino_vitb16',choices=['clip_ViT-B_32','dino_vitb16','dino_resnet50','clip_pretrained_model_GeoRSCLIP_RS5M_ViT-B-32.pt','clip_pretrained_model_GeoRSCLIP_RS5M_ViT-L-14.pt','simclr_RN50','triplet_RN50', 'clip_RN50','imagenet_RN50','clip_ViT-L14'],help='type of pretrained model')
     parser.add_argument("--pos_type", type=str, choices=['context_sample','augment_self', ''],default='augment_self',help='type of positives used during pretraining, if features from ssl')
 
     parser.add_argument("--return_single_image",action="store_true",default=True)
     parser.add_argument("--pseudo_conf",type=str,default='')
-    parser.add_argument("--pseudolabel_model",type=str,choices=['georsclip','clip_GeoRSCLIP_ViTB32','clip_RN50','clip_ViT-L14','clip_ViT-B_32'])
+    parser.add_argument("--pseudolabel_model",type=str,choices=['georsclip','clip_GeoRSCLIP_ViTB32','clip_RN50','clip_ViT-L14','ViT-B_32'])
     parser.add_argument("--clip_fusion_model",type=str,choices=['RN50','ViT-L_14','ViT-L_14'],default='RN50',help='which clip model to fuse ssl adapter with')
 
     parser.add_argument("--finetune_type", type=str, choices=['linear_probe','mlp','mlp_adapter','end_to_end'],default='linear_probe',help='type of low-shot finetuning')
@@ -194,7 +198,7 @@ if __name__ == "__main__":
     parser.add_argument("--hidden_size", type=int,help='hidden layer dimensions of mlp if finetuning is mlp',default=256)
     parser.add_argument("--device", type=str, default='cuda')
     parser.add_argument("--diff_encoder",type=str, default='')
-    parser.add_argument("--bb", type=str, required=True, help="backbone model")
+    parser.add_argument("--bb", type=str,default='ViT-B_32', required=True, help="backbone model")
     parser.add_argument('--model_sub', type=str, default='', help='subfolder for model')
     parser.add_argument('--lr', type=float, default=1e-3, help='learning rate')
 

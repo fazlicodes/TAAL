@@ -22,7 +22,7 @@ def main(args):
     args['data_dir'] = os.path.join(args['root_data_dir'],args['dataset'], '')
     
     if args['use_pseudo']==True:
-        args['metadata'] = os.path.join(args['data_dir'], args['dataset']+'_meta_{}_pseudo_clip_{}.csv'.format(args['pseudolabel_model'],args['pseudo_conf']))
+        args['metadata'] = os.path.join(args['data_dir'], args['dataset']+'_meta_{}_pseudo_{}.csv'.format(args['pseudolabel_model'],args['pseudo_conf']))
     else:
         args['metadata'] = os.path.join(args['data_dir'], args['dataset']+'_meta.csv')
    
@@ -32,13 +32,14 @@ def main(args):
         model.eval()
         args['model_subtype'] ='{}_{}'.format(args['model_type'],args['model_subtype'])
     elif args['model_type'] == "ssl":
-        if args['model_path']!='na':
-            checkpoint = torch.load(args['model_path'])
-        else:
-            # list_of_models = glob.glob('{}*.pt'.format(args['model_dir'])) # list all models in the dir (*.pt)
-            # most_recent_model_path = max(list_of_models, key=os.path.getctime)
-            # checkpoint = torch.load(most_recent_model_path)
-            checkpoint = torch.load(args['model_dir'])
+        raise NotImplementedError
+        # if args['model_path']!='na':
+        #     checkpoint = torch.load(args['model_path'])
+        # else:
+        #     # list_of_models = glob.glob('{}*.pt'.format(args['model_dir'])) # list all models in the dir (*.pt)
+        #     # most_recent_model_path = max(list_of_models, key=os.path.getctime)
+        #     # checkpoint = torch.load(most_recent_model_path)
+        #     checkpoint = torch.load(args['model_dir'])
         breakpoint()
         model_args = checkpoint['args']
         model_args['im_res'] = args['im_res']
@@ -104,7 +105,7 @@ def main(args):
         pseudo=''
         if args['use_pseudo']:
             pseudo='_{}_pseudolabels_{}'.format(args['pseudolabel_model'],args['pseudo_conf'])
-        feature_dir = args['model_subtype'].replace('/','_')
+        feature_dir = args['model_subtype'].replace('/','')
         os.makedirs(os.path.join(args['feature_path'], '{}_feat/'.format(feature_dir,)),exist_ok=True)
         save_filename =  "{}_feat/{}_{}_features{}".format(feature_dir,
                                                            feature_dir,
@@ -128,16 +129,16 @@ if __name__ == "__main__":
                                               'kenya','cct20','serengeti','icct','fmow','oct'], type=str)
     parser.add_argument("--model_type", type=str, choices=["clip", "ssl","imagenet_transfer", "dino"], help="type of pretraining")
     parser.add_argument("--return_single_image",action="store_true",default=True)
-    parser.add_argument("--model_subtype",type=str, choices=["ViT-B/32", "ViT-B/16","ViT-L/14", "RN50", "resnet50", "vitb16"],default="", help="exact type of pretraining backbone")
+    parser.add_argument("--model_subtype",type=str, choices=["ViT-B/32", "ViT-B/16","ViT-L/14", "RN50", "resnet50", "vitb16"],default="vitb16", help="exact type of pretraining backbone")
     parser.add_argument("--model_dir",default='',type=str, help="directory to load latest model available if not specific path is given through model_path")
     parser.add_argument("--model_path",default='na', type=str, help="path to torch model, if saved locally, just make sure its consistent with where ssl_pretraining.py saves the file to")
     parser.add_argument("--split", type=str, choices=["train", "val", "test"], help="which split")
     parser.add_argument("--feature_path",type=str,default='')
     parser.add_argument("--batch_size", type=int,default=64, help="dataloader batch size")
     parser.add_argument("--im_res", type=int,default=224, help="processed image resolution")
-    parser.add_argument("--use_pseudo", action='store_true',default=False, help="use pseudolabels as extracted labels")
+    parser.add_argument("--use_pseudo", action='store_true',default=True, help="use pseudolabels as extracted labels")
     parser.add_argument("--pseudo_conf",type=str,default='')
-    parser.add_argument("--pseudolabel_model",type=str,choices=['georsclip','clip_GeoRSCLIP_ViTB32','clip_RN50','clip_ViT-L_14','clip_ViT-B_32'], default='clip_RN50')
+    parser.add_argument("--pseudolabel_model",type=str,choices=['georsclip','clip_GeoRSCLIP_ViTB32','clip_RN50','clip_ViT-L_14','ViT-B_32'], default='ViT-B_32')
     parser.add_argument("--workers", type=int,default=4)
     parser.add_argument("--device", type=str, choices=["cuda", "cpu"],default="cuda",help="which device")
     parser.add_argument('--seed', default=2001, type=int)

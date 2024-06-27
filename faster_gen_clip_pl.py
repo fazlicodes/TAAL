@@ -126,7 +126,7 @@ def main(args):
     acc_mean = 100 * np.mean(correct_list)
     print(f'Accuracy mean: {acc_mean:.2f}%')
 
-    clip_model = 'clip_' + args['model_subtype'].replace('/', '').replace('-', '_')
+    clip_model = args['model_subtype'].replace('/', '_')
     save_line = "{},{}, {} Shot, Test acc stat: {:.2f} ()\n".format(args['dataset'], clip_model, 0, acc_mean, '')
     print(save_line, flush=True)
 
@@ -170,7 +170,7 @@ def main(args):
     meta_new.reset_index(inplace=True)
     meta_new.drop(columns=['index'], inplace=True)
 
-    meta_new.to_csv('{}/{}_meta_fast_{}_pseudo_clip_{}shot.csv'.format(data_dir, args['dataset'], clip_model, args['imgs_per_label']))
+    meta_new.to_csv('{}/{}_meta_{}_pseudo_{}shot.csv'.format(data_dir, args['dataset'], clip_model, args['imgs_per_label']))
 
 
 if __name__ == "__main__":
