@@ -17,7 +17,7 @@ def main(args):
 
     print('Dataset: {}\n Extracting features with pretrained {} ({} backbone).'.format(args['dataset'],args['model_type'],args['model_subtype']))
     if args['use_pseudo']:
-        print('.. from data pseudolabeled with {} and a {} confidence threshold (i.e. keep the top 16 most confident images per predicted category)'.format(args['pseudolabel_model'],args['pseudo_conf']))
+        print('.. from data pseudolabeled with {} and a {} confidence threshold (i.e. keep the top {} most confident images per predicted category)'.format(args['pseudolabel_model'],args['pseudo_conf'], args['pseudolabel_model']))
     print('\n')
     args['data_dir'] = os.path.join(args['root_data_dir'],args['dataset'], '')
     

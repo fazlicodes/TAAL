@@ -7,3 +7,4 @@ all_weights/
 pretrained_model/
 __pycache__/
 embeddings/
+run_all*
