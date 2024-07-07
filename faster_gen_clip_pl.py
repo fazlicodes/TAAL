@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 import os
 import argparse
 from torch.utils.data import Dataset, DataLoader
-
+import time
 
 class CustomDataset(Dataset):
     def __init__(self, image_paths, targets, preprocess, data_dir):
@@ -29,11 +29,11 @@ class CustomDataset(Dataset):
 
 
 def main(args):
+    start_time = time.time()
     device = "cuda" if torch.cuda.is_available() else "cpu"
     data_dir = '{}{}/'.format(args['root_data_dir'], args['dataset'])
     metadir = data_dir + '{}_meta.csv'.format(args['dataset'])
     meta = pd.read_csv(metadir, index_col=0)
-    meta['category_id'] = meta.category_id.astype(int)
     split_list = ['train']
     sampled = meta.loc[meta.img_set.isin(split_list)]
 
@@ -72,11 +72,11 @@ def main(args):
 
     pred_df = pd.DataFrame()
     correct_list = []
-    batch_size = 4096  # Adjusted for better performance
+    batch_size = 12500 #27000  # Adjusted for better performance
 
     dataset = CustomDataset(image_links, targets, preprocess, data_dir)
     dataloader = DataLoader(dataset, batch_size=batch_size, shuffle=False, num_workers=4)
-
+    model.eval()
     for i, (batch_images, batch_targets) in enumerate(dataloader):
         print(f'{i * batch_size / N * 100:.2f}% done')
         batch_images = batch_images.to(device)
@@ -137,14 +137,13 @@ def main(args):
     sub_df = pred_df.copy()
     sub_df = sub_df.rename(columns={'target': 'label'})
 
-    # sub_df.to_csv('{}/{}_meta_faster_sub_df_{}_clip_{}shot.csv'.format(data_dir, args['dataset'], clip_model, 0))
+    sub_df.to_csv('{}/{}_25_sampled_meta_faster_sub_df_{}_clip_{}shot.csv'.format(data_dir, args['dataset'], clip_model, 0))
 
     pseudo_df = pd.DataFrame()
     for pred_label in predicted_labels:
         sub_label_df = pred_df.loc[(pred_df.pred1 == pred_label) & (pred_df.prob1 >= args['confidence_lower_bound'])]
         sub_label_df = sub_label_df.sort_values('prob1', ascending=False).iloc[0:args['imgs_per_label']]
         pseudo_df = pd.concat((pseudo_df, sub_label_df))
-
     pseudo_full = pseudo_df.rename(columns={'target': 'label'}).copy()
     print(f'Accuracy of {args["imgs_per_label"]} pseudo labels chosen for adapter {(pseudo_full["correct"].sum()) / (len(pseudo_full))}')
     pseudo_full.drop_duplicates(subset='img_path', inplace=True)
@@ -155,7 +154,6 @@ def main(args):
         print(args['dataset'] + ' NEEDED EXTRA GUESSES')
         raise NotImplementedError
 
-
     meta_train_replace = meta.loc[meta.img_path.isin(set(pseudo_full.img_path_trimmed))]
     pseudo_full.sort_values('img_path_trimmed', inplace=True)
     pseudo_full['pseudolabel'] = pseudo_full['pred1']
@@ -163,7 +161,6 @@ def main(args):
     meta_train_replace.sort_values('img_path', inplace=True)
     meta_train_replace['label'] = pseudo_full['pseudolabel'].values
     meta_train_replace['category_id'] = meta_train_replace['label'].apply(lambda x: label_to_category[x])
-
     meta_test = meta.loc[~meta.img_set.isin(split_list)].copy()
 
     meta_new = pd.concat((meta_train_replace, meta_test))
@@ -171,7 +168,7 @@ def main(args):
     meta_new.drop(columns=['index'], inplace=True)
 
     meta_new.to_csv('{}/{}_meta_{}_pseudo_{}shot.csv'.format(data_dir, args['dataset'], clip_model, args['imgs_per_label']))
-
+    print(f'Finished in {time.time() - start_time:.2f} seconds')
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()

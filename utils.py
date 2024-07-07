@@ -123,7 +123,7 @@ def adapter_train(train_loader,optimizer,adapter,criterion,args, wandb=None):
         print(" Used different encoder for adapter training")
         torch.save(adapter.state_dict(), f"data/{args['dataset']}/{args['diff_encoder']}_{args['dataset']}_adapter.pt")
     else:
-        torch.save(adapter.state_dict(), f"data/{args['dataset']}/{args['pretrained_model']}_{args['dataset']}_adapter.pt")
+        torch.save(adapter.state_dict(), f"data/{args['dataset']}/{args['pseudo_conf']}_{args['pretrained_model']}_{args['dataset']}_adapter.pt")
     
 
 def adapter_predict(adapter, loader, args, return_logits=False):
