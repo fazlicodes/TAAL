@@ -111,7 +111,7 @@ def main(args):
     # Create label_to_idx mapping
     label_to_idx = {label: idx for idx, label in enumerate(sorted(set(targets)))}
 
-    batch_size = 27000  # Adjusted for better performance
+    batch_size = 12000  # Adjusted for better performance
 
     dataset = CustomDataset(image_links, targets, preprocess, data_dir, label_to_idx)
     dataloader = DataLoader(dataset, batch_size=batch_size, shuffle=False, num_workers=8)
@@ -173,15 +173,46 @@ def main(args):
     label_to_category = dict(meta[['label', 'category_id']].drop_duplicates().values)
     predicted_labels = set(pred_df.pred1)
 
+   # Initialize an empty DataFrame for storing the pseudo-labels
     pseudo_df = pd.DataFrame()
-    for pred_label in predicted_labels:
-        sub_label_df = pred_df.loc[(pred_df.pred1 == pred_label) & (pred_df.prob1 >= args['confidence_lower_bound'])]
-        sub_label_df = sub_label_df.sort_values('prob1', ascending=False).iloc[:args['imgs_per_label']]
-        pseudo_df = pd.concat((pseudo_df, sub_label_df))
 
+    # Calculate the average prob1 for each group
+    grouped = pred_df.groupby('pred1')['prob1'].mean().reset_index().rename(columns={'prob1': 'avg_prob1'})
+
+    # Merge the average probabilities back into the original DataFrame
+    pred_df = pred_df.merge(grouped, on='pred1')
+
+    # Filter the DataFrame to only include rows where prob1 is greater than the average prob1 for the group
+    filtered_df = pred_df[pred_df['prob1'] > pred_df['avg_prob1']]
+
+    # Iterate over predicted labels and select the top 30% samples based on prob1
+    for pred_label in predicted_labels:
+        sub_label_df = filtered_df.loc[filtered_df.pred1 == pred_label]
+        sub_label_df = sub_label_df.sort_values('prob1', ascending=False)
+        
+        # Calculate the number of top samples to select (30% of the total samples in the group)
+        top_30_percent = int(0.025 * len(sub_label_df))
+        
+        # Select only the top 30% samples
+        sub_label_df = sub_label_df.iloc[:top_30_percent]
+        
+        pseudo_df = pd.concat((pseudo_df, sub_label_df))
+    print(pseudo_df.shape)
+
+    #save the pseudo_df
+    pseudo_df.to_csv('{}/{}_pseudo_df_{}_clip_{}shot.csv'.format(data_dir, args['dataset'], clip_model, 0))
+
+    # Rename the target column to label and create a copy of the DataFrame
     pseudo_full = pseudo_df.rename(columns={'target': 'label'}).copy()
-    print(f'Accuracy of {args["imgs_per_label"]} pseudo labels chosen for adapter {(pseudo_full["correct"].sum()) / len(pseudo_full)}')
+
+    # Print the accuracy of the selected pseudo labels
+    print(f'Accuracy of selected pseudo labels: {(pseudo_full["correct"].sum()) / len(pseudo_full)}')
+
+    # Remove duplicate image paths
     pseudo_full.drop_duplicates(subset='img_path', inplace=True)
+
+
+
 
     list_of_classes_without_pseudolabel = len(set(pred_df.target)) - len(predicted_labels)
 
