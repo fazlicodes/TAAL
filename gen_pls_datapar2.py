@@ -175,38 +175,17 @@ def main(args):
 
     pseudo_df = pd.DataFrame()
 
-    # pseudo_df_meta = {"class":[], "pred_nos":[], "actual_nos":[], "correct_nos":[], "accuracy":[]}
-
     classes_with_percentage=0
     classes_with_k=0
     for pred_label in predicted_labels:
-        sub_label_df = pred_df.loc[(pred_df.pred1 == pred_label) & (pred_df.prob1 >= args['confidence_lower_bound'])]
+        sub_label_df = pred_df.loc[(pred_df.pred1 == pred_label)]
         sub_label_df = sub_label_df.sort_values('prob1', ascending=False)
 
-        # rows_to_select = max(64, min(int(0.2 * len(sub_label_df)),128))
         min_rows=args['imgs_per_label']
-        rows_to_select = max(min_rows, min(int(0.1 * len(sub_label_df)),128))
+        rows_to_select = max(min_rows, min(int(1 * len(sub_label_df)),min_rows*2))
 
-        # pseudo_df_meta["class"].append(pred_label)
-        # pseudo_df_meta["pred_nos"].append(len(sub_label_df))
-
-        # # count the number of rows in pred_df where target is pred_label
-        # correct_nos = pred_df.loc[pred_df.target == pred_label].shape[0]
-        # pseudo_df_meta["actual_nos"].append(correct_nos)
-
-        # pseudo_df_meta["correct_nos"].append(len(sub_label_df)/correct_nos)
-
-
-
-        if rows_to_select > min_rows:
-            classes_with_percentage += 1
-        else:
-            classes_with_k += 1
         sub_label_df = sub_label_df.head(rows_to_select)
         pseudo_df = pd.concat((pseudo_df, sub_label_df))
-    pseudo_df.to_csv('{}/{}_pseudo-df_{}shot.csv'.format(data_dir, args['dataset'], args['imgs_per_label']), index=False)
-    # pseudo_df_meta = pd.DataFrame(pseudo_df_meta)
-    # pseudo_df_meta.to_csv('{}/{}_pseudo-df-meta_{}shot.csv'.format(data_dir, args['dataset'], args['imgs_per_label']), index=False)
     print(f'Classes with percentage: {classes_with_percentage}, classes with k: {classes_with_k}')
 
     pseudo_full = pseudo_df.rename(columns={'target': 'label'}).copy()
