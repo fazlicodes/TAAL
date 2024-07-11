@@ -107,6 +107,7 @@ def adapter_train(train_loader,optimizer,adapter,criterion,args, wandb=None):
             y = y.to(args['device'])
 
             output = adapter(x)
+            breakpoint()
             loss = criterion(output, y)
             loss.backward()
             losses.append(loss.item())

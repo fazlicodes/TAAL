@@ -111,7 +111,7 @@ def main(args):
     # Create label_to_idx mapping
     label_to_idx = {label: idx for idx, label in enumerate(sorted(set(targets)))}
 
-    batch_size = 12000  # Adjusted for better performance
+    batch_size = 27000  # Adjusted for better performance
 
     dataset = CustomDataset(image_links, targets, preprocess, data_dir, label_to_idx)
     dataloader = DataLoader(dataset, batch_size=batch_size, shuffle=False, num_workers=8)
@@ -173,47 +173,45 @@ def main(args):
     label_to_category = dict(meta[['label', 'category_id']].drop_duplicates().values)
     predicted_labels = set(pred_df.pred1)
 
-   # Initialize an empty DataFrame for storing the pseudo-labels
     pseudo_df = pd.DataFrame()
 
-    # Calculate the average prob1 for each group
-    grouped = pred_df.groupby('pred1')['prob1'].mean().reset_index().rename(columns={'prob1': 'avg_prob1'})
+    # pseudo_df_meta = {"class":[], "pred_nos":[], "actual_nos":[], "correct_nos":[], "accuracy":[]}
 
-    # Merge the average probabilities back into the original DataFrame
-    pred_df = pred_df.merge(grouped, on='pred1')
-
-    # Filter the DataFrame to only include rows where prob1 is greater than the average prob1 for the group
-    filtered_df = pred_df[pred_df['prob1'] > pred_df['avg_prob1']]
-
-    # Iterate over predicted labels and select the top 30% samples based on prob1
+    classes_with_percentage=0
+    classes_with_k=0
     for pred_label in predicted_labels:
-        sub_label_df = filtered_df.loc[filtered_df.pred1 == pred_label]
+        sub_label_df = pred_df.loc[(pred_df.pred1 == pred_label) & (pred_df.prob1 >= args['confidence_lower_bound'])]
         sub_label_df = sub_label_df.sort_values('prob1', ascending=False)
-        
-        # Calculate the number of top samples to select (30% of the total samples in the group)
-        top_30_percent = int(0.025 * len(sub_label_df))
-        
-        # Select only the top 30% samples
-        sub_label_df = sub_label_df.iloc[:top_30_percent]
-        
+
+        # rows_to_select = max(64, min(int(0.2 * len(sub_label_df)),128))
+        min_rows=args['imgs_per_label']
+        rows_to_select = max(min_rows, min(int(0.1 * len(sub_label_df)),128))
+
+        # pseudo_df_meta["class"].append(pred_label)
+        # pseudo_df_meta["pred_nos"].append(len(sub_label_df))
+
+        # # count the number of rows in pred_df where target is pred_label
+        # correct_nos = pred_df.loc[pred_df.target == pred_label].shape[0]
+        # pseudo_df_meta["actual_nos"].append(correct_nos)
+
+        # pseudo_df_meta["correct_nos"].append(len(sub_label_df)/correct_nos)
+
+
+
+        if rows_to_select > min_rows:
+            classes_with_percentage += 1
+        else:
+            classes_with_k += 1
+        sub_label_df = sub_label_df.head(rows_to_select)
         pseudo_df = pd.concat((pseudo_df, sub_label_df))
-    print(pseudo_df.shape)
+    pseudo_df.to_csv('{}/{}_pseudo-df_{}shot.csv'.format(data_dir, args['dataset'], args['imgs_per_label']), index=False)
+    # pseudo_df_meta = pd.DataFrame(pseudo_df_meta)
+    # pseudo_df_meta.to_csv('{}/{}_pseudo-df-meta_{}shot.csv'.format(data_dir, args['dataset'], args['imgs_per_label']), index=False)
+    print(f'Classes with percentage: {classes_with_percentage}, classes with k: {classes_with_k}')
 
-    #save the pseudo_df
-    pseudo_df.to_csv('{}/{}_pseudo_df_{}_clip_{}shot.csv'.format(data_dir, args['dataset'], clip_model, 0))
-
-    # Rename the target column to label and create a copy of the DataFrame
     pseudo_full = pseudo_df.rename(columns={'target': 'label'}).copy()
-
-    # Print the accuracy of the selected pseudo labels
-    print(f'Accuracy of selected pseudo labels: {(pseudo_full["correct"].sum()) / len(pseudo_full)}')
-
-    # Remove duplicate image paths
+    print(f'Accuracy of {args["imgs_per_label"]} pseudo labels chosen for adapter {(pseudo_full["correct"].sum()) / len(pseudo_full)}')
     pseudo_full.drop_duplicates(subset='img_path', inplace=True)
-
-
-
-
     list_of_classes_without_pseudolabel = len(set(pred_df.target)) - len(predicted_labels)
 
     if list_of_classes_without_pseudolabel > 0:

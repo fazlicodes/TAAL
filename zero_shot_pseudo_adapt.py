@@ -91,7 +91,6 @@ def main(args):
 
         criterion = nn.CrossEntropyLoss()
         print(model)
-
         adapter_train(train_loader,optimizer,model,criterion,args, wandb)
         breakpoint()
         preds, true_labels = adapter_predict(model, test_loader, args)

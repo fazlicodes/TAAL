@@ -1,7 +1,7 @@
 #!/bin/bash
 # custom config
 dset="$1"
-num_pl=64
+num_pl=128
 pseudo_model="ViT-B/32"
 pseudo_model2="ViT-B_32"
 # python data_preparation.py --dataset ${dset}
