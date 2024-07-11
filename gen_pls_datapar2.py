@@ -175,8 +175,6 @@ def main(args):
 
     pseudo_df = pd.DataFrame()
 
-    classes_with_percentage=0
-    classes_with_k=0
     for pred_label in predicted_labels:
         sub_label_df = pred_df.loc[(pred_df.pred1 == pred_label)]
         sub_label_df = sub_label_df.sort_values('prob1', ascending=False)
@@ -186,7 +184,6 @@ def main(args):
 
         sub_label_df = sub_label_df.head(rows_to_select)
         pseudo_df = pd.concat((pseudo_df, sub_label_df))
-    print(f'Classes with percentage: {classes_with_percentage}, classes with k: {classes_with_k}')
 
     pseudo_full = pseudo_df.rename(columns={'target': 'label'}).copy()
     print(f'Accuracy of {args["imgs_per_label"]} pseudo labels chosen for adapter {(pseudo_full["correct"].sum()) / len(pseudo_full)}')
