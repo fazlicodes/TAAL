@@ -56,6 +56,8 @@ def main(args):
         label_mapper['clip_label'] = label_mapper['clip_label'].apply(lambda x: 'a photo of a {}, a type of aircraft.'.format(x))
     elif args['dataset']=="caltech-101":
         label_mapper['clip_label'] = label_mapper['clip_label'].apply(lambda x: 'a photo of a {}.'.format(x))
+    elif args['dataset']=="resisc45":
+        label_mapper['clip_label'] = label_mapper['clip_label'].apply(lambda x: 'a centered satellite photo of {}.'.format(x))
     elif args['dataset']=="eurosat":
         label_mapper['clip_label'] = label_mapper['clip_label'].apply(lambda x: 'a centered satellite photo of {}.'.format(x))
     elif args['dataset']=="oxford_pets":
@@ -70,6 +72,10 @@ def main(args):
         label_mapper['clip_label'] = label_mapper['clip_label'].apply(lambda x: 'a photo of {}, a type of food.'.format(x))
     elif args['dataset']=="sun397":
         label_mapper['clip_label'] = label_mapper['clip_label'].apply(lambda x: 'a photo of a {}.'.format(x))
+    elif args['dataset']=="cifar10":
+        label_mapper['clip_label'] = label_mapper['clip_label'].apply(lambda x: 'a photo of a {}.'.format(x))
+    elif args['dataset']=="cifar100":
+        label_mapper['clip_label'] = label_mapper['clip_label'].apply(lambda x: 'a photo of a {}.'.format(x))
     elif args['dataset']=="stanford_cars":
         label_mapper['clip_label'] = label_mapper['clip_label'].apply(lambda x: 'a photo of a {}.'.format(x))
     else:
@@ -81,9 +87,11 @@ def main(args):
     N = sampled.shape[0]
 
     datasets_names = ['eurosat', 'ucm', 'aid', 'patternnet', 'resisc45', 'whurs19', 'mlrsnet', 'optimal31',
-                      'caltech-101', 'oxford_pets', 'oxford_flowers', 'imagenet','food101','stanford_cars']
+                      'caltech-101', 'oxford_pets', 'oxford_flowers', 'imagenet','food101','stanford_cars','sun397','cifar10','cifar100',
+                      'fgvc_aircraft','ucf101']
     map_datasets_name = ['EuroSAT', 'UCM', 'AID', 'PatternNet', 'RESISC45', 'WHURS19', 'MLRSNet', 'Optimal31',
-                         'Caltech101', 'OxfordPets', 'OxfordFlowers', 'ImageNet','Food101','StanfordCars']
+                         'Caltech101', 'OxfordPets', 'OxfordFlowers', 'ImageNet','Food101','StanfordCars','SUN397','CIFAR10','CIFAR100',
+                         'FGVCAircraft','UCF101']
     dataset = map_datasets_name[datasets_names.index(args['dataset'])]
 
     ### Load CLIP model
@@ -97,10 +105,12 @@ def main(args):
 
     pred_df = pd.DataFrame()
     correct_list = []
-    batch_size = 5000 #27000  # Adjusted for better performance
+    
+    batch_size = 12000 #27000  # Adjusted for better performance
     dataset = CustomDataset(image_links, targets, preprocess, data_dir)
     dataloader = DataLoader(dataset, batch_size=batch_size, shuffle=False, num_workers=4)
     model.eval()
+    print('Processing batches using DataLoader')
     for i, (batch_images, batch_targets) in enumerate(dataloader):
         print(f'{i * batch_size / N * 100:.2f}% done')
         batch_images = batch_images.to(device)
@@ -169,22 +179,31 @@ def main(args):
     min_classes, max_classes, other_classes = 0,0,0
     pl_stats = pd.DataFrame(columns=['category', 'rows_to_select', 'selected_rows'])
 
-    breakpoint()
+    # breakpoint()
     for pred_label in predicted_labels:
         sub_label_df = pred_df.loc[(pred_df.pred1 == pred_label) & (pred_df.prob1 >= pred_df.quartile_75)]
         sub_label_df = sub_label_df.sort_values('prob1', ascending=False).iloc[0:args['imgs_per_label']]
         min_rows=args['imgs_per_label']
-        rows_to_select = max(min_rows, min(len(sub_label_df),min_rows*2))
-        # print(f'For label {pred_label}, {rows_to_select} rows selected')
-        if rows_to_select == min_rows:
+        # rows_to_select = max(min_rows, min(len(sub_label_df),min_rows*2))
+        if (len(sub_label_df) < min_rows):
+            rows_to_select = min_rows//2
             min_classes += 1
-        elif rows_to_select == min_rows*2:
+        elif (len(sub_label_df) > min_rows):
+            rows_to_select = min_rows
             max_classes += 1
         else:
+            rows_to_select = len(sub_label_df)
             other_classes += 1
+        # print(f'For label {pred_label}, {rows_to_select} rows selected')
+        # if rows_to_select == min_rows:
+        #     min_classes += 1
+        # elif rows_to_select == min_rows*2:
+        #     max_classes += 1
+        # else:
+        #     other_classes += 1
 
         sub_label_df = sub_label_df.head(rows_to_select)
-        pl_stats = pl_stats.append({'category': str(pred_label), 'rows_to_select':rows_to_select, 'selected_rows':len(sub_label_df)},ignore_index=True)
+        d = pl_stats.append({'category': str(pred_label), 'rows_to_select':rows_to_select, 'selected_rows':len(sub_label_df)},ignore_index=True)
         pseudo_df = pd.concat((pseudo_df, sub_label_df))
     pl_stats.to_csv(f'pseudo_stats_{args["dataset"]}_{args["imgs_per_label"]}.csv', index=False)
     print(f'Min classes: {min_classes}, Max classes: {max_classes}, Other classes: {other_classes}')
@@ -203,8 +222,8 @@ def main(args):
     pseudo_full['pseudolabel'] = pseudo_full['pred1']
 
     meta_train_replace.sort_values('img_path', inplace=True)
-    meta_train_replace['label'] = pseudo_full['pseudolabel'].values
-    meta_train_replace['category_id'] = meta_train_replace['label'].apply(lambda x: label_to_category[x])
+    # meta_train_replace['label'] = pseudo_full['pseudolabel'].values
+    # meta_train_replace['category_id'] = meta_train_replace['label'].apply(lambda x: label_to_category[x])
 
     meta_test = meta.loc[~meta.img_set.isin(split_list)].copy()
 
@@ -219,7 +238,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--root_data_dir", type=str, default='data/')
     parser.add_argument('--dataset', default='eurosat',choices=['resisc45', 'aid', 'patternnet', 'whurs19', 'ucm', 'optimal31', 'mlrsnet',
-                                                                'eurosat', 'stanford_cars',
+                                                                'eurosat', 'stanford_cars','sun397','cifar10','cifar100','fgvc_aircraft','ucf101',
                                               'food101','caltech-101','oxford_pets', 'oxford_flowers', 'dtd', 'imagenet'], type=str)
     parser.add_argument("--model_subtype", type=str, choices=["ViT-B/32", "ViT-B/16", "ViT-L/14", "RN50"],
                         default="ViT-B/32", help="exact type of clip pretraining backbone")
