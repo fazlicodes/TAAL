@@ -92,7 +92,7 @@ def nt_xent(x1, x2, args):
 
 
 
-def adapter_train(train_loader,optimizer,adapter,criterion,args, wandb=None):
+def adapter_train(train_loader,optimizer,adapter,criterion,args, wandb=None, test_loader=None):
     '''
     Utility function that trains the MLP adapter with few-shot samples on top of frozen features.
     '''
@@ -107,7 +107,6 @@ def adapter_train(train_loader,optimizer,adapter,criterion,args, wandb=None):
             y = y.to(args['device'])
 
             output = adapter(x)
-            breakpoint()
             loss = criterion(output, y)
             loss.backward()
             losses.append(loss.item())
@@ -117,8 +116,8 @@ def adapter_train(train_loader,optimizer,adapter,criterion,args, wandb=None):
 
             optimizer.step()
 
-            if batch_num % 40 == 0:
-                print('\tEpoch %d | Batch %d | Loss %f' % (epoch, batch_num, loss.item()))
+            # if batch_num % 40 == 0:
+            #     print('\tEpoch %d | Batch %d | Loss %f' % (epoch, batch_num, loss.item()))
         #print('Epoch %d | Loss %6.2f' % (epoch, sum(losses)/len(losses)))
     if len(args['diff_encoder'])>0:
         print(" Used different encoder for adapter training")

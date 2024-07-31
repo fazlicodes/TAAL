@@ -15,7 +15,7 @@ split_types = []
 image_locations = []
 
 # Iterate through train and validation directories
-for split_type in ['train', 'val']:
+for split_type in ['train', 'val','test']:
 # for split_type in ['val']:
     split_dir = os.path.join(dataset_path, split_type)
     class_folders = os.listdir(split_dir)

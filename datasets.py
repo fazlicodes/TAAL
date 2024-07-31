@@ -73,6 +73,39 @@ def get_color_distortion(s=0.5):  # 0.5 for CIFAR10 by default
     return color_distort
 
 
+from PIL import ImageFilter
+import random
+class GaussianBlur(object):
+    """Gaussian blur augmentation in SimCLR https://arxiv.org/abs/2002.05709"""
+
+    def __init__(self, sigma=[.1, 2.]):
+        self.sigma = sigma
+
+    def __call__(self, x):
+        sigma = random.uniform(self.sigma[0], self.sigma[1])
+        x = x.filter(ImageFilter.GaussianBlur(radius=sigma))
+        return x
+
+def get_strong_augmentation():
+    import torchvision.transforms as transforms
+    normalize = transforms.Compose([transforms.ToTensor(),
+                                    transforms.Normalize((0.48145466, 0.4578275, 0.40821073),
+                                                         (0.26862954, 0.26130258, 0.27577711))])
+
+    blur = GaussianBlur()
+    return transforms.Compose([
+        transforms.RandomResizedCrop(224, scale=(0.2, 1.)),
+        transforms.RandomHorizontalFlip(),
+        transforms.RandomApply([
+            transforms.ColorJitter(0.4, 0.4, 0.4, 0.1)  # not strengthened
+        ], p=0.8),
+        transforms.RandomPerspective(distortion_scale=0.2, p=0.5, interpolation=3),
+        transforms.ColorJitter(brightness=0.4, contrast=0.4, saturation=0.4, hue=0.1),
+        blur,
+        normalize
+    ])
+
+
 
 
 
@@ -118,7 +151,9 @@ class IMAGE_DATASET(torch.utils.data.Dataset):
         self.return_alt_pos = return_alt_pos
         self.return_single_image = return_single_image    
         
+        # breakpoint()
         self.transform = transform
+        # self.transform = get_strong_augmentation()
         self.data_root = args['data_dir']
 
     

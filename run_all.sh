@@ -1,6 +1,8 @@
 #!/bin/bash
+set -e
+
 # custom config
-# CUDA_VISIBLE_DEVICES=5
+# CUDA_VISIBLE_DEVICES =5
 dset="$1"
 num_pl=128
 pseudo_model="ViT-B/32"
@@ -8,8 +10,10 @@ pseudo_model2="ViT-B_32"
 # python data_preparation.py --dataset ${dset}
 
 # python faster_gen_clip_pl.py --dataset ${dset} --model_subtype ${pseudo_model} --imgs_per_label ${num_pl}
-# python gen_pls_from_saved.py --dataset ${dset} --model_subtype ${pseudo_model} --imgs_per_label ${num_pl}
-python gen_pls_datapar2.py --dataset ${dset} --model_subtype ${pseudo_model} --imgs_per_label ${num_pl}
+# python faster_gen_clip_pl.py --dataset caltech-101 --model_subtype "ViT-B/32" --imgs_per_label 16
+# python gen_pls_datapar2.py --dataset ${dset} --model_subtype ${pseudo_model} --imgs_per_label ${num_pl}
+python generate_pls.py --dataset ${dset} --model_subtype ${pseudo_model} --imgs_per_label ${num_pl}
+# python generate_pls_from_saved.py --dataset ${dset} --model_subtype ${pseudo_model} --imgs_per_label ${num_pl}
 
 model_type=dino
 model_subtype=vitb16

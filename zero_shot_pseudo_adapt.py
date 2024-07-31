@@ -68,8 +68,8 @@ def main(args):
     pseudolabel_type = '{}_pseudolabels_{}'.format(pl_model,args['pseudo_conf']) #clip_RN50_pseudolabels_70
     train_file = np.load(os.path.join(args['feature_path'],pretrained_feature_folder,'{}_train_features_{}.npz'.format(pretrained_model,pseudolabel_type)))
     train_feature, train_label = train_file["feature_list"], train_file["label_list"]
-    val_file = np.load(os.path.join(args['feature_path'],pretrained_feature_folder,'{}_val_features_{}.npz'.format(pretrained_model,pseudolabel_type)))
-    val_feature, val_label = val_file["feature_list"], val_file["label_list"]
+    # val_file = np.load(os.path.join(args['feature_path'],pretrained_feature_folder,'{}_val_features_{}.npz'.format(pretrained_model,pseudolabel_type)))
+    # val_feature, val_label = val_file["feature_list"], val_file["label_list"]
     test_file = np.load(os.path.join(args['feature_path'],pretrained_feature_folder,'{}_test_features_{}.npz'.format(pretrained_model,pseudolabel_type)))
     test_feature, test_label = test_file["feature_list"], test_file["label_list"]
 
@@ -80,24 +80,24 @@ def main(args):
         num_classes = len(set(train_label))
         input_size = train_feature.shape[1]
         train_set = FeatureDataset(train_feature,train_label)
-        val_set  = FeatureDataset(val_feature,val_label)
+        # val_set  = FeatureDataset(val_feature,val_label)
         test_set  = FeatureDataset(test_feature,test_label)
         train_loader = DataLoader(train_set, batch_size=args['batch_size'], shuffle=True)
-        val_loader  = DataLoader(val_set,  batch_size=args['batch_size'], shuffle=False)
+        # val_loader  = DataLoader(val_set,  batch_size=args['batch_size'], shuffle=False)
         test_loader  = DataLoader(test_set,  batch_size=args['batch_size'], shuffle=False)
         model = AdapterMLP(num_classes,input_size,args['hidden_size']).to(args['device'])
         optimizer = torch.optim.Adam(model.parameters(), args['lr'])
 
 
         criterion = nn.CrossEntropyLoss()
-        print(model)
+        # print(model) 
         adapter_train(train_loader,optimizer,model,criterion,args, wandb)
-        breakpoint()
+        # breakpoint()
         preds, true_labels = adapter_predict(model, test_loader, args)
         accuracy = accuracy_score(true_labels, preds)
         print(f"Test set accuracy: {accuracy:.4f}")
 
-        breakpoint()
+        exit()
         if args['finetune_type'] == 'mlp_adapter':
                 
                 logits = adapter_predict(model,test_loader,args,return_logits=True)
@@ -177,7 +177,7 @@ if __name__ == "__main__":
     parser.add_argument("--root_data_dir", type=str, default='data/')
     parser.add_argument('--dataset', choices=['ucf101','food101','sun397','stanford_cars','fgvc-aircraft','caltech-101',
                                                 'eurosat','resisc45','aid','patternnet','ucm','whurs19','mlrsnet','optimal31',
-                                                'oxford_pets','oxford_flowers','dtd', 'imagenet',
+                                                'oxford_pets','oxford_flowers','dtd', 'imagenet','cifar10','cifar100',
                                               'kenya','cct20','serengeti','icct','fmow','oct'], type=str)
     parser.add_argument("--feature_path", type=str, default='',help="directory with extracted features")
     
@@ -199,6 +199,8 @@ if __name__ == "__main__":
     # parser.add_argument("--bb", type=str,default=, required=True, help="backbone model")
     parser.add_argument('--model_sub', type=str, default='', help='subfolder for model')
     parser.add_argument('--lr', type=float, default=1e-3, help='learning rate')
+    # parser.add_argument('--lr', type=float, default=0.016, help='learning rate')
+
 
 
     args = vars(parser.parse_args())

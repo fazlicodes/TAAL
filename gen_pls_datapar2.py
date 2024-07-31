@@ -56,10 +56,8 @@ class CustomDataset(Dataset):
 
 def main(args):
     start_time = time.time()
-    # device = "cuda:5" if torch.cuda.is_available() else "cpu"
     print(torch.cuda.is_available())
     device = "cuda" if torch.cuda.is_available() else "cpu"
-    # os.environ["CUDA_VISIBLE_DEVICES"] = args['cuda_devices']  # Set visible GPUs
     data_dir = os.path.join(args['root_data_dir'], args['dataset'])
     metadir = os.path.join(data_dir, '{}_meta.csv'.format(args['dataset']))
     meta = pd.read_csv(metadir, index_col=0)
@@ -77,14 +75,32 @@ def main(args):
     label_mapper['clip_label'] = label_mapper.label.apply(lambda x: x.replace('_', ' '))
 
 
-    if args['dataset']=='imagenet':
-        prefix = 'a photo of a {}.'
-    elif args['dataset']=='eurosat':
-        prefix = 'a centered satellite image of '
+    if args['dataset'] == 'imagenet':
+        label_mapper['clip_label'] = label_mapper['clip_label'].apply(lambda x: 'a photo of a {}.'.format(x))
+    elif args['dataset']=="serengeti":
+        label_mapper['clip_label'] = label_mapper['clip_label'].apply(lambda x: 'a photo of {}.'.format(x))
+    elif args['dataset']=="fgvc_aircraft":
+        label_mapper['clip_label'] = label_mapper['clip_label'].apply(lambda x: 'a photo of a {}, a type of aircraft.'.format(x))
+    elif args['dataset']=="caltech-101":
+        label_mapper['clip_label'] = label_mapper['clip_label'].apply(lambda x: 'a photo of a {}.'.format(x))
+    elif args['dataset']=="eurosat":
+        label_mapper['clip_label'] = label_mapper['clip_label'].apply(lambda x: 'a centered satellite photo of {}.'.format(x))
+    elif args['dataset']=="oxford_pets":
+        label_mapper['clip_label'] = label_mapper['clip_label'].apply(lambda x: 'a photo of a {}, a type of pet.'.format(x))
+    elif args['dataset']=="oxford_flowers":
+        label_mapper['clip_label'] = label_mapper['clip_label'].apply(lambda x: 'a photo of a {}, a type of flower.'.format(x))
+    elif args['dataset']=="dtd":
+        label_mapper['clip_label'] = label_mapper['clip_label'].apply(lambda x: '{} texture.'.format(x))
+    elif args['dataset']=="ucf101":
+        label_mapper['clip_label'] = label_mapper['clip_label'].apply(lambda x: 'a photo of a person doing {}.'.format(x))
+    elif args['dataset']=="food101":
+        label_mapper['clip_label'] = label_mapper['clip_label'].apply(lambda x: 'a photo of {}, a type of food.'.format(x))
+    elif args['dataset']=="sun397":
+        label_mapper['clip_label'] = label_mapper['clip_label'].apply(lambda x: 'a photo of a {}.'.format(x))
+    elif args['dataset']=="stanford_cars":
+        label_mapper['clip_label'] = label_mapper['clip_label'].apply(lambda x: 'a photo of a {}.'.format(x))
     else:
         raise NotImplementedError
-
-    label_mapper['clip_label'] = label_mapper['clip_label'].apply(lambda x: f'{prefix}{x}.' if '{}' in prefix else f'{prefix}{x}')
 
     clip_to_target = dict(label_mapper[['clip_label', 'label']].values)
     grouped_label_to_clip_ids = pd.DataFrame(clip_to_target.values()).reset_index().rename(
@@ -93,9 +109,11 @@ def main(args):
     N = sampled.shape[0]
 
     datasets_names = ['eurosat', 'ucm', 'aid', 'patternnet', 'resisc45', 'whurs19', 'mlrsnet', 'optimal31',
-                      'caltech-101', 'oxford_pets', 'oxford_flowers', 'imagenet']
+                      'caltech-101', 'oxford_pets', 'oxford_flowers', 'imagenet','food101','stanford_cars','sun397','cifar10','cifar100',
+                      'fgvc_aircraft','ucf101','dtd']
     map_datasets_name = ['EuroSAT', 'UCM', 'AID', 'PatternNet', 'RESISC45', 'WHURS19', 'MLRSNet', 'Optimal31',
-                         'Caltech101', 'OxfordPets', 'OxfordFlowers', 'ImageNet']
+                         'Caltech101', 'OxfordPets', 'OxfordFlowers', 'ImageNet','Food101','StanfordCars','SUN397','CIFAR10','CIFAR100',
+                         'FGVCAircraft','UCF101','DescribableTextures']
     dataset_name = args['dataset']
     dataset_idx = datasets_names.index(dataset_name)
     dataset = map_datasets_name[dataset_idx]
@@ -111,7 +129,7 @@ def main(args):
     # Create label_to_idx mapping
     label_to_idx = {label: idx for idx, label in enumerate(sorted(set(targets)))}
 
-    batch_size = 27000  # Adjusted for better performance
+    batch_size = 1000  # Adjusted for better performance
 
     dataset = CustomDataset(image_links, targets, preprocess, data_dir, label_to_idx)
     dataloader = DataLoader(dataset, batch_size=batch_size, shuffle=False, num_workers=8)
@@ -121,7 +139,7 @@ def main(args):
     model.eval()
     all_probs = []
     all_targets = []
-
+    print('Starting Looping')
     # Process batches using DataLoader
     for i, (batch_images, batch_targets) in enumerate(dataloader):
         print(f'{i * batch_size / N * 100:.2f}% done')
@@ -170,27 +188,32 @@ def main(args):
     print(save_line, flush=True)
 
     pred_df['img_path_trimmed'] = pred_df['img_path'].apply(lambda x: x.replace(data_dir, ''))
+    # grouped_dict = pred_df.groupby('pred1')['prob1'].mean().to_dict()    # grouped = grouped[['pred1','avg']]
+    # pred_df['avg']=pred_df['pred1'].map(grouped_dict)
+    # pred_df['avg'] = pred_df['avg']*0.99
     label_to_category = dict(meta[['label', 'category_id']].drop_duplicates().values)
     predicted_labels = set(pred_df.pred1)
 
     pseudo_df = pd.DataFrame()
-
+    pl_stats = pd.DataFrame(columns=['category', 'rows_to_select', 'selected_rows'])
+    
     for pred_label in predicted_labels:
+        # sub_label_df = pred_df.loc[(pred_df.pred1 == pred_label) & (pred_df.prob1 >= pred_df.avg)]
         sub_label_df = pred_df.loc[(pred_df.pred1 == pred_label)]
-        sub_label_df = sub_label_df.sort_values('prob1', ascending=False)
+        sub_label_df = sub_label_df.sort_values('prob1', ascending=False).iloc[0:args['imgs_per_label']]
 
-        min_rows=args['imgs_per_label']
-        rows_to_select = max(min_rows, min(int(1 * len(sub_label_df)),min_rows*2))
 
-        sub_label_df = sub_label_df.head(rows_to_select)
+
+        pl_stats = pl_stats.append({'category': str(pred_label), 'selected_rows':len(sub_label_df)},ignore_index=True)
         pseudo_df = pd.concat((pseudo_df, sub_label_df))
-
+    pl_stats.to_csv(f'pseudo_stats_{args["dataset"]}_{args["imgs_per_label"]}.csv', index=False)
     pseudo_full = pseudo_df.rename(columns={'target': 'label'}).copy()
     print(f'Accuracy of {args["imgs_per_label"]} pseudo labels chosen for adapter {(pseudo_full["correct"].sum()) / len(pseudo_full)}')
     pseudo_full.drop_duplicates(subset='img_path', inplace=True)
     list_of_classes_without_pseudolabel = len(set(pred_df.target)) - len(predicted_labels)
 
     if list_of_classes_without_pseudolabel > 0:
+        print(list_of_classes_without_pseudolabel)
         print(args['dataset'] + ' NEEDED EXTRA GUESSES')
         raise NotImplementedError
 
@@ -199,9 +222,9 @@ def main(args):
     pseudo_full['pseudolabel'] = pseudo_full['pred1']
 
     meta_train_replace.sort_values('img_path', inplace=True)
-
-    meta_train_replace['label'] = pseudo_full['pseudolabel'].apply(lambda x: list(label_to_category.keys())[list(label_to_category.values()).index(x)])
-    meta_train_replace['category_id'] = pseudo_full['pseudolabel']
+    if args['dataset'] != 'caltech-101':
+        meta_train_replace['label'] = pseudo_full['pseudolabel'].apply(lambda x: list(label_to_category.keys())[list(label_to_category.values()).index(x)])
+        meta_train_replace['category_id'] = pseudo_full['pseudolabel']
 
     meta_test = meta.loc[~meta.img_set.isin(split_list)].copy()
 
@@ -215,8 +238,7 @@ def main(args):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--root_data_dir", type=str, default='data/')
-    parser.add_argument('--dataset', default='eurosat', choices=['resisc45', 'aid', 'patternnet', 'whurs19', 'ucm', 'optimal31', 'mlrsnet', 'eurosat',
-                                              'oxford_pets', 'oxford_flowers', 'dtd', 'imagenet'], type=str)
+    parser.add_argument('--dataset', required=True, type=str)
     parser.add_argument("--model_subtype", type=str, choices=["ViT-B/32", "ViT-B/16", "ViT-L/14", "RN50"],
                         default="ViT-B/32", help="exact type of clip pretraining backbone")
     parser.add_argument("--confidence_lower_bound", type=float,
@@ -224,6 +246,5 @@ if __name__ == "__main__":
     parser.add_argument("--imgs_per_label", type=int,
                         help='the amount of pseudolabels to keep for each of the predicted labels '
                              '(ranked based on their clip confidence, higher first)', default=16)
-    # parser.add_argument("--cuda_devices", type=str, default='5', help='comma separated list of CUDA device ids to use')
     args = vars(parser.parse_args())
     main(args)

@@ -3,6 +3,7 @@ import glob
 import argparse
 import torch
 import clip
+from tqdm import tqdm
 import numpy as np
 import datasets as ds
 # import utils as ut
@@ -76,14 +77,15 @@ def main(args):
                             num_workers=args['workers'], shuffle=False)     
 
     ##### Feature extraction #####
-    split_set = ['train','val','test']    
+    # split_set = ['train','val','test'] 
+    split_set = ['train','test']   
     for split in split_set:
         dataiter = iter(loaders[split])
         model.eval()
         feature_list = []
         label_list = []
         with torch.no_grad():
-            for train_step in range(1, len(dataiter) + 1):
+            for train_step in tqdm(range(1, len(dataiter) + 1)):
                 batch = next(dataiter)
                 data = batch["im"].cuda()
             
@@ -125,7 +127,7 @@ if __name__ == "__main__":
     parser.add_argument("--root_data_dir",type=str,default='data/')
     parser.add_argument('--dataset', choices=['ucf101','food101','sun397','stanford_cars','fgvc-aircraft','caltech-101',
                                             'eurosat','resisc45','aid','patternnet','ucm','whurs19','mlrsnet','optimal31',
-                                            'oxford_pets','oxford_flowers','dtd','imagenet',
+                                            'oxford_pets','oxford_flowers','dtd','imagenet','cifar10','cifar100',
                                               'kenya','cct20','serengeti','icct','fmow','oct'], type=str)
     parser.add_argument("--model_type", type=str, choices=["clip", "ssl","imagenet_transfer", "dino"], help="type of pretraining")
     parser.add_argument("--return_single_image",action="store_true",default=True)
@@ -134,7 +136,7 @@ if __name__ == "__main__":
     parser.add_argument("--model_path",default='na', type=str, help="path to torch model, if saved locally, just make sure its consistent with where ssl_pretraining.py saves the file to")
     parser.add_argument("--split", type=str, choices=["train", "val", "test"], help="which split")
     parser.add_argument("--feature_path",type=str,default='')
-    parser.add_argument("--batch_size", type=int,default=64, help="dataloader batch size")
+    parser.add_argument("--batch_size", type=int,default=512, help="dataloader batch size")
     parser.add_argument("--im_res", type=int,default=224, help="processed image resolution")
     parser.add_argument("--use_pseudo", action='store_true',default=True, help="use pseudolabels as extracted labels")
     parser.add_argument("--pseudo_conf",type=str,default='')

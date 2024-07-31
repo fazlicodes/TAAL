@@ -88,10 +88,10 @@ def main(args):
 
     datasets_names = ['eurosat', 'ucm', 'aid', 'patternnet', 'resisc45', 'whurs19', 'mlrsnet', 'optimal31',
                       'caltech-101', 'oxford_pets', 'oxford_flowers', 'imagenet','food101','stanford_cars','sun397','cifar10','cifar100',
-                      'fgvc_aircraft','ucf101']
+                      'fgvc_aircraft','ucf101','dtd']
     map_datasets_name = ['EuroSAT', 'UCM', 'AID', 'PatternNet', 'RESISC45', 'WHURS19', 'MLRSNet', 'Optimal31',
                          'Caltech101', 'OxfordPets', 'OxfordFlowers', 'ImageNet','Food101','StanfordCars','SUN397','CIFAR10','CIFAR100',
-                         'FGVCAircraft','UCF101']
+                         'FGVCAircraft','UCF101','DescribableTextures']
     dataset = map_datasets_name[datasets_names.index(args['dataset'])]
 
     ### Load CLIP model
@@ -106,7 +106,7 @@ def main(args):
     pred_df = pd.DataFrame()
     correct_list = []
     
-    batch_size = 12000 #27000  # Adjusted for better performance
+    batch_size = 27000 #27000  # Adjusted for better performance
     dataset = CustomDataset(image_links, targets, preprocess, data_dir)
     dataloader = DataLoader(dataset, batch_size=batch_size, shuffle=False, num_workers=4)
     model.eval()
@@ -134,9 +134,6 @@ def main(args):
                 prob3 = np.nan
                 pred3 = np.nan
 
-            rest_of_the_predictions = sorted_probs[1:].index
-            rest_of_the_prediction_probs = sorted_probs[1:].values
-
             pred_correct = batch_targets[b_index] == pred1
             correct_list.append(pred_correct)
 
@@ -149,8 +146,6 @@ def main(args):
                 'prob1': [prob1],
                 'prob2': [prob2],
                 'prob3': [prob3],
-                'rest_of_pred': [list(rest_of_the_predictions)],
-                'rest_of_pred_probs': [list(rest_of_the_prediction_probs)],
                 'correct': pred_correct,
                 'target': [batch_targets[b_index]]
             })
@@ -167,63 +162,43 @@ def main(args):
     pred_df['img_path_trimmed'] = pred_df['img_path'].apply(lambda x: x.replace(data_dir, ''))
     grouped_dict = pred_df.groupby('pred1')['prob1'].mean().to_dict()    # grouped = grouped[['pred1','avg']]
     pred_df['avg']=pred_df['pred1'].map(grouped_dict)
-    pred_df['quartile_75'] = pred_df['avg']*0.75
+    percentage=0.99
+    print('Calculating percentile ',percentage)
+    pred_df['quartile_75'] = pred_df['avg']*percentage
     label_to_category = dict(meta[['label', 'category_id']].drop_duplicates().values)
-    predicted_labels = set(pred_df.pred1)
     sub_df = pred_df.copy()
     sub_df = sub_df.rename(columns={'target': 'label'})
 
-    sub_df.to_csv('{}/{}_25_sampled_meta_faster_sub_df_{}_clip_{}shot.csv'.format(data_dir, args['dataset'], clip_model, 0))
-
     pseudo_df = pd.DataFrame()
-    min_classes, max_classes, other_classes = 0,0,0
-    pl_stats = pd.DataFrame(columns=['category', 'rows_to_select', 'selected_rows'])
 
-    # breakpoint()
-    for pred_label in predicted_labels:
+    for pred_label in set(pred_df.target):
         sub_label_df = pred_df.loc[(pred_df.pred1 == pred_label) & (pred_df.prob1 >= pred_df.quartile_75)]
         sub_label_df = sub_label_df.sort_values('prob1', ascending=False).iloc[0:args['imgs_per_label']]
-        min_rows=args['imgs_per_label']
-        # rows_to_select = max(min_rows, min(len(sub_label_df),min_rows*2))
-        if (len(sub_label_df) < min_rows):
-            rows_to_select = min_rows//2
-            min_classes += 1
-        elif (len(sub_label_df) > min_rows):
-            rows_to_select = min_rows
-            max_classes += 1
-        else:
-            rows_to_select = len(sub_label_df)
-            other_classes += 1
-        # print(f'For label {pred_label}, {rows_to_select} rows selected')
-        # if rows_to_select == min_rows:
-        #     min_classes += 1
-        # elif rows_to_select == min_rows*2:
-        #     max_classes += 1
-        # else:
-        #     other_classes += 1
 
-        sub_label_df = sub_label_df.head(rows_to_select)
-        d = pl_stats.append({'category': str(pred_label), 'rows_to_select':rows_to_select, 'selected_rows':len(sub_label_df)},ignore_index=True)
+        if len(sub_label_df) == 0:
+            sub_label_df = pred_df.loc[(pred_df.pred2 == pred_label)]
+            sub_label_df = sub_label_df.sort_values('prob2', ascending=False).iloc[0:args['imgs_per_label']]
+            print(f'For label {pred_label}, {len(sub_label_df)} rows selected')
+            if len(sub_label_df) == 0:
+                sub_label_df = pred_df.loc[(pred_df.pred3 == pred_label)]
+                sub_label_df = sub_label_df.sort_values('prob3', ascending=False).iloc[0:args['imgs_per_label']]
+                print(f'For label {pred_label}, {len(sub_label_df)} rows selected')
+                if len(sub_label_df) == 0:
+                    raise NotImplementedError
         pseudo_df = pd.concat((pseudo_df, sub_label_df))
-    pl_stats.to_csv(f'pseudo_stats_{args["dataset"]}_{args["imgs_per_label"]}.csv', index=False)
-    print(f'Min classes: {min_classes}, Max classes: {max_classes}, Other classes: {other_classes}')
     pseudo_full = pseudo_df.rename(columns={'target': 'label'}).copy()
+
     print(f'Accuracy of {args["imgs_per_label"]} pseudo labels chosen for adapter {(pseudo_full["correct"].sum()) / (len(pseudo_full))}')
     pseudo_full.drop_duplicates(subset='img_path', inplace=True)
-
-    list_of_classes_without_pseudolabel = set(pred_df.target) - predicted_labels
-
-    if len(list_of_classes_without_pseudolabel) > 0:
-        print(args['dataset'] + ' NEEDED EXTRA GUESSES')
-        raise NotImplementedError
 
     meta_train_replace = meta.loc[meta.img_path.isin(set(pseudo_full.img_path_trimmed))]
     pseudo_full.sort_values('img_path_trimmed', inplace=True)
     pseudo_full['pseudolabel'] = pseudo_full['pred1']
 
     meta_train_replace.sort_values('img_path', inplace=True)
-    # meta_train_replace['label'] = pseudo_full['pseudolabel'].values
-    # meta_train_replace['category_id'] = meta_train_replace['label'].apply(lambda x: label_to_category[x])
+    if args['dataset'] != 'caltech-101':
+        meta_train_replace['label'] = pseudo_full['pseudolabel'].apply(lambda x: list(label_to_category.keys())[list(label_to_category.values()).index(x)])
+        meta_train_replace['category_id'] = pseudo_full['pseudolabel']
 
     meta_test = meta.loc[~meta.img_set.isin(split_list)].copy()
 

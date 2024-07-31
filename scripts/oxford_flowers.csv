@@ -1,0 +1,1564 @@
+,img_id,img_name,img_path,category_id,label,img_set,label2,category_id2,label_same,category_id_same
+89,image_00010,image_00010.jpg,jpg/image_00010.jpg,76.0,passion flower,train,passion flower,76.0,True,True
+81,image_00015,image_00015.jpg,jpg/image_00015.jpg,76.0,passion flower,train,passion flower,76.0,True,True
+75,image_00022,image_00022.jpg,jpg/image_00022.jpg,76.0,passion flower,train,passion flower,76.0,True,True
+83,image_00032,image_00032.jpg,jpg/image_00032.jpg,76.0,passion flower,train,passion flower,76.0,True,True
+77,image_00038,image_00038.jpg,jpg/image_00038.jpg,76.0,passion flower,train,passion flower,76.0,True,True
+104,image_00043,image_00043.jpg,jpg/image_00043.jpg,76.0,passion flower,train,passion flower,76.0,True,True
+117,image_00065,image_00065.jpg,jpg/image_00065.jpg,76.0,passion flower,train,passion flower,76.0,True,True
+102,image_00077,image_00077.jpg,jpg/image_00077.jpg,76.0,passion flower,train,thorn apple,76.0,False,True
+70,image_00083,image_00083.jpg,jpg/image_00083.jpg,76.0,passion flower,train,tree mallow,76.0,False,True
+28,image_00084,image_00084.jpg,jpg/image_00084.jpg,76.0,passion flower,train,passion flower,76.0,True,True
+14,image_00110,image_00110.jpg,jpg/image_00110.jpg,76.0,passion flower,train,passion flower,76.0,True,True
+97,image_00120,image_00120.jpg,jpg/image_00120.jpg,76.0,passion flower,train,passion flower,76.0,True,True
+115,image_00166,image_00166.jpg,jpg/image_00166.jpg,76.0,passion flower,train,bolero deep blue,76.0,False,True
+71,image_00183,image_00183.jpg,jpg/image_00183.jpg,76.0,passion flower,train,passion flower,76.0,True,True
+54,image_00193,image_00193.jpg,jpg/image_00193.jpg,76.0,passion flower,train,passion flower,76.0,True,True
+109,image_00203,image_00203.jpg,jpg/image_00203.jpg,76.0,passion flower,train,cape flower,76.0,False,True
+12,image_00218,image_00218.jpg,jpg/image_00218.jpg,76.0,passion flower,train,passion flower,76.0,True,True
+27,image_00223,image_00223.jpg,jpg/image_00223.jpg,76.0,passion flower,train,passion flower,76.0,True,True
+34,image_00224,image_00224.jpg,jpg/image_00224.jpg,76.0,passion flower,train,passion flower,76.0,True,True
+49,image_00228,image_00228.jpg,jpg/image_00228.jpg,76.0,passion flower,train,passion flower,76.0,True,True
+159,image_00267,image_00267.jpg,jpg/image_00267.jpg,72.0,water lily,train,water lily,72.0,True,True
+148,image_00279,image_00279.jpg,jpg/image_00279.jpg,72.0,water lily,train,water lily,72.0,True,True
+141,image_00283,image_00283.jpg,jpg/image_00283.jpg,72.0,water lily,train,water lily,72.0,True,True
+195,image_00313,image_00313.jpg,jpg/image_00313.jpg,72.0,water lily,train,water lily,72.0,True,True
+138,image_00323,image_00323.jpg,jpg/image_00323.jpg,72.0,water lily,train,water lily,72.0,True,True
+152,image_00333,image_00333.jpg,jpg/image_00333.jpg,72.0,water lily,train,water lily,72.0,True,True
+198,image_00347,image_00347.jpg,jpg/image_00347.jpg,72.0,water lily,train,water lily,72.0,True,True
+214,image_00365,image_00365.jpg,jpg/image_00365.jpg,72.0,water lily,train,water lily,72.0,True,True
+171,image_00370,image_00370.jpg,jpg/image_00370.jpg,72.0,water lily,train,water lily,72.0,True,True
+153,image_00387,image_00387.jpg,jpg/image_00387.jpg,72.0,water lily,train,water lily,72.0,True,True
+218,image_00391,image_00391.jpg,jpg/image_00391.jpg,72.0,water lily,train,water lily,72.0,True,True
+132,image_00394,image_00394.jpg,jpg/image_00394.jpg,72.0,water lily,train,water lily,72.0,True,True
+194,image_00417,image_00417.jpg,jpg/image_00417.jpg,72.0,water lily,train,water lily,72.0,True,True
+212,image_00421,image_00421.jpg,jpg/image_00421.jpg,72.0,water lily,train,water lily,72.0,True,True
+180,image_00437,image_00437.jpg,jpg/image_00437.jpg,72.0,water lily,train,water lily,72.0,True,True
+197,image_00443,image_00443.jpg,jpg/image_00443.jpg,72.0,water lily,train,water lily,72.0,True,True
+290,image_00457,image_00457.jpg,jpg/image_00457.jpg,87.0,cyclamen,train,cyclamen,87.0,True,True
+275,image_00461,image_00461.jpg,jpg/image_00461.jpg,87.0,cyclamen,train,cyclamen,87.0,True,True
+298,image_00463,image_00463.jpg,jpg/image_00463.jpg,87.0,cyclamen,train,fire lily,87.0,False,True
+289,image_00475,image_00475.jpg,jpg/image_00475.jpg,87.0,cyclamen,train,cyclamen,87.0,True,True
+294,image_00481,image_00481.jpg,jpg/image_00481.jpg,87.0,cyclamen,train,cyclamen,87.0,True,True
+236,image_00483,image_00483.jpg,jpg/image_00483.jpg,87.0,cyclamen,train,cyclamen,87.0,True,True
+244,image_00488,image_00488.jpg,jpg/image_00488.jpg,87.0,cyclamen,train,cyclamen,87.0,True,True
+251,image_00494,image_00494.jpg,jpg/image_00494.jpg,87.0,cyclamen,train,cyclamen,87.0,True,True
+233,image_00505,image_00505.jpg,jpg/image_00505.jpg,87.0,cyclamen,train,cyclamen,87.0,True,True
+225,image_00511,image_00511.jpg,jpg/image_00511.jpg,87.0,cyclamen,train,cyclamen,87.0,True,True
+283,image_00540,image_00540.jpg,jpg/image_00540.jpg,87.0,cyclamen,train,cyclamen,87.0,True,True
+268,image_00557,image_00557.jpg,jpg/image_00557.jpg,87.0,cyclamen,train,cyclamen,87.0,True,True
+243,image_00559,image_00559.jpg,jpg/image_00559.jpg,87.0,cyclamen,train,cyclamen,87.0,True,True
+260,image_00569,image_00569.jpg,jpg/image_00569.jpg,87.0,cyclamen,train,cyclamen,87.0,True,True
+272,image_00570,image_00570.jpg,jpg/image_00570.jpg,87.0,cyclamen,train,cyclamen,87.0,True,True
+267,image_00571,image_00571.jpg,jpg/image_00571.jpg,87.0,cyclamen,train,cyclamen,87.0,True,True
+256,image_00573,image_00573.jpg,jpg/image_00573.jpg,87.0,cyclamen,train,cyclamen,87.0,True,True
+235,image_00590,image_00590.jpg,jpg/image_00590.jpg,87.0,cyclamen,train,siam tulip,87.0,False,True
+390,image_00598,image_00598.jpg,jpg/image_00598.jpg,88.0,watercress,train,globe-flower,88.0,False,True
+308,image_00600,image_00600.jpg,jpg/image_00600.jpg,88.0,watercress,train,cape flower,88.0,False,True
+300,image_00604,image_00604.jpg,jpg/image_00604.jpg,88.0,watercress,train,globe-flower,88.0,False,True
+359,image_00622,image_00622.jpg,jpg/image_00622.jpg,88.0,watercress,train,globe-flower,88.0,False,True
+347,image_00648,image_00648.jpg,jpg/image_00648.jpg,88.0,watercress,train,marigold,88.0,False,True
+328,image_00651,image_00651.jpg,jpg/image_00651.jpg,88.0,watercress,train,cape flower,88.0,False,True
+330,image_00709,image_00709.jpg,jpg/image_00709.jpg,88.0,watercress,train,globe-flower,88.0,False,True
+315,image_00714,image_00714.jpg,jpg/image_00714.jpg,88.0,watercress,train,marigold,88.0,False,True
+335,image_00718,image_00718.jpg,jpg/image_00718.jpg,88.0,watercress,train,cape flower,88.0,False,True
+327,image_00759,image_00759.jpg,jpg/image_00759.jpg,88.0,watercress,train,globe-flower,88.0,False,True
+366,image_00773,image_00773.jpg,jpg/image_00773.jpg,88.0,watercress,train,marigold,88.0,False,True
+440,image_00781,image_00781.jpg,jpg/image_00781.jpg,80.0,frangipani,train,frangipani,80.0,True,True
+430,image_00790,image_00790.jpg,jpg/image_00790.jpg,80.0,frangipani,train,frangipani,80.0,True,True
+397,image_00792,image_00792.jpg,jpg/image_00792.jpg,80.0,frangipani,train,frangipani,80.0,True,True
+417,image_00815,image_00815.jpg,jpg/image_00815.jpg,80.0,frangipani,train,frangipani,80.0,True,True
+403,image_00833,image_00833.jpg,jpg/image_00833.jpg,80.0,frangipani,train,frangipani,80.0,True,True
+461,image_00838,image_00838.jpg,jpg/image_00838.jpg,80.0,frangipani,train,frangipani,80.0,True,True
+443,image_00851,image_00851.jpg,jpg/image_00851.jpg,80.0,frangipani,train,frangipani,80.0,True,True
+450,image_00854,image_00854.jpg,jpg/image_00854.jpg,80.0,frangipani,train,frangipani,80.0,True,True
+462,image_00863,image_00863.jpg,jpg/image_00863.jpg,80.0,frangipani,train,frangipani,80.0,True,True
+392,image_00873,image_00873.jpg,jpg/image_00873.jpg,80.0,frangipani,train,frangipani,80.0,True,True
+451,image_00876,image_00876.jpg,jpg/image_00876.jpg,80.0,frangipani,train,frangipani,80.0,True,True
+411,image_00888,image_00888.jpg,jpg/image_00888.jpg,80.0,frangipani,train,frangipani,80.0,True,True
+398,image_00901,image_00901.jpg,jpg/image_00901.jpg,80.0,frangipani,train,frangipani,80.0,True,True
+424,image_00917,image_00917.jpg,jpg/image_00917.jpg,80.0,frangipani,train,frangipani,80.0,True,True
+420,image_00925,image_00925.jpg,jpg/image_00925.jpg,80.0,frangipani,train,frangipani,80.0,True,True
+419,image_00929,image_00929.jpg,jpg/image_00929.jpg,80.0,frangipani,train,frangipani,80.0,True,True
+477,image_00947,image_00947.jpg,jpg/image_00947.jpg,45.0,wallflower,train,wallflower,45.0,True,True
+570,image_00950,image_00950.jpg,jpg/image_00950.jpg,45.0,wallflower,train,wallflower,45.0,True,True
+536,image_00951,image_00951.jpg,jpg/image_00951.jpg,45.0,wallflower,train,wallflower,45.0,True,True
+556,image_00952,image_00952.jpg,jpg/image_00952.jpg,45.0,wallflower,train,wallflower,45.0,True,True
+568,image_00967,image_00967.jpg,jpg/image_00967.jpg,45.0,wallflower,train,wallflower,45.0,True,True
+503,image_00982,image_00982.jpg,jpg/image_00982.jpg,45.0,wallflower,train,wallflower,45.0,True,True
+493,image_01006,image_01006.jpg,jpg/image_01006.jpg,45.0,wallflower,train,wallflower,45.0,True,True
+539,image_01019,image_01019.jpg,jpg/image_01019.jpg,45.0,wallflower,train,bishop of llandaff,45.0,False,True
+488,image_01040,image_01040.jpg,jpg/image_01040.jpg,45.0,wallflower,train,pelargonium,45.0,False,True
+517,image_01046,image_01046.jpg,jpg/image_01046.jpg,45.0,wallflower,train,pelargonium,45.0,False,True
+564,image_01074,image_01074.jpg,jpg/image_01074.jpg,45.0,wallflower,train,wallflower,45.0,True,True
+498,image_01082,image_01082.jpg,jpg/image_01082.jpg,45.0,wallflower,train,wallflower,45.0,True,True
+531,image_01086,image_01086.jpg,jpg/image_01086.jpg,45.0,wallflower,train,wallflower,45.0,True,True
+476,image_01093,image_01093.jpg,jpg/image_01093.jpg,45.0,wallflower,train,wallflower,45.0,True,True
+516,image_01095,image_01095.jpg,jpg/image_01095.jpg,45.0,wallflower,train,wallflower,45.0,True,True
+549,image_01112,image_01112.jpg,jpg/image_01112.jpg,45.0,wallflower,train,wallflower,45.0,True,True
+534,image_01117,image_01117.jpg,jpg/image_01117.jpg,45.0,wallflower,train,trumpet creeper,45.0,False,True
+546,image_01127,image_01127.jpg,jpg/image_01127.jpg,45.0,wallflower,train,wallflower,45.0,True,True
+572,image_01131,image_01131.jpg,jpg/image_01131.jpg,45.0,wallflower,train,wallflower,45.0,True,True
+560,image_01134,image_01134.jpg,jpg/image_01134.jpg,45.0,wallflower,train,wallflower,45.0,True,True
+507,image_01136,image_01136.jpg,jpg/image_01136.jpg,45.0,wallflower,train,cautleya spicata,45.0,False,True
+636,image_01151,image_01151.jpg,jpg/image_01151.jpg,73.0,rose,train,rose,73.0,True,True
+634,image_01156,image_01156.jpg,jpg/image_01156.jpg,73.0,rose,train,rose,73.0,True,True
+596,image_01164,image_01164.jpg,jpg/image_01164.jpg,73.0,rose,train,rose,73.0,True,True
+599,image_01180,image_01180.jpg,jpg/image_01180.jpg,73.0,rose,train,rose,73.0,True,True
+611,image_01187,image_01187.jpg,jpg/image_01187.jpg,73.0,rose,train,rose,73.0,True,True
+640,image_01212,image_01212.jpg,jpg/image_01212.jpg,73.0,rose,train,rose,73.0,True,True
+590,image_01222,image_01222.jpg,jpg/image_01222.jpg,73.0,rose,train,rose,73.0,True,True
+594,image_01250,image_01250.jpg,jpg/image_01250.jpg,73.0,rose,train,rose,73.0,True,True
+595,image_01263,image_01263.jpg,jpg/image_01263.jpg,73.0,rose,train,rose,73.0,True,True
+655,image_01270,image_01270.jpg,jpg/image_01270.jpg,73.0,rose,train,rose,73.0,True,True
+597,image_01271,image_01271.jpg,jpg/image_01271.jpg,73.0,rose,train,rose,73.0,True,True
+626,image_01280,image_01280.jpg,jpg/image_01280.jpg,73.0,rose,train,siam tulip,73.0,False,True
+630,image_01285,image_01285.jpg,jpg/image_01285.jpg,73.0,rose,train,rose,73.0,True,True
+651,image_01288,image_01288.jpg,jpg/image_01288.jpg,73.0,rose,train,rose,73.0,True,True
+647,image_01289,image_01289.jpg,jpg/image_01289.jpg,73.0,rose,train,rose,73.0,True,True
+652,image_01292,image_01292.jpg,jpg/image_01292.jpg,73.0,rose,train,rose,73.0,True,True
+648,image_01299,image_01299.jpg,jpg/image_01299.jpg,73.0,rose,train,rose,73.0,True,True
+659,image_01334,image_01334.jpg,jpg/image_01334.jpg,50.0,petunia,train,geranium,50.0,False,True
+704,image_01353,image_01353.jpg,jpg/image_01353.jpg,50.0,petunia,train,petunia,50.0,True,True
+761,image_01355,image_01355.jpg,jpg/image_01355.jpg,50.0,petunia,train,petunia,50.0,True,True
+743,image_01364,image_01364.jpg,jpg/image_01364.jpg,50.0,petunia,train,geranium,50.0,False,True
+688,image_01376,image_01376.jpg,jpg/image_01376.jpg,50.0,petunia,train,mexican petunia,50.0,False,True
+685,image_01388,image_01388.jpg,jpg/image_01388.jpg,50.0,petunia,train,thorn apple,50.0,False,True
+755,image_01391,image_01391.jpg,jpg/image_01391.jpg,50.0,petunia,train,canterbury bells,50.0,False,True
+770,image_01395,image_01395.jpg,jpg/image_01395.jpg,50.0,petunia,train,cape flower,50.0,False,True
+712,image_01404,image_01404.jpg,jpg/image_01404.jpg,50.0,petunia,train,silverbush,50.0,False,True
+785,image_01406,image_01406.jpg,jpg/image_01406.jpg,50.0,petunia,train,silverbush,50.0,False,True
+680,image_01420,image_01420.jpg,jpg/image_01420.jpg,50.0,petunia,train,cape flower,50.0,False,True
+753,image_01428,image_01428.jpg,jpg/image_01428.jpg,50.0,petunia,train,cape flower,50.0,False,True
+666,image_01447,image_01447.jpg,jpg/image_01447.jpg,50.0,petunia,train,pink primrose,50.0,False,True
+744,image_01455,image_01455.jpg,jpg/image_01455.jpg,50.0,petunia,train,silverbush,50.0,False,True
+699,image_01470,image_01470.jpg,jpg/image_01470.jpg,50.0,petunia,train,cape flower,50.0,False,True
+732,image_01478,image_01478.jpg,jpg/image_01478.jpg,50.0,petunia,train,silverbush,50.0,False,True
+740,image_01488,image_01488.jpg,jpg/image_01488.jpg,50.0,petunia,train,canterbury bells,50.0,False,True
+820,image_01492,image_01492.jpg,jpg/image_01492.jpg,43.0,poinsettia,train,poinsettia,43.0,True,True
+788,image_01493,image_01493.jpg,jpg/image_01493.jpg,43.0,poinsettia,train,poinsettia,43.0,True,True
+825,image_01502,image_01502.jpg,jpg/image_01502.jpg,43.0,poinsettia,train,poinsettia,43.0,True,True
+789,image_01507,image_01507.jpg,jpg/image_01507.jpg,43.0,poinsettia,train,poinsettia,43.0,True,True
+808,image_01514,image_01514.jpg,jpg/image_01514.jpg,43.0,poinsettia,train,poinsettia,43.0,True,True
+802,image_01516,image_01516.jpg,jpg/image_01516.jpg,43.0,poinsettia,train,poinsettia,43.0,True,True
+797,image_01520,image_01520.jpg,jpg/image_01520.jpg,43.0,poinsettia,train,poinsettia,43.0,True,True
+831,image_01524,image_01524.jpg,jpg/image_01524.jpg,43.0,poinsettia,train,poinsettia,43.0,True,True
+812,image_01526,image_01526.jpg,jpg/image_01526.jpg,43.0,poinsettia,train,poinsettia,43.0,True,True
+810,image_01534,image_01534.jpg,jpg/image_01534.jpg,43.0,poinsettia,train,poinsettia,43.0,True,True
+799,image_01544,image_01544.jpg,jpg/image_01544.jpg,43.0,poinsettia,train,poinsettia,43.0,True,True
+805,image_01546,image_01546.jpg,jpg/image_01546.jpg,43.0,poinsettia,train,poinsettia,43.0,True,True
+826,image_01554,image_01554.jpg,jpg/image_01554.jpg,43.0,poinsettia,train,poinsettia,43.0,True,True
+819,image_01564,image_01564.jpg,jpg/image_01564.jpg,43.0,poinsettia,train,poinsettia,43.0,True,True
+796,image_01568,image_01568.jpg,jpg/image_01568.jpg,43.0,poinsettia,train,poinsettia,43.0,True,True
+813,image_01579,image_01579.jpg,jpg/image_01579.jpg,43.0,poinsettia,train,poinsettia,43.0,True,True
+885,image_01591,image_01591.jpg,jpg/image_01591.jpg,81.0,clematis,train,bolero deep blue,81.0,False,True
+857,image_01598,image_01598.jpg,jpg/image_01598.jpg,81.0,clematis,train,clematis,81.0,True,True
+889,image_01599,image_01599.jpg,jpg/image_01599.jpg,81.0,clematis,train,clematis,81.0,True,True
+888,image_01609,image_01609.jpg,jpg/image_01609.jpg,81.0,clematis,train,clematis,81.0,True,True
+874,image_01617,image_01617.jpg,jpg/image_01617.jpg,81.0,clematis,train,bolero deep blue,81.0,False,True
+862,image_01624,image_01624.jpg,jpg/image_01624.jpg,81.0,clematis,train,clematis,81.0,True,True
+853,image_01630,image_01630.jpg,jpg/image_01630.jpg,81.0,clematis,train,clematis,81.0,True,True
+860,image_01631,image_01631.jpg,jpg/image_01631.jpg,81.0,clematis,train,clematis,81.0,True,True
+836,image_01635,image_01635.jpg,jpg/image_01635.jpg,81.0,clematis,train,windflower,81.0,False,True
+873,image_01639,image_01639.jpg,jpg/image_01639.jpg,81.0,clematis,train,clematis,81.0,True,True
+847,image_01640,image_01640.jpg,jpg/image_01640.jpg,81.0,clematis,train,clematis,81.0,True,True
+850,image_01644,image_01644.jpg,jpg/image_01644.jpg,81.0,clematis,train,clematis,81.0,True,True
+854,image_01650,image_01650.jpg,jpg/image_01650.jpg,81.0,clematis,train,clematis,81.0,True,True
+845,image_01661,image_01661.jpg,jpg/image_01661.jpg,81.0,clematis,train,clematis,81.0,True,True
+846,image_01668,image_01668.jpg,jpg/image_01668.jpg,81.0,clematis,train,clematis,81.0,True,True
+838,image_01671,image_01671.jpg,jpg/image_01671.jpg,81.0,clematis,train,clematis,81.0,True,True
+855,image_01676,image_01676.jpg,jpg/image_01676.jpg,81.0,clematis,train,clematis,81.0,True,True
+883,image_01685,image_01685.jpg,jpg/image_01685.jpg,81.0,clematis,train,clematis,81.0,True,True
+871,image_01694,image_01694.jpg,jpg/image_01694.jpg,81.0,clematis,train,clematis,81.0,True,True
+912,image_01696,image_01696.jpg,jpg/image_01696.jpg,82.0,hibiscus,train,hibiscus,82.0,True,True
+935,image_01716,image_01716.jpg,jpg/image_01716.jpg,82.0,hibiscus,train,hibiscus,82.0,True,True
+951,image_01725,image_01725.jpg,jpg/image_01725.jpg,82.0,hibiscus,train,hibiscus,82.0,True,True
+911,image_01742,image_01742.jpg,jpg/image_01742.jpg,82.0,hibiscus,train,hibiscus,82.0,True,True
+896,image_01763,image_01763.jpg,jpg/image_01763.jpg,82.0,hibiscus,train,hibiscus,82.0,True,True
+940,image_01767,image_01767.jpg,jpg/image_01767.jpg,82.0,hibiscus,train,hibiscus,82.0,True,True
+899,image_01773,image_01773.jpg,jpg/image_01773.jpg,82.0,hibiscus,train,hibiscus,82.0,True,True
+949,image_01777,image_01777.jpg,jpg/image_01777.jpg,82.0,hibiscus,train,hibiscus,82.0,True,True
+921,image_01780,image_01780.jpg,jpg/image_01780.jpg,82.0,hibiscus,train,hibiscus,82.0,True,True
+898,image_01792,image_01792.jpg,jpg/image_01792.jpg,82.0,hibiscus,train,hibiscus,82.0,True,True
+934,image_01793,image_01793.jpg,jpg/image_01793.jpg,82.0,hibiscus,train,hibiscus,82.0,True,True
+947,image_01797,image_01797.jpg,jpg/image_01797.jpg,82.0,hibiscus,train,hibiscus,82.0,True,True
+931,image_01803,image_01803.jpg,jpg/image_01803.jpg,82.0,hibiscus,train,hibiscus,82.0,True,True
+897,image_01808,image_01808.jpg,jpg/image_01808.jpg,82.0,hibiscus,train,hibiscus,82.0,True,True
+925,image_01813,image_01813.jpg,jpg/image_01813.jpg,82.0,hibiscus,train,hibiscus,82.0,True,True
+900,image_01823,image_01823.jpg,jpg/image_01823.jpg,82.0,hibiscus,train,hibiscus,82.0,True,True
+1007,image_01828,image_01828.jpg,jpg/image_01828.jpg,77.0,lotus,train,lotus,77.0,True,True
+1004,image_01834,image_01834.jpg,jpg/image_01834.jpg,77.0,lotus,train,lotus,77.0,True,True
+974,image_01843,image_01843.jpg,jpg/image_01843.jpg,77.0,lotus,train,lotus,77.0,True,True
+998,image_01848,image_01848.jpg,jpg/image_01848.jpg,77.0,lotus,train,lotus,77.0,True,True
+1012,image_01850,image_01850.jpg,jpg/image_01850.jpg,77.0,lotus,train,siam tulip,77.0,False,True
+1011,image_01853,image_01853.jpg,jpg/image_01853.jpg,77.0,lotus,train,lotus,77.0,True,True
+1005,image_01864,image_01864.jpg,jpg/image_01864.jpg,77.0,lotus,train,lotus,77.0,True,True
+966,image_01866,image_01866.jpg,jpg/image_01866.jpg,77.0,lotus,train,lotus,77.0,True,True
+1002,image_01879,image_01879.jpg,jpg/image_01879.jpg,77.0,lotus,train,lotus,77.0,True,True
+979,image_01894,image_01894.jpg,jpg/image_01894.jpg,77.0,lotus,train,lotus,77.0,True,True
+962,image_01896,image_01896.jpg,jpg/image_01896.jpg,77.0,lotus,train,lotus,77.0,True,True
+961,image_01909,image_01909.jpg,jpg/image_01909.jpg,77.0,lotus,train,lotus,77.0,True,True
+980,image_01915,image_01915.jpg,jpg/image_01915.jpg,77.0,lotus,train,lotus,77.0,True,True
+981,image_01925,image_01925.jpg,jpg/image_01925.jpg,77.0,lotus,train,lotus,77.0,True,True
+1013,image_01930,image_01930.jpg,jpg/image_01930.jpg,77.0,lotus,train,lotus,77.0,True,True
+996,image_01937,image_01937.jpg,jpg/image_01937.jpg,77.0,lotus,train,lotus,77.0,True,True
+991,image_01946,image_01946.jpg,jpg/image_01946.jpg,77.0,lotus,train,lotus,77.0,True,True
+1066,image_01964,image_01964.jpg,jpg/image_01964.jpg,79.0,anthurium,train,anthurium,79.0,True,True
+1055,image_01975,image_01975.jpg,jpg/image_01975.jpg,79.0,anthurium,train,anthurium,79.0,True,True
+1035,image_01977,image_01977.jpg,jpg/image_01977.jpg,79.0,anthurium,train,anthurium,79.0,True,True
+1051,image_01992,image_01992.jpg,jpg/image_01992.jpg,79.0,anthurium,train,anthurium,79.0,True,True
+1033,image_02012,image_02012.jpg,jpg/image_02012.jpg,79.0,anthurium,train,anthurium,79.0,True,True
+1075,image_02035,image_02035.jpg,jpg/image_02035.jpg,79.0,anthurium,train,anthurium,79.0,True,True
+1073,image_02041,image_02041.jpg,jpg/image_02041.jpg,79.0,anthurium,train,anthurium,79.0,True,True
+1043,image_02047,image_02047.jpg,jpg/image_02047.jpg,79.0,anthurium,train,anthurium,79.0,True,True
+1044,image_02049,image_02049.jpg,jpg/image_02049.jpg,79.0,anthurium,train,anthurium,79.0,True,True
+1074,image_02050,image_02050.jpg,jpg/image_02050.jpg,79.0,anthurium,train,anthurium,79.0,True,True
+1049,image_02058,image_02058.jpg,jpg/image_02058.jpg,79.0,anthurium,train,anthurium,79.0,True,True
+1025,image_02059,image_02059.jpg,jpg/image_02059.jpg,79.0,anthurium,train,anthurium,79.0,True,True
+1061,image_02062,image_02062.jpg,jpg/image_02062.jpg,79.0,anthurium,train,anthurium,79.0,True,True
+1034,image_02064,image_02064.jpg,jpg/image_02064.jpg,79.0,anthurium,train,anthurium,79.0,True,True
+1030,image_02065,image_02065.jpg,jpg/image_02065.jpg,79.0,anthurium,train,anthurium,79.0,True,True
+1072,image_02066,image_02066.jpg,jpg/image_02066.jpg,79.0,anthurium,train,anthurium,79.0,True,True
+1109,image_02080,image_02080.jpg,jpg/image_02080.jpg,74.0,thorn apple,train,desert-rose,74.0,False,True
+1082,image_02091,image_02091.jpg,jpg/image_02091.jpg,74.0,thorn apple,train,thorn apple,74.0,True,True
+1105,image_02099,image_02099.jpg,jpg/image_02099.jpg,74.0,thorn apple,train,thorn apple,74.0,True,True
+1123,image_02106,image_02106.jpg,jpg/image_02106.jpg,74.0,thorn apple,train,thorn apple,74.0,True,True
+1127,image_02128,image_02128.jpg,jpg/image_02128.jpg,74.0,thorn apple,train,thorn apple,74.0,True,True
+1120,image_02147,image_02147.jpg,jpg/image_02147.jpg,74.0,thorn apple,train,thorn apple,74.0,True,True
+1096,image_02164,image_02164.jpg,jpg/image_02164.jpg,74.0,thorn apple,train,thorn apple,74.0,True,True
+1099,image_02165,image_02165.jpg,jpg/image_02165.jpg,74.0,thorn apple,train,thorn apple,74.0,True,True
+1111,image_02170,image_02170.jpg,jpg/image_02170.jpg,74.0,thorn apple,train,thorn apple,74.0,True,True
+1103,image_02176,image_02176.jpg,jpg/image_02176.jpg,74.0,thorn apple,train,thorn apple,74.0,True,True
+1119,image_02179,image_02179.jpg,jpg/image_02179.jpg,74.0,thorn apple,train,giant white arum lily,74.0,False,True
+1128,image_02180,image_02180.jpg,jpg/image_02180.jpg,74.0,thorn apple,train,thorn apple,74.0,True,True
+1112,image_02184,image_02184.jpg,jpg/image_02184.jpg,74.0,thorn apple,train,thorn apple,74.0,True,True
+1160,image_02223,image_02223.jpg,jpg/image_02223.jpg,40.0,barbeton daisy,train,barbeton daisy,40.0,True,True
+1184,image_02233,image_02233.jpg,jpg/image_02233.jpg,40.0,barbeton daisy,train,barbeton daisy,40.0,True,True
+1161,image_02235,image_02235.jpg,jpg/image_02235.jpg,40.0,barbeton daisy,train,osteospermum,40.0,False,True
+1141,image_02239,image_02239.jpg,jpg/image_02239.jpg,40.0,barbeton daisy,train,barbeton daisy,40.0,True,True
+1188,image_02252,image_02252.jpg,jpg/image_02252.jpg,40.0,barbeton daisy,train,barbeton daisy,40.0,True,True
+1175,image_02277,image_02277.jpg,jpg/image_02277.jpg,40.0,barbeton daisy,train,barbeton daisy,40.0,True,True
+1170,image_02282,image_02282.jpg,jpg/image_02282.jpg,40.0,barbeton daisy,train,orange dahlia,40.0,False,True
+1194,image_02283,image_02283.jpg,jpg/image_02283.jpg,40.0,barbeton daisy,train,barbeton daisy,40.0,True,True
+1142,image_02289,image_02289.jpg,jpg/image_02289.jpg,40.0,barbeton daisy,train,osteospermum,40.0,False,True
+1191,image_02290,image_02290.jpg,jpg/image_02290.jpg,40.0,barbeton daisy,train,barbeton daisy,40.0,True,True
+1190,image_02293,image_02293.jpg,jpg/image_02293.jpg,40.0,barbeton daisy,train,osteospermum,40.0,False,True
+1172,image_02295,image_02295.jpg,jpg/image_02295.jpg,40.0,barbeton daisy,train,barbeton daisy,40.0,True,True
+1229,image_02319,image_02319.jpg,jpg/image_02319.jpg,42.0,sword lily,train,siam tulip,42.0,False,True
+1249,image_02322,image_02322.jpg,jpg/image_02322.jpg,42.0,sword lily,train,snapdragon,42.0,False,True
+1232,image_02352,image_02352.jpg,jpg/image_02352.jpg,42.0,sword lily,train,snapdragon,42.0,False,True
+1237,image_02367,image_02367.jpg,jpg/image_02367.jpg,42.0,sword lily,train,siam tulip,42.0,False,True
+1242,image_02373,image_02373.jpg,jpg/image_02373.jpg,42.0,sword lily,train,siam tulip,42.0,False,True
+1214,image_02375,image_02375.jpg,jpg/image_02375.jpg,42.0,sword lily,train,canterbury bells,42.0,False,True
+1246,image_02377,image_02377.jpg,jpg/image_02377.jpg,42.0,sword lily,train,bearded iris,42.0,False,True
+1206,image_02390,image_02390.jpg,jpg/image_02390.jpg,42.0,sword lily,train,bolero deep blue,42.0,False,True
+1314,image_02450,image_02450.jpg,jpg/image_02450.jpg,75.0,morning glory,train,morning glory,75.0,True,True
+1299,image_02462,image_02462.jpg,jpg/image_02462.jpg,75.0,morning glory,train,morning glory,75.0,True,True
+1291,image_02474,image_02474.jpg,jpg/image_02474.jpg,75.0,morning glory,train,morning glory,75.0,True,True
+1269,image_02480,image_02480.jpg,jpg/image_02480.jpg,75.0,morning glory,train,morning glory,75.0,True,True
+1310,image_02482,image_02482.jpg,jpg/image_02482.jpg,75.0,morning glory,train,morning glory,75.0,True,True
+1311,image_02488,image_02488.jpg,jpg/image_02488.jpg,75.0,morning glory,train,morning glory,75.0,True,True
+1300,image_02495,image_02495.jpg,jpg/image_02495.jpg,75.0,morning glory,train,morning glory,75.0,True,True
+1298,image_02499,image_02499.jpg,jpg/image_02499.jpg,75.0,morning glory,train,morning glory,75.0,True,True
+1270,image_02505,image_02505.jpg,jpg/image_02505.jpg,75.0,morning glory,train,morning glory,75.0,True,True
+1303,image_02507,image_02507.jpg,jpg/image_02507.jpg,75.0,morning glory,train,morning glory,75.0,True,True
+1302,image_02512,image_02512.jpg,jpg/image_02512.jpg,75.0,morning glory,train,morning glory,75.0,True,True
+1289,image_02514,image_02514.jpg,jpg/image_02514.jpg,75.0,morning glory,train,morning glory,75.0,True,True
+1265,image_02516,image_02516.jpg,jpg/image_02516.jpg,75.0,morning glory,train,bolero deep blue,75.0,False,True
+1315,image_02524,image_02524.jpg,jpg/image_02524.jpg,75.0,morning glory,train,morning glory,75.0,True,True
+1277,image_02528,image_02528.jpg,jpg/image_02528.jpg,75.0,morning glory,train,morning glory,75.0,True,True
+1284,image_02534,image_02534.jpg,jpg/image_02534.jpg,75.0,morning glory,train,morning glory,75.0,True,True
+1293,image_02549,image_02549.jpg,jpg/image_02549.jpg,75.0,morning glory,train,morning glory,75.0,True,True
+1334,image_02559,image_02559.jpg,jpg/image_02559.jpg,83.0,columbine,train,columbine,83.0,True,True
+1320,image_02566,image_02566.jpg,jpg/image_02566.jpg,83.0,columbine,train,columbine,83.0,True,True
+1337,image_02567,image_02567.jpg,jpg/image_02567.jpg,83.0,columbine,train,columbine,83.0,True,True
+1330,image_02570,image_02570.jpg,jpg/image_02570.jpg,83.0,columbine,train,columbine,83.0,True,True
+1349,image_02571,image_02571.jpg,jpg/image_02571.jpg,83.0,columbine,train,columbine,83.0,True,True
+1331,image_02573,image_02573.jpg,jpg/image_02573.jpg,83.0,columbine,train,columbine,83.0,True,True
+1323,image_02582,image_02582.jpg,jpg/image_02582.jpg,83.0,columbine,train,columbine,83.0,True,True
+1352,image_02591,image_02591.jpg,jpg/image_02591.jpg,83.0,columbine,train,columbine,83.0,True,True
+1346,image_02592,image_02592.jpg,jpg/image_02592.jpg,83.0,columbine,train,trumpet creeper,83.0,False,True
+1339,image_02593,image_02593.jpg,jpg/image_02593.jpg,83.0,columbine,train,columbine,83.0,True,True
+1361,image_02595,image_02595.jpg,jpg/image_02595.jpg,83.0,columbine,train,columbine,83.0,True,True
+1356,image_02601,image_02601.jpg,jpg/image_02601.jpg,83.0,columbine,train,columbine,83.0,True,True
+1324,image_02604,image_02604.jpg,jpg/image_02604.jpg,83.0,columbine,train,columbine,83.0,True,True
+1350,image_02608,image_02608.jpg,jpg/image_02608.jpg,83.0,columbine,train,columbine,83.0,True,True
+1333,image_02620,image_02620.jpg,jpg/image_02620.jpg,83.0,columbine,train,columbine,83.0,True,True
+1342,image_02622,image_02622.jpg,jpg/image_02622.jpg,83.0,columbine,train,bolero deep blue,83.0,False,True
+1359,image_02630,image_02630.jpg,jpg/image_02630.jpg,83.0,columbine,train,columbine,83.0,True,True
+1357,image_02636,image_02636.jpg,jpg/image_02636.jpg,83.0,columbine,train,columbine,83.0,True,True
+1371,image_02641,image_02641.jpg,jpg/image_02641.jpg,57.0,geranium,train,pelargonium,57.0,False,True
+1411,image_02642,image_02642.jpg,jpg/image_02642.jpg,57.0,geranium,train,geranium,57.0,True,True
+1363,image_02648,image_02648.jpg,jpg/image_02648.jpg,57.0,geranium,train,geranium,57.0,True,True
+1384,image_02655,image_02655.jpg,jpg/image_02655.jpg,57.0,geranium,train,geranium,57.0,True,True
+1389,image_02666,image_02666.jpg,jpg/image_02666.jpg,57.0,geranium,train,geranium,57.0,True,True
+1394,image_02671,image_02671.jpg,jpg/image_02671.jpg,57.0,geranium,train,geranium,57.0,True,True
+1376,image_02673,image_02673.jpg,jpg/image_02673.jpg,57.0,geranium,train,geranium,57.0,True,True
+1412,image_02674,image_02674.jpg,jpg/image_02674.jpg,57.0,geranium,train,geranium,57.0,True,True
+1396,image_02676,image_02676.jpg,jpg/image_02676.jpg,57.0,geranium,train,geranium,57.0,True,True
+1410,image_02681,image_02681.jpg,jpg/image_02681.jpg,57.0,geranium,train,pelargonium,57.0,False,True
+1375,image_02684,image_02684.jpg,jpg/image_02684.jpg,57.0,geranium,train,geranium,57.0,True,True
+1370,image_02690,image_02690.jpg,jpg/image_02690.jpg,57.0,geranium,train,pelargonium,57.0,False,True
+1400,image_02691,image_02691.jpg,jpg/image_02691.jpg,57.0,geranium,train,geranium,57.0,True,True
+1380,image_02712,image_02712.jpg,jpg/image_02712.jpg,57.0,geranium,train,geranium,57.0,True,True
+1416,image_02713,image_02713.jpg,jpg/image_02713.jpg,57.0,geranium,train,geranium,57.0,True,True
+1391,image_02716,image_02716.jpg,jpg/image_02716.jpg,57.0,geranium,train,pelargonium,57.0,False,True
+1415,image_02728,image_02728.jpg,jpg/image_02728.jpg,57.0,geranium,train,pelargonium,57.0,False,True
+1385,image_02733,image_02733.jpg,jpg/image_02733.jpg,57.0,geranium,train,pelargonium,57.0,False,True
+1372,image_02734,image_02734.jpg,jpg/image_02734.jpg,57.0,geranium,train,pelargonium,57.0,False,True
+1382,image_02736,image_02736.jpg,jpg/image_02736.jpg,57.0,geranium,train,pelargonium,57.0,False,True
+1373,image_02743,image_02743.jpg,jpg/image_02743.jpg,57.0,geranium,train,geranium,57.0,True,True
+1388,image_02745,image_02745.jpg,jpg/image_02745.jpg,57.0,geranium,train,pelargonium,57.0,False,True
+1414,image_02752,image_02752.jpg,jpg/image_02752.jpg,57.0,geranium,train,geranium,57.0,True,True
+1442,image_02755,image_02755.jpg,jpg/image_02755.jpg,55.0,bishop of llandaff,train,bishop of llandaff,55.0,True,True
+1453,image_02757,image_02757.jpg,jpg/image_02757.jpg,55.0,bishop of llandaff,train,bishop of llandaff,55.0,True,True
+1431,image_02761,image_02761.jpg,jpg/image_02761.jpg,55.0,bishop of llandaff,train,bishop of llandaff,55.0,True,True
+1464,image_02771,image_02771.jpg,jpg/image_02771.jpg,55.0,bishop of llandaff,train,bishop of llandaff,55.0,True,True
+1439,image_02782,image_02782.jpg,jpg/image_02782.jpg,55.0,bishop of llandaff,train,bishop of llandaff,55.0,True,True
+1440,image_02787,image_02787.jpg,jpg/image_02787.jpg,55.0,bishop of llandaff,train,bishop of llandaff,55.0,True,True
+1455,image_02797,image_02797.jpg,jpg/image_02797.jpg,55.0,bishop of llandaff,train,bishop of llandaff,55.0,True,True
+1441,image_02800,image_02800.jpg,jpg/image_02800.jpg,55.0,bishop of llandaff,train,bishop of llandaff,55.0,True,True
+1425,image_02807,image_02807.jpg,jpg/image_02807.jpg,55.0,bishop of llandaff,train,bishop of llandaff,55.0,True,True
+1435,image_02809,image_02809.jpg,jpg/image_02809.jpg,55.0,bishop of llandaff,train,fire lily,55.0,False,True
+1445,image_02817,image_02817.jpg,jpg/image_02817.jpg,55.0,bishop of llandaff,train,bishop of llandaff,55.0,True,True
+1422,image_02819,image_02819.jpg,jpg/image_02819.jpg,55.0,bishop of llandaff,train,bishop of llandaff,55.0,True,True
+1444,image_02826,image_02826.jpg,jpg/image_02826.jpg,55.0,bishop of llandaff,train,bishop of llandaff,55.0,True,True
+1452,image_02830,image_02830.jpg,jpg/image_02830.jpg,55.0,bishop of llandaff,train,bishop of llandaff,55.0,True,True
+1433,image_02832,image_02832.jpg,jpg/image_02832.jpg,55.0,bishop of llandaff,train,bishop of llandaff,55.0,True,True
+1472,image_02845,image_02845.jpg,jpg/image_02845.jpg,55.0,bishop of llandaff,train,bishop of llandaff,55.0,True,True
+1493,image_02862,image_02862.jpg,jpg/image_02862.jpg,85.0,tree mallow,train,mallow,85.0,False,True
+1480,image_02865,image_02865.jpg,jpg/image_02865.jpg,85.0,tree mallow,train,petunia,85.0,False,True
+1495,image_02874,image_02874.jpg,jpg/image_02874.jpg,85.0,tree mallow,train,tree mallow,85.0,True,True
+1484,image_02880,image_02880.jpg,jpg/image_02880.jpg,85.0,tree mallow,train,mallow,85.0,False,True
+1474,image_02888,image_02888.jpg,jpg/image_02888.jpg,85.0,tree mallow,train,tree mallow,85.0,True,True
+1496,image_02897,image_02897.jpg,jpg/image_02897.jpg,85.0,tree mallow,train,mallow,85.0,False,True
+1479,image_02898,image_02898.jpg,jpg/image_02898.jpg,85.0,tree mallow,train,tree mallow,85.0,True,True
+1491,image_02902,image_02902.jpg,jpg/image_02902.jpg,85.0,tree mallow,train,tree mallow,85.0,True,True
+1483,image_02915,image_02915.jpg,jpg/image_02915.jpg,85.0,tree mallow,train,mallow,85.0,False,True
+1486,image_02919,image_02919.jpg,jpg/image_02919.jpg,85.0,tree mallow,train,mallow,85.0,False,True
+1536,image_02924,image_02924.jpg,jpg/image_02924.jpg,59.0,pink-yellow dahlia,train,pink-yellow dahlia,59.0,True,True
+1552,image_02927,image_02927.jpg,jpg/image_02927.jpg,59.0,pink-yellow dahlia,train,pink-yellow dahlia,59.0,True,True
+1520,image_02933,image_02933.jpg,jpg/image_02933.jpg,59.0,pink-yellow dahlia,train,pink-yellow dahlia,59.0,True,True
+1531,image_02939,image_02939.jpg,jpg/image_02939.jpg,59.0,pink-yellow dahlia,train,pink-yellow dahlia,59.0,True,True
+1515,image_02959,image_02959.jpg,jpg/image_02959.jpg,59.0,pink-yellow dahlia,train,pink-yellow dahlia,59.0,True,True
+1517,image_02962,image_02962.jpg,jpg/image_02962.jpg,59.0,pink-yellow dahlia,train,pink-yellow dahlia,59.0,True,True
+1535,image_02965,image_02965.jpg,jpg/image_02965.jpg,59.0,pink-yellow dahlia,train,pink-yellow dahlia,59.0,True,True
+1519,image_02966,image_02966.jpg,jpg/image_02966.jpg,59.0,pink-yellow dahlia,train,pink-yellow dahlia,59.0,True,True
+1555,image_02982,image_02982.jpg,jpg/image_02982.jpg,59.0,pink-yellow dahlia,train,pink-yellow dahlia,59.0,True,True
+1534,image_02991,image_02991.jpg,jpg/image_02991.jpg,59.0,pink-yellow dahlia,train,pink-yellow dahlia,59.0,True,True
+1505,image_02997,image_02997.jpg,jpg/image_02997.jpg,59.0,pink-yellow dahlia,train,pink-yellow dahlia,59.0,True,True
+1542,image_02999,image_02999.jpg,jpg/image_02999.jpg,59.0,pink-yellow dahlia,train,pink-yellow dahlia,59.0,True,True
+1508,image_03009,image_03009.jpg,jpg/image_03009.jpg,59.0,pink-yellow dahlia,train,orange dahlia,59.0,False,True
+1510,image_03022,image_03022.jpg,jpg/image_03022.jpg,59.0,pink-yellow dahlia,train,pink-yellow dahlia,59.0,True,True
+1506,image_03023,image_03023.jpg,jpg/image_03023.jpg,59.0,pink-yellow dahlia,train,pink-yellow dahlia,59.0,True,True
+1509,image_03024,image_03024.jpg,jpg/image_03024.jpg,59.0,pink-yellow dahlia,train,pink-yellow dahlia,59.0,True,True
+1530,image_03026,image_03026.jpg,jpg/image_03026.jpg,59.0,pink-yellow dahlia,train,pink-yellow dahlia,59.0,True,True
+1557,image_03035,image_03035.jpg,jpg/image_03035.jpg,91.0,bee balm,train,bee balm,91.0,True,True
+1570,image_03036,image_03036.jpg,jpg/image_03036.jpg,91.0,bee balm,train,bee balm,91.0,True,True
+1562,image_03040,image_03040.jpg,jpg/image_03040.jpg,91.0,bee balm,train,bee balm,91.0,True,True
+1585,image_03045,image_03045.jpg,jpg/image_03045.jpg,91.0,bee balm,train,bee balm,91.0,True,True
+1582,image_03051,image_03051.jpg,jpg/image_03051.jpg,91.0,bee balm,train,bee balm,91.0,True,True
+1577,image_03055,image_03055.jpg,jpg/image_03055.jpg,91.0,bee balm,train,bee balm,91.0,True,True
+1574,image_03058,image_03058.jpg,jpg/image_03058.jpg,91.0,bee balm,train,bee balm,91.0,True,True
+1558,image_03062,image_03062.jpg,jpg/image_03062.jpg,91.0,bee balm,train,bee balm,91.0,True,True
+1563,image_03072,image_03072.jpg,jpg/image_03072.jpg,91.0,bee balm,train,bee balm,91.0,True,True
+1580,image_03074,image_03074.jpg,jpg/image_03074.jpg,91.0,bee balm,train,bee balm,91.0,True,True
+1571,image_03076,image_03076.jpg,jpg/image_03076.jpg,91.0,bee balm,train,bee balm,91.0,True,True
+1581,image_03078,image_03078.jpg,jpg/image_03078.jpg,91.0,bee balm,train,bee balm,91.0,True,True
+1587,image_03079,image_03079.jpg,jpg/image_03079.jpg,91.0,bee balm,train,bee balm,91.0,True,True
+1567,image_03081,image_03081.jpg,jpg/image_03081.jpg,91.0,bee balm,train,bee balm,91.0,True,True
+1564,image_03091,image_03091.jpg,jpg/image_03091.jpg,91.0,bee balm,train,bee balm,91.0,True,True
+1572,image_03094,image_03094.jpg,jpg/image_03094.jpg,91.0,bee balm,train,bee balm,91.0,True,True
+1628,image_03098,image_03098.jpg,jpg/image_03098.jpg,10.0,snapdragon,train,moon orchid,10.0,False,True
+1630,image_03107,image_03107.jpg,jpg/image_03107.jpg,10.0,snapdragon,train,snapdragon,10.0,True,True
+1610,image_03113,image_03113.jpg,jpg/image_03113.jpg,10.0,snapdragon,train,canterbury bells,10.0,False,True
+1622,image_03114,image_03114.jpg,jpg/image_03114.jpg,10.0,snapdragon,train,snapdragon,10.0,True,True
+1599,image_03118,image_03118.jpg,jpg/image_03118.jpg,10.0,snapdragon,train,snapdragon,10.0,True,True
+1597,image_03127,image_03127.jpg,jpg/image_03127.jpg,10.0,snapdragon,train,snapdragon,10.0,True,True
+1624,image_03130,image_03130.jpg,jpg/image_03130.jpg,10.0,snapdragon,train,snapdragon,10.0,True,True
+1623,image_03141,image_03141.jpg,jpg/image_03141.jpg,10.0,snapdragon,train,snapdragon,10.0,True,True
+1605,image_03145,image_03145.jpg,jpg/image_03145.jpg,10.0,snapdragon,train,snapdragon,10.0,True,True
+1617,image_03146,image_03146.jpg,jpg/image_03146.jpg,10.0,snapdragon,train,snapdragon,10.0,True,True
+1620,image_03149,image_03149.jpg,jpg/image_03149.jpg,10.0,snapdragon,train,snapdragon,10.0,True,True
+1631,image_03158,image_03158.jpg,jpg/image_03158.jpg,10.0,snapdragon,train,hard-leaved pocket orchid,10.0,False,True
+1592,image_03161,image_03161.jpg,jpg/image_03161.jpg,10.0,snapdragon,train,snapdragon,10.0,True,True
+1593,image_03170,image_03170.jpg,jpg/image_03170.jpg,10.0,snapdragon,train,snapdragon,10.0,True,True
+1621,image_03172,image_03172.jpg,jpg/image_03172.jpg,10.0,snapdragon,train,snapdragon,10.0,True,True
+1615,image_03173,image_03173.jpg,jpg/image_03173.jpg,10.0,snapdragon,train,snapdragon,10.0,True,True
+1619,image_03178,image_03178.jpg,jpg/image_03178.jpg,10.0,snapdragon,train,snapdragon,10.0,True,True
+1645,image_03184,image_03184.jpg,jpg/image_03184.jpg,64.0,californian poppy,train,californian poppy,64.0,True,True
+1679,image_03193,image_03193.jpg,jpg/image_03193.jpg,64.0,californian poppy,train,californian poppy,64.0,True,True
+1658,image_03202,image_03202.jpg,jpg/image_03202.jpg,64.0,californian poppy,train,californian poppy,64.0,True,True
+1639,image_03205,image_03205.jpg,jpg/image_03205.jpg,64.0,californian poppy,train,californian poppy,64.0,True,True
+1682,image_03213,image_03213.jpg,jpg/image_03213.jpg,64.0,californian poppy,train,californian poppy,64.0,True,True
+1683,image_03233,image_03233.jpg,jpg/image_03233.jpg,64.0,californian poppy,train,californian poppy,64.0,True,True
+1676,image_03244,image_03244.jpg,jpg/image_03244.jpg,64.0,californian poppy,train,californian poppy,64.0,True,True
+1652,image_03249,image_03249.jpg,jpg/image_03249.jpg,64.0,californian poppy,train,californian poppy,64.0,True,True
+1651,image_03250,image_03250.jpg,jpg/image_03250.jpg,64.0,californian poppy,train,californian poppy,64.0,True,True
+1642,image_03251,image_03251.jpg,jpg/image_03251.jpg,64.0,californian poppy,train,californian poppy,64.0,True,True
+1669,image_03254,image_03254.jpg,jpg/image_03254.jpg,64.0,californian poppy,train,windflower,64.0,False,True
+1672,image_03258,image_03258.jpg,jpg/image_03258.jpg,64.0,californian poppy,train,globe-flower,64.0,False,True
+1655,image_03265,image_03265.jpg,jpg/image_03265.jpg,64.0,californian poppy,train,californian poppy,64.0,True,True
+1673,image_03269,image_03269.jpg,jpg/image_03269.jpg,64.0,californian poppy,train,californian poppy,64.0,True,True
+1643,image_03271,image_03271.jpg,jpg/image_03271.jpg,64.0,californian poppy,train,californian poppy,64.0,True,True
+1680,image_03272,image_03272.jpg,jpg/image_03272.jpg,64.0,californian poppy,train,californian poppy,64.0,True,True
+1677,image_03275,image_03275.jpg,jpg/image_03275.jpg,64.0,californian poppy,train,californian poppy,64.0,True,True
+1650,image_03280,image_03280.jpg,jpg/image_03280.jpg,64.0,californian poppy,train,windflower,64.0,False,True
+1662,image_03281,image_03281.jpg,jpg/image_03281.jpg,64.0,californian poppy,train,californian poppy,64.0,True,True
+1699,image_03290,image_03290.jpg,jpg/image_03290.jpg,7.0,bird of paradise,train,bird of paradise,7.0,True,True
+1685,image_03295,image_03295.jpg,jpg/image_03295.jpg,7.0,bird of paradise,train,bird of paradise,7.0,True,True
+1722,image_03299,image_03299.jpg,jpg/image_03299.jpg,7.0,bird of paradise,train,bird of paradise,7.0,True,True
+1710,image_03305,image_03305.jpg,jpg/image_03305.jpg,7.0,bird of paradise,train,bird of paradise,7.0,True,True
+1701,image_03308,image_03308.jpg,jpg/image_03308.jpg,7.0,bird of paradise,train,bird of paradise,7.0,True,True
+1709,image_03319,image_03319.jpg,jpg/image_03319.jpg,7.0,bird of paradise,train,bird of paradise,7.0,True,True
+1719,image_03322,image_03322.jpg,jpg/image_03322.jpg,7.0,bird of paradise,train,bird of paradise,7.0,True,True
+1725,image_03324,image_03324.jpg,jpg/image_03324.jpg,7.0,bird of paradise,train,bird of paradise,7.0,True,True
+1714,image_03325,image_03325.jpg,jpg/image_03325.jpg,7.0,bird of paradise,train,bird of paradise,7.0,True,True
+1690,image_03326,image_03326.jpg,jpg/image_03326.jpg,7.0,bird of paradise,train,bird of paradise,7.0,True,True
+1724,image_03328,image_03328.jpg,jpg/image_03328.jpg,7.0,bird of paradise,train,bird of paradise,7.0,True,True
+1716,image_03329,image_03329.jpg,jpg/image_03329.jpg,7.0,bird of paradise,train,bird of paradise,7.0,True,True
+1684,image_03331,image_03331.jpg,jpg/image_03331.jpg,7.0,bird of paradise,train,bird of paradise,7.0,True,True
+1706,image_03353,image_03353.jpg,jpg/image_03353.jpg,7.0,bird of paradise,train,bird of paradise,7.0,True,True
+1687,image_03361,image_03361.jpg,jpg/image_03361.jpg,7.0,bird of paradise,train,bird of paradise,7.0,True,True
+1712,image_03362,image_03362.jpg,jpg/image_03362.jpg,7.0,bird of paradise,train,bird of paradise,7.0,True,True
+1763,image_03381,image_03381.jpg,jpg/image_03381.jpg,22.0,fritillary,train,fritillary,22.0,True,True
+1732,image_03392,image_03392.jpg,jpg/image_03392.jpg,22.0,fritillary,train,fritillary,22.0,True,True
+1726,image_03394,image_03394.jpg,jpg/image_03394.jpg,22.0,fritillary,train,fritillary,22.0,True,True
+1741,image_03403,image_03403.jpg,jpg/image_03403.jpg,22.0,fritillary,train,fritillary,22.0,True,True
+1727,image_03404,image_03404.jpg,jpg/image_03404.jpg,22.0,fritillary,train,fritillary,22.0,True,True
+1768,image_03411,image_03411.jpg,jpg/image_03411.jpg,22.0,fritillary,train,fritillary,22.0,True,True
+1747,image_03416,image_03416.jpg,jpg/image_03416.jpg,22.0,fritillary,train,fritillary,22.0,True,True
+1764,image_03419,image_03419.jpg,jpg/image_03419.jpg,22.0,fritillary,train,fritillary,22.0,True,True
+1762,image_03421,image_03421.jpg,jpg/image_03421.jpg,22.0,fritillary,train,fritillary,22.0,True,True
+1740,image_03422,image_03422.jpg,jpg/image_03422.jpg,22.0,fritillary,train,fritillary,22.0,True,True
+1734,image_03423,image_03423.jpg,jpg/image_03423.jpg,22.0,fritillary,train,fritillary,22.0,True,True
+1745,image_03425,image_03425.jpg,jpg/image_03425.jpg,22.0,fritillary,train,fritillary,22.0,True,True
+1756,image_03438,image_03438.jpg,jpg/image_03438.jpg,22.0,fritillary,train,fritillary,22.0,True,True
+1767,image_03444,image_03444.jpg,jpg/image_03444.jpg,22.0,fritillary,train,fritillary,22.0,True,True
+1746,image_03445,image_03445.jpg,jpg/image_03445.jpg,22.0,fritillary,train,fritillary,22.0,True,True
+1758,image_03451,image_03451.jpg,jpg/image_03451.jpg,22.0,fritillary,train,fritillary,22.0,True,True
+1780,image_03467,image_03467.jpg,jpg/image_03467.jpg,29.0,sweet william,train,sweet william,29.0,True,True
+1779,image_03469,image_03469.jpg,jpg/image_03469.jpg,29.0,sweet william,train,sweet william,29.0,True,True
+1811,image_03470,image_03470.jpg,jpg/image_03470.jpg,29.0,sweet william,train,garden phlox,29.0,False,True
+1793,image_03475,image_03475.jpg,jpg/image_03475.jpg,29.0,sweet william,train,sweet william,29.0,True,True
+1785,image_03476,image_03476.jpg,jpg/image_03476.jpg,29.0,sweet william,train,sweet william,29.0,True,True
+1782,image_03480,image_03480.jpg,jpg/image_03480.jpg,29.0,sweet william,train,sweet william,29.0,True,True
+1772,image_03481,image_03481.jpg,jpg/image_03481.jpg,29.0,sweet william,train,sweet william,29.0,True,True
+1796,image_03482,image_03482.jpg,jpg/image_03482.jpg,29.0,sweet william,train,sweet william,29.0,True,True
+1804,image_03485,image_03485.jpg,jpg/image_03485.jpg,29.0,sweet william,train,garden phlox,29.0,False,True
+1788,image_03487,image_03487.jpg,jpg/image_03487.jpg,29.0,sweet william,train,sweet william,29.0,True,True
+1800,image_03492,image_03492.jpg,jpg/image_03492.jpg,29.0,sweet william,train,sweet william,29.0,True,True
+1789,image_03498,image_03498.jpg,jpg/image_03498.jpg,29.0,sweet william,train,garden phlox,29.0,False,True
+1787,image_03503,image_03503.jpg,jpg/image_03503.jpg,29.0,sweet william,train,garden phlox,29.0,False,True
+1783,image_03514,image_03514.jpg,jpg/image_03514.jpg,29.0,sweet william,train,sweet william,29.0,True,True
+1792,image_03515,image_03515.jpg,jpg/image_03515.jpg,29.0,sweet william,train,sweet william,29.0,True,True
+1781,image_03522,image_03522.jpg,jpg/image_03522.jpg,29.0,sweet william,train,sweet william,29.0,True,True
+1809,image_03528,image_03528.jpg,jpg/image_03528.jpg,29.0,sweet william,train,sweet william,29.0,True,True
+1794,image_03529,image_03529.jpg,jpg/image_03529.jpg,29.0,sweet william,train,sweet william,29.0,True,True
+1777,image_03530,image_03530.jpg,jpg/image_03530.jpg,29.0,sweet william,train,sweet william,29.0,True,True
+1784,image_03531,image_03531.jpg,jpg/image_03531.jpg,29.0,sweet william,train,sweet william,29.0,True,True
+1858,image_03550,image_03550.jpg,jpg/image_03550.jpg,71.0,azalea,train,azalea,71.0,True,True
+1850,image_03555,image_03555.jpg,jpg/image_03555.jpg,71.0,azalea,train,azalea,71.0,True,True
+1829,image_03562,image_03562.jpg,jpg/image_03562.jpg,71.0,azalea,train,azalea,71.0,True,True
+1857,image_03565,image_03565.jpg,jpg/image_03565.jpg,71.0,azalea,train,desert-rose,71.0,False,True
+1822,image_03579,image_03579.jpg,jpg/image_03579.jpg,71.0,azalea,train,azalea,71.0,True,True
+1817,image_03584,image_03584.jpg,jpg/image_03584.jpg,71.0,azalea,train,azalea,71.0,True,True
+1816,image_03586,image_03586.jpg,jpg/image_03586.jpg,71.0,azalea,train,azalea,71.0,True,True
+1860,image_03597,image_03597.jpg,jpg/image_03597.jpg,71.0,azalea,train,azalea,71.0,True,True
+1843,image_03600,image_03600.jpg,jpg/image_03600.jpg,71.0,azalea,train,azalea,71.0,True,True
+1833,image_03606,image_03606.jpg,jpg/image_03606.jpg,71.0,azalea,train,azalea,71.0,True,True
+1835,image_03611,image_03611.jpg,jpg/image_03611.jpg,71.0,azalea,train,azalea,71.0,True,True
+1828,image_03612,image_03612.jpg,jpg/image_03612.jpg,71.0,azalea,train,azalea,71.0,True,True
+1821,image_03615,image_03615.jpg,jpg/image_03615.jpg,71.0,azalea,train,azalea,71.0,True,True
+1844,image_03622,image_03622.jpg,jpg/image_03622.jpg,71.0,azalea,train,pink primrose,71.0,False,True
+1848,image_03630,image_03630.jpg,jpg/image_03630.jpg,71.0,azalea,train,azalea,71.0,True,True
+1819,image_03631,image_03631.jpg,jpg/image_03631.jpg,71.0,azalea,train,azalea,71.0,True,True
+1852,image_03633,image_03633.jpg,jpg/image_03633.jpg,71.0,azalea,train,azalea,71.0,True,True
+1855,image_03638,image_03638.jpg,jpg/image_03638.jpg,71.0,azalea,train,azalea,71.0,True,True
+1868,image_03650,image_03650.jpg,jpg/image_03650.jpg,52.0,primula,train,primula,52.0,True,True
+1905,image_03652,image_03652.jpg,jpg/image_03652.jpg,52.0,primula,train,primula,52.0,True,True
+1880,image_03653,image_03653.jpg,jpg/image_03653.jpg,52.0,primula,train,primula,52.0,True,True
+1867,image_03654,image_03654.jpg,jpg/image_03654.jpg,52.0,primula,train,primula,52.0,True,True
+1873,image_03655,image_03655.jpg,jpg/image_03655.jpg,52.0,primula,train,primula,52.0,True,True
+1894,image_03656,image_03656.jpg,jpg/image_03656.jpg,52.0,primula,train,pink primrose,52.0,False,True
+1887,image_03657,image_03657.jpg,jpg/image_03657.jpg,52.0,primula,train,primula,52.0,True,True
+1881,image_03664,image_03664.jpg,jpg/image_03664.jpg,52.0,primula,train,pink primrose,52.0,False,True
+1889,image_03672,image_03672.jpg,jpg/image_03672.jpg,52.0,primula,train,primula,52.0,True,True
+1906,image_03680,image_03680.jpg,jpg/image_03680.jpg,52.0,primula,train,pink primrose,52.0,False,True
+1875,image_03682,image_03682.jpg,jpg/image_03682.jpg,52.0,primula,train,pink primrose,52.0,False,True
+1862,image_03686,image_03686.jpg,jpg/image_03686.jpg,52.0,primula,train,pink primrose,52.0,False,True
+1883,image_03701,image_03701.jpg,jpg/image_03701.jpg,52.0,primula,train,primula,52.0,True,True
+1877,image_03702,image_03702.jpg,jpg/image_03702.jpg,52.0,primula,train,pink primrose,52.0,False,True
+1904,image_03703,image_03703.jpg,jpg/image_03703.jpg,52.0,primula,train,primula,52.0,True,True
+1907,image_03704,image_03704.jpg,jpg/image_03704.jpg,52.0,primula,train,primula,52.0,True,True
+1902,image_03710,image_03710.jpg,jpg/image_03710.jpg,52.0,primula,train,primula,52.0,True,True
+1876,image_03711,image_03711.jpg,jpg/image_03711.jpg,52.0,primula,train,primula,52.0,True,True
+1863,image_03715,image_03715.jpg,jpg/image_03715.jpg,52.0,primula,train,bolero deep blue,52.0,False,True
+1891,image_03721,image_03721.jpg,jpg/image_03721.jpg,52.0,primula,train,primula,52.0,True,True
+1900,image_03722,image_03722.jpg,jpg/image_03722.jpg,52.0,primula,train,primula,52.0,True,True
+1888,image_03724,image_03724.jpg,jpg/image_03724.jpg,52.0,primula,train,primula,52.0,True,True
+1899,image_03726,image_03726.jpg,jpg/image_03726.jpg,52.0,primula,train,primula,52.0,True,True
+1903,image_03731,image_03731.jpg,jpg/image_03731.jpg,52.0,primula,train,bolero deep blue,52.0,False,True
+1921,image_03734,image_03734.jpg,jpg/image_03734.jpg,36.0,cape flower,train,sword lily,36.0,False,True
+1948,image_03736,image_03736.jpg,jpg/image_03736.jpg,36.0,cape flower,train,sword lily,36.0,False,True
+1946,image_03738,image_03738.jpg,jpg/image_03738.jpg,36.0,cape flower,train,sword lily,36.0,False,True
+1931,image_03766,image_03766.jpg,jpg/image_03766.jpg,36.0,cape flower,train,sword lily,36.0,False,True
+1932,image_03769,image_03769.jpg,jpg/image_03769.jpg,36.0,cape flower,train,sword lily,36.0,False,True
+1911,image_03770,image_03770.jpg,jpg/image_03770.jpg,36.0,cape flower,train,sword lily,36.0,False,True
+1941,image_03784,image_03784.jpg,jpg/image_03784.jpg,36.0,cape flower,train,pelargonium,36.0,False,True
+1957,image_03806,image_03806.jpg,jpg/image_03806.jpg,36.0,cape flower,train,pelargonium,36.0,False,True
+1987,image_03833,image_03833.jpg,jpg/image_03833.jpg,16.0,purple coneflower,train,purple coneflower,16.0,True,True
+1995,image_03844,image_03844.jpg,jpg/image_03844.jpg,16.0,purple coneflower,train,purple coneflower,16.0,True,True
+2003,image_03846,image_03846.jpg,jpg/image_03846.jpg,16.0,purple coneflower,train,purple coneflower,16.0,True,True
+1963,image_03847,image_03847.jpg,jpg/image_03847.jpg,16.0,purple coneflower,train,purple coneflower,16.0,True,True
+1979,image_03851,image_03851.jpg,jpg/image_03851.jpg,16.0,purple coneflower,train,purple coneflower,16.0,True,True
+1984,image_03857,image_03857.jpg,jpg/image_03857.jpg,16.0,purple coneflower,train,purple coneflower,16.0,True,True
+2002,image_03861,image_03861.jpg,jpg/image_03861.jpg,16.0,purple coneflower,train,purple coneflower,16.0,True,True
+1991,image_03862,image_03862.jpg,jpg/image_03862.jpg,16.0,purple coneflower,train,purple coneflower,16.0,True,True
+1971,image_03874,image_03874.jpg,jpg/image_03874.jpg,16.0,purple coneflower,train,purple coneflower,16.0,True,True
+1974,image_03879,image_03879.jpg,jpg/image_03879.jpg,16.0,purple coneflower,train,purple coneflower,16.0,True,True
+1993,image_03888,image_03888.jpg,jpg/image_03888.jpg,16.0,purple coneflower,train,purple coneflower,16.0,True,True
+1994,image_03889,image_03889.jpg,jpg/image_03889.jpg,16.0,purple coneflower,train,purple coneflower,16.0,True,True
+1976,image_03890,image_03890.jpg,jpg/image_03890.jpg,16.0,purple coneflower,train,purple coneflower,16.0,True,True
+1983,image_03893,image_03893.jpg,jpg/image_03893.jpg,16.0,purple coneflower,train,purple coneflower,16.0,True,True
+1992,image_03904,image_03904.jpg,jpg/image_03904.jpg,16.0,purple coneflower,train,purple coneflower,16.0,True,True
+1990,image_03910,image_03910.jpg,jpg/image_03910.jpg,16.0,purple coneflower,train,purple coneflower,16.0,True,True
+783,image_03919,image_03919.jpg,jpg/image_03919.jpg,50.0,petunia,train,petunia,50.0,True,True
+670,image_03920,image_03920.jpg,jpg/image_03920.jpg,50.0,petunia,train,petunia,50.0,True,True
+737,image_03921,image_03921.jpg,jpg/image_03921.jpg,50.0,petunia,train,petunia,50.0,True,True
+777,image_03924,image_03924.jpg,jpg/image_03924.jpg,50.0,petunia,train,petunia,50.0,True,True
+759,image_03926,image_03926.jpg,jpg/image_03926.jpg,50.0,petunia,train,tree mallow,50.0,False,True
+696,image_03934,image_03934.jpg,jpg/image_03934.jpg,50.0,petunia,train,petunia,50.0,True,True
+767,image_03948,image_03948.jpg,jpg/image_03948.jpg,50.0,petunia,train,petunia,50.0,True,True
+713,image_03961,image_03961.jpg,jpg/image_03961.jpg,50.0,petunia,train,petunia,50.0,True,True
+694,image_03964,image_03964.jpg,jpg/image_03964.jpg,50.0,petunia,train,mexican petunia,50.0,False,True
+726,image_03974,image_03974.jpg,jpg/image_03974.jpg,50.0,petunia,train,petunia,50.0,True,True
+748,image_03976,image_03976.jpg,jpg/image_03976.jpg,50.0,petunia,train,petunia,50.0,True,True
+686,image_03978,image_03978.jpg,jpg/image_03978.jpg,50.0,petunia,train,petunia,50.0,True,True
+742,image_03979,image_03979.jpg,jpg/image_03979.jpg,50.0,petunia,train,petunia,50.0,True,True
+668,image_03980,image_03980.jpg,jpg/image_03980.jpg,50.0,petunia,train,petunia,50.0,True,True
+676,image_03992,image_03992.jpg,jpg/image_03992.jpg,50.0,petunia,train,petunia,50.0,True,True
+2046,image_03994,image_03994.jpg,jpg/image_03994.jpg,11.0,colt's foot,train,colt's foot,11.0,True,True
+2016,image_03996,image_03996.jpg,jpg/image_03996.jpg,11.0,colt's foot,train,colt's foot,11.0,True,True
+2047,image_03997,image_03997.jpg,jpg/image_03997.jpg,11.0,colt's foot,train,ball moss,11.0,False,True
+2009,image_04002,image_04002.jpg,jpg/image_04002.jpg,11.0,colt's foot,train,ball moss,11.0,False,True
+2029,image_04003,image_04003.jpg,jpg/image_04003.jpg,11.0,colt's foot,train,colt's foot,11.0,True,True
+2038,image_04011,image_04011.jpg,jpg/image_04011.jpg,11.0,colt's foot,train,colt's foot,11.0,True,True
+2020,image_04025,image_04025.jpg,jpg/image_04025.jpg,11.0,colt's foot,train,colt's foot,11.0,True,True
+2013,image_04031,image_04031.jpg,jpg/image_04031.jpg,11.0,colt's foot,train,colt's foot,11.0,True,True
+2006,image_04033,image_04033.jpg,jpg/image_04033.jpg,11.0,colt's foot,train,colt's foot,11.0,True,True
+2039,image_04037,image_04037.jpg,jpg/image_04037.jpg,11.0,colt's foot,train,colt's foot,11.0,True,True
+2031,image_04041,image_04041.jpg,jpg/image_04041.jpg,11.0,colt's foot,train,colt's foot,11.0,True,True
+2017,image_04042,image_04042.jpg,jpg/image_04042.jpg,11.0,colt's foot,train,ball moss,11.0,False,True
+2015,image_04052,image_04052.jpg,jpg/image_04052.jpg,11.0,colt's foot,train,colt's foot,11.0,True,True
+2032,image_04055,image_04055.jpg,jpg/image_04055.jpg,11.0,colt's foot,train,colt's foot,11.0,True,True
+2042,image_04059,image_04059.jpg,jpg/image_04059.jpg,11.0,colt's foot,train,colt's foot,11.0,True,True
+2021,image_04062,image_04062.jpg,jpg/image_04062.jpg,11.0,colt's foot,train,colt's foot,11.0,True,True
+2041,image_04067,image_04067.jpg,jpg/image_04067.jpg,11.0,colt's foot,train,ball moss,11.0,False,True
+2034,image_04071,image_04071.jpg,jpg/image_04071.jpg,11.0,colt's foot,train,colt's foot,11.0,True,True
+2044,image_04079,image_04079.jpg,jpg/image_04079.jpg,11.0,colt's foot,train,colt's foot,11.0,True,True
+2055,image_04082,image_04082.jpg,jpg/image_04082.jpg,28.0,artichoke,train,artichoke,28.0,True,True
+2059,image_04083,image_04083.jpg,jpg/image_04083.jpg,28.0,artichoke,train,artichoke,28.0,True,True
+2071,image_04099,image_04099.jpg,jpg/image_04099.jpg,28.0,artichoke,train,artichoke,28.0,True,True
+2054,image_04100,image_04100.jpg,jpg/image_04100.jpg,28.0,artichoke,train,artichoke,28.0,True,True
+2064,image_04102,image_04102.jpg,jpg/image_04102.jpg,28.0,artichoke,train,artichoke,28.0,True,True
+2080,image_04115,image_04115.jpg,jpg/image_04115.jpg,28.0,artichoke,train,artichoke,28.0,True,True
+2075,image_04116,image_04116.jpg,jpg/image_04116.jpg,28.0,artichoke,train,artichoke,28.0,True,True
+2057,image_04117,image_04117.jpg,jpg/image_04117.jpg,28.0,artichoke,train,artichoke,28.0,True,True
+2056,image_04120,image_04120.jpg,jpg/image_04120.jpg,28.0,artichoke,train,artichoke,28.0,True,True
+2049,image_04122,image_04122.jpg,jpg/image_04122.jpg,28.0,artichoke,train,artichoke,28.0,True,True
+2079,image_04125,image_04125.jpg,jpg/image_04125.jpg,28.0,artichoke,train,artichoke,28.0,True,True
+2076,image_04136,image_04136.jpg,jpg/image_04136.jpg,28.0,artichoke,train,globe thistle,28.0,False,True
+2067,image_04151,image_04151.jpg,jpg/image_04151.jpg,28.0,artichoke,train,artichoke,28.0,True,True
+2062,image_04152,image_04152.jpg,jpg/image_04152.jpg,28.0,artichoke,train,artichoke,28.0,True,True
+2065,image_04154,image_04154.jpg,jpg/image_04154.jpg,28.0,artichoke,train,artichoke,28.0,True,True
+2083,image_04156,image_04156.jpg,jpg/image_04156.jpg,28.0,artichoke,train,artichoke,28.0,True,True
+2082,image_04157,image_04157.jpg,jpg/image_04157.jpg,28.0,artichoke,train,artichoke,28.0,True,True
+2120,image_04161,image_04161.jpg,jpg/image_04161.jpg,51.0,wild pansy,train,wild pansy,51.0,True,True
+2091,image_04164,image_04164.jpg,jpg/image_04164.jpg,51.0,wild pansy,train,wild pansy,51.0,True,True
+2115,image_04167,image_04167.jpg,jpg/image_04167.jpg,51.0,wild pansy,train,wild pansy,51.0,True,True
+2096,image_04170,image_04170.jpg,jpg/image_04170.jpg,51.0,wild pansy,train,wild pansy,51.0,True,True
+2112,image_04175,image_04175.jpg,jpg/image_04175.jpg,51.0,wild pansy,train,wild pansy,51.0,True,True
+2092,image_04176,image_04176.jpg,jpg/image_04176.jpg,51.0,wild pansy,train,wild pansy,51.0,True,True
+2121,image_04178,image_04178.jpg,jpg/image_04178.jpg,51.0,wild pansy,train,wild pansy,51.0,True,True
+2109,image_04188,image_04188.jpg,jpg/image_04188.jpg,51.0,wild pansy,train,wild pansy,51.0,True,True
+2127,image_04190,image_04190.jpg,jpg/image_04190.jpg,51.0,wild pansy,train,wild pansy,51.0,True,True
+2114,image_04197,image_04197.jpg,jpg/image_04197.jpg,51.0,wild pansy,train,wild pansy,51.0,True,True
+2117,image_04200,image_04200.jpg,jpg/image_04200.jpg,51.0,wild pansy,train,wild pansy,51.0,True,True
+2103,image_04217,image_04217.jpg,jpg/image_04217.jpg,51.0,wild pansy,train,wild pansy,51.0,True,True
+2128,image_04220,image_04220.jpg,jpg/image_04220.jpg,51.0,wild pansy,train,wild pansy,51.0,True,True
+2088,image_04222,image_04222.jpg,jpg/image_04222.jpg,51.0,wild pansy,train,wild pansy,51.0,True,True
+2126,image_04223,image_04223.jpg,jpg/image_04223.jpg,51.0,wild pansy,train,wild pansy,51.0,True,True
+2118,image_04230,image_04230.jpg,jpg/image_04230.jpg,51.0,wild pansy,train,windflower,51.0,False,True
+2108,image_04233,image_04233.jpg,jpg/image_04233.jpg,51.0,wild pansy,train,windflower,51.0,False,True
+2087,image_04242,image_04242.jpg,jpg/image_04242.jpg,51.0,wild pansy,train,wild pansy,51.0,True,True
+2140,image_04247,image_04247.jpg,jpg/image_04247.jpg,17.0,peruvian lily,train,peruvian lily,17.0,True,True
+2162,image_04251,image_04251.jpg,jpg/image_04251.jpg,17.0,peruvian lily,train,peruvian lily,17.0,True,True
+2139,image_04252,image_04252.jpg,jpg/image_04252.jpg,17.0,peruvian lily,train,peruvian lily,17.0,True,True
+2150,image_04263,image_04263.jpg,jpg/image_04263.jpg,17.0,peruvian lily,train,peruvian lily,17.0,True,True
+2136,image_04264,image_04264.jpg,jpg/image_04264.jpg,17.0,peruvian lily,train,peruvian lily,17.0,True,True
+2148,image_04267,image_04267.jpg,jpg/image_04267.jpg,17.0,peruvian lily,train,peruvian lily,17.0,True,True
+2158,image_04273,image_04273.jpg,jpg/image_04273.jpg,17.0,peruvian lily,train,peruvian lily,17.0,True,True
+2163,image_04278,image_04278.jpg,jpg/image_04278.jpg,17.0,peruvian lily,train,peruvian lily,17.0,True,True
+2153,image_04280,image_04280.jpg,jpg/image_04280.jpg,17.0,peruvian lily,train,peruvian lily,17.0,True,True
+2166,image_04282,image_04282.jpg,jpg/image_04282.jpg,17.0,peruvian lily,train,peruvian lily,17.0,True,True
+2159,image_04287,image_04287.jpg,jpg/image_04287.jpg,17.0,peruvian lily,train,peruvian lily,17.0,True,True
+2157,image_04292,image_04292.jpg,jpg/image_04292.jpg,17.0,peruvian lily,train,peruvian lily,17.0,True,True
+2156,image_04299,image_04299.jpg,jpg/image_04299.jpg,17.0,peruvian lily,train,fire lily,17.0,False,True
+2132,image_04304,image_04304.jpg,jpg/image_04304.jpg,17.0,peruvian lily,train,peruvian lily,17.0,True,True
+2167,image_04312,image_04312.jpg,jpg/image_04312.jpg,17.0,peruvian lily,train,peruvian lily,17.0,True,True
+2169,image_04317,image_04317.jpg,jpg/image_04317.jpg,17.0,peruvian lily,train,peruvian lily,17.0,True,True
+2145,image_04319,image_04319.jpg,jpg/image_04319.jpg,17.0,peruvian lily,train,peruvian lily,17.0,True,True
+2137,image_04322,image_04322.jpg,jpg/image_04322.jpg,17.0,peruvian lily,train,cape flower,17.0,False,True
+2204,image_04327,image_04327.jpg,jpg/image_04327.jpg,35.0,ruby-lipped cattleya,train,ruby-lipped cattleya,35.0,True,True
+2186,image_04333,image_04333.jpg,jpg/image_04333.jpg,35.0,ruby-lipped cattleya,train,ruby-lipped cattleya,35.0,True,True
+2203,image_04340,image_04340.jpg,jpg/image_04340.jpg,35.0,ruby-lipped cattleya,train,ruby-lipped cattleya,35.0,True,True
+2173,image_04341,image_04341.jpg,jpg/image_04341.jpg,35.0,ruby-lipped cattleya,train,ruby-lipped cattleya,35.0,True,True
+2180,image_04343,image_04343.jpg,jpg/image_04343.jpg,35.0,ruby-lipped cattleya,train,ruby-lipped cattleya,35.0,True,True
+2176,image_04344,image_04344.jpg,jpg/image_04344.jpg,35.0,ruby-lipped cattleya,train,ruby-lipped cattleya,35.0,True,True
+2190,image_04346,image_04346.jpg,jpg/image_04346.jpg,35.0,ruby-lipped cattleya,train,ruby-lipped cattleya,35.0,True,True
+2194,image_04352,image_04352.jpg,jpg/image_04352.jpg,35.0,ruby-lipped cattleya,train,ruby-lipped cattleya,35.0,True,True
+2189,image_04353,image_04353.jpg,jpg/image_04353.jpg,35.0,ruby-lipped cattleya,train,ruby-lipped cattleya,35.0,True,True
+2181,image_04356,image_04356.jpg,jpg/image_04356.jpg,35.0,ruby-lipped cattleya,train,ruby-lipped cattleya,35.0,True,True
+2192,image_04357,image_04357.jpg,jpg/image_04357.jpg,35.0,ruby-lipped cattleya,train,ruby-lipped cattleya,35.0,True,True
+2191,image_04366,image_04366.jpg,jpg/image_04366.jpg,35.0,ruby-lipped cattleya,train,ruby-lipped cattleya,35.0,True,True
+2175,image_04367,image_04367.jpg,jpg/image_04367.jpg,35.0,ruby-lipped cattleya,train,ruby-lipped cattleya,35.0,True,True
+2200,image_04371,image_04371.jpg,jpg/image_04371.jpg,35.0,ruby-lipped cattleya,train,hard-leaved pocket orchid,35.0,False,True
+2199,image_04374,image_04374.jpg,jpg/image_04374.jpg,35.0,ruby-lipped cattleya,train,ruby-lipped cattleya,35.0,True,True
+2171,image_04376,image_04376.jpg,jpg/image_04376.jpg,35.0,ruby-lipped cattleya,train,ruby-lipped cattleya,35.0,True,True
+2207,image_04377,image_04377.jpg,jpg/image_04377.jpg,35.0,ruby-lipped cattleya,train,moon orchid,35.0,False,True
+2205,image_04399,image_04399.jpg,jpg/image_04399.jpg,35.0,ruby-lipped cattleya,train,ruby-lipped cattleya,35.0,True,True
+2228,image_04401,image_04401.jpg,jpg/image_04401.jpg,89.0,canna lily,train,canna lily,89.0,True,True
+2231,image_04402,image_04402.jpg,jpg/image_04402.jpg,89.0,canna lily,train,canna lily,89.0,True,True
+2240,image_04404,image_04404.jpg,jpg/image_04404.jpg,89.0,canna lily,train,canna lily,89.0,True,True
+2221,image_04406,image_04406.jpg,jpg/image_04406.jpg,89.0,canna lily,train,canna lily,89.0,True,True
+2218,image_04408,image_04408.jpg,jpg/image_04408.jpg,89.0,canna lily,train,canna lily,89.0,True,True
+2238,image_04409,image_04409.jpg,jpg/image_04409.jpg,89.0,canna lily,train,canna lily,89.0,True,True
+2247,image_04418,image_04418.jpg,jpg/image_04418.jpg,89.0,canna lily,train,canna lily,89.0,True,True
+2216,image_04427,image_04427.jpg,jpg/image_04427.jpg,89.0,canna lily,train,canna lily,89.0,True,True
+2230,image_04438,image_04438.jpg,jpg/image_04438.jpg,89.0,canna lily,train,canna lily,89.0,True,True
+2209,image_04445,image_04445.jpg,jpg/image_04445.jpg,89.0,canna lily,train,canna lily,89.0,True,True
+2211,image_04446,image_04446.jpg,jpg/image_04446.jpg,89.0,canna lily,train,canna lily,89.0,True,True
+2244,image_04451,image_04451.jpg,jpg/image_04451.jpg,89.0,canna lily,train,canna lily,89.0,True,True
+2241,image_04455,image_04455.jpg,jpg/image_04455.jpg,89.0,canna lily,train,trumpet creeper,89.0,False,True
+2225,image_04458,image_04458.jpg,jpg/image_04458.jpg,89.0,canna lily,train,canna lily,89.0,True,True
+2222,image_04467,image_04467.jpg,jpg/image_04467.jpg,89.0,canna lily,train,canna lily,89.0,True,True
+2210,image_04468,image_04468.jpg,jpg/image_04468.jpg,89.0,canna lily,train,canna lily,89.0,True,True
+2213,image_04476,image_04476.jpg,jpg/image_04476.jpg,89.0,canna lily,train,canna lily,89.0,True,True
+2281,image_04484,image_04484.jpg,jpg/image_04484.jpg,70.0,gazania,train,gazania,70.0,True,True
+2273,image_04486,image_04486.jpg,jpg/image_04486.jpg,70.0,gazania,train,gazania,70.0,True,True
+2280,image_04500,image_04500.jpg,jpg/image_04500.jpg,70.0,gazania,train,gazania,70.0,True,True
+2284,image_04504,image_04504.jpg,jpg/image_04504.jpg,70.0,gazania,train,gazania,70.0,True,True
+2269,image_04508,image_04508.jpg,jpg/image_04508.jpg,70.0,gazania,train,gazania,70.0,True,True
+2271,image_04514,image_04514.jpg,jpg/image_04514.jpg,70.0,gazania,train,gazania,70.0,True,True
+2272,image_04515,image_04515.jpg,jpg/image_04515.jpg,70.0,gazania,train,gazania,70.0,True,True
+2287,image_04516,image_04516.jpg,jpg/image_04516.jpg,70.0,gazania,train,gazania,70.0,True,True
+2262,image_04523,image_04523.jpg,jpg/image_04523.jpg,70.0,gazania,train,gazania,70.0,True,True
+2256,image_04528,image_04528.jpg,jpg/image_04528.jpg,70.0,gazania,train,gazania,70.0,True,True
+2251,image_04538,image_04538.jpg,jpg/image_04538.jpg,70.0,gazania,train,gazania,70.0,True,True
+2261,image_04548,image_04548.jpg,jpg/image_04548.jpg,70.0,gazania,train,gazania,70.0,True,True
+2276,image_04551,image_04551.jpg,jpg/image_04551.jpg,70.0,gazania,train,gazania,70.0,True,True
+2266,image_04556,image_04556.jpg,jpg/image_04556.jpg,70.0,gazania,train,gazania,70.0,True,True
+2253,image_04557,image_04557.jpg,jpg/image_04557.jpg,70.0,gazania,train,gazania,70.0,True,True
+2289,image_04558,image_04558.jpg,jpg/image_04558.jpg,39.0,lenten rose,train,lenten rose,39.0,True,True
+2299,image_04559,image_04559.jpg,jpg/image_04559.jpg,39.0,lenten rose,train,lenten rose,39.0,True,True
+2292,image_04560,image_04560.jpg,jpg/image_04560.jpg,39.0,lenten rose,train,lenten rose,39.0,True,True
+2296,image_04571,image_04571.jpg,jpg/image_04571.jpg,39.0,lenten rose,train,lenten rose,39.0,True,True
+2300,image_04577,image_04577.jpg,jpg/image_04577.jpg,39.0,lenten rose,train,lenten rose,39.0,True,True
+2306,image_04578,image_04578.jpg,jpg/image_04578.jpg,39.0,lenten rose,train,lenten rose,39.0,True,True
+2297,image_04582,image_04582.jpg,jpg/image_04582.jpg,39.0,lenten rose,train,lenten rose,39.0,True,True
+2302,image_04584,image_04584.jpg,jpg/image_04584.jpg,39.0,lenten rose,train,lenten rose,39.0,True,True
+2319,image_04587,image_04587.jpg,jpg/image_04587.jpg,39.0,lenten rose,train,lenten rose,39.0,True,True
+2321,image_04592,image_04592.jpg,jpg/image_04592.jpg,39.0,lenten rose,train,lenten rose,39.0,True,True
+2313,image_04596,image_04596.jpg,jpg/image_04596.jpg,39.0,lenten rose,train,lenten rose,39.0,True,True
+2303,image_04597,image_04597.jpg,jpg/image_04597.jpg,39.0,lenten rose,train,lenten rose,39.0,True,True
+2320,image_04599,image_04599.jpg,jpg/image_04599.jpg,39.0,lenten rose,train,lenten rose,39.0,True,True
+2290,image_04602,image_04602.jpg,jpg/image_04602.jpg,39.0,lenten rose,train,lenten rose,39.0,True,True
+2317,image_04609,image_04609.jpg,jpg/image_04609.jpg,39.0,lenten rose,train,lenten rose,39.0,True,True
+2314,image_04624,image_04624.jpg,jpg/image_04624.jpg,39.0,lenten rose,train,lenten rose,39.0,True,True
+2357,image_04625,image_04625.jpg,jpg/image_04625.jpg,47.0,buttercup,train,buttercup,47.0,True,True
+2356,image_04627,image_04627.jpg,jpg/image_04627.jpg,47.0,buttercup,train,buttercup,47.0,True,True
+2350,image_04629,image_04629.jpg,jpg/image_04629.jpg,47.0,buttercup,train,buttercup,47.0,True,True
+2346,image_04630,image_04630.jpg,jpg/image_04630.jpg,47.0,buttercup,train,buttercup,47.0,True,True
+2342,image_04633,image_04633.jpg,jpg/image_04633.jpg,47.0,buttercup,train,buttercup,47.0,True,True
+2335,image_04636,image_04636.jpg,jpg/image_04636.jpg,47.0,buttercup,train,buttercup,47.0,True,True
+2326,image_04638,image_04638.jpg,jpg/image_04638.jpg,47.0,buttercup,train,buttercup,47.0,True,True
+2349,image_04639,image_04639.jpg,jpg/image_04639.jpg,47.0,buttercup,train,buttercup,47.0,True,True
+2341,image_04641,image_04641.jpg,jpg/image_04641.jpg,47.0,buttercup,train,buttercup,47.0,True,True
+2323,image_04642,image_04642.jpg,jpg/image_04642.jpg,47.0,buttercup,train,buttercup,47.0,True,True
+2329,image_04643,image_04643.jpg,jpg/image_04643.jpg,47.0,buttercup,train,buttercup,47.0,True,True
+2325,image_04646,image_04646.jpg,jpg/image_04646.jpg,47.0,buttercup,train,buttercup,47.0,True,True
+2332,image_04665,image_04665.jpg,jpg/image_04665.jpg,47.0,buttercup,train,buttercup,47.0,True,True
+2330,image_04669,image_04669.jpg,jpg/image_04669.jpg,47.0,buttercup,train,buttercup,47.0,True,True
+2348,image_04684,image_04684.jpg,jpg/image_04684.jpg,47.0,buttercup,train,buttercup,47.0,True,True
+2351,image_04686,image_04686.jpg,jpg/image_04686.jpg,47.0,buttercup,train,buttercup,47.0,True,True
+2361,image_04700,image_04700.jpg,jpg/image_04700.jpg,54.0,pelargonium,train,tree mallow,54.0,False,True
+2378,image_04705,image_04705.jpg,jpg/image_04705.jpg,54.0,pelargonium,train,tree mallow,54.0,False,True
+2373,image_04712,image_04712.jpg,jpg/image_04712.jpg,54.0,pelargonium,train,tree mallow,54.0,False,True
+2365,image_04715,image_04715.jpg,jpg/image_04715.jpg,54.0,pelargonium,train,canterbury bells,54.0,False,True
+2359,image_04736,image_04736.jpg,jpg/image_04736.jpg,54.0,pelargonium,train,tree mallow,54.0,False,True
+2364,image_04738,image_04738.jpg,jpg/image_04738.jpg,54.0,pelargonium,train,tree mallow,54.0,False,True
+2393,image_04743,image_04743.jpg,jpg/image_04743.jpg,54.0,pelargonium,train,tree mallow,54.0,False,True
+2372,image_04748,image_04748.jpg,jpg/image_04748.jpg,54.0,pelargonium,train,tree mallow,54.0,False,True
+2390,image_04755,image_04755.jpg,jpg/image_04755.jpg,54.0,pelargonium,train,canterbury bells,54.0,False,True
+2409,image_04768,image_04768.jpg,jpg/image_04768.jpg,84.0,desert-rose,train,desert-rose,84.0,True,True
+2406,image_04780,image_04780.jpg,jpg/image_04780.jpg,84.0,desert-rose,train,desert-rose,84.0,True,True
+2423,image_04787,image_04787.jpg,jpg/image_04787.jpg,84.0,desert-rose,train,desert-rose,84.0,True,True
+2402,image_04788,image_04788.jpg,jpg/image_04788.jpg,84.0,desert-rose,train,desert-rose,84.0,True,True
+2417,image_04792,image_04792.jpg,jpg/image_04792.jpg,84.0,desert-rose,train,desert-rose,84.0,True,True
+2399,image_04795,image_04795.jpg,jpg/image_04795.jpg,84.0,desert-rose,train,desert-rose,84.0,True,True
+2408,image_04801,image_04801.jpg,jpg/image_04801.jpg,84.0,desert-rose,train,desert-rose,84.0,True,True
+2407,image_04806,image_04806.jpg,jpg/image_04806.jpg,84.0,desert-rose,train,desert-rose,84.0,True,True
+2404,image_04809,image_04809.jpg,jpg/image_04809.jpg,84.0,desert-rose,train,desert-rose,84.0,True,True
+2394,image_04814,image_04814.jpg,jpg/image_04814.jpg,84.0,desert-rose,train,desert-rose,84.0,True,True
+2397,image_04817,image_04817.jpg,jpg/image_04817.jpg,84.0,desert-rose,train,desert-rose,84.0,True,True
+2401,image_04819,image_04819.jpg,jpg/image_04819.jpg,84.0,desert-rose,train,desert-rose,84.0,True,True
+2424,image_04821,image_04821.jpg,jpg/image_04821.jpg,84.0,desert-rose,train,desert-rose,84.0,True,True
+2416,image_04824,image_04824.jpg,jpg/image_04824.jpg,84.0,desert-rose,train,desert-rose,84.0,True,True
+2429,image_04833,image_04833.jpg,jpg/image_04833.jpg,90.0,hippeastrum,train,sword lily,90.0,False,True
+2460,image_04836,image_04836.jpg,jpg/image_04836.jpg,90.0,hippeastrum,train,hippeastrum,90.0,True,True
+2437,image_04838,image_04838.jpg,jpg/image_04838.jpg,90.0,hippeastrum,train,hippeastrum,90.0,True,True
+2427,image_04845,image_04845.jpg,jpg/image_04845.jpg,90.0,hippeastrum,train,hippeastrum,90.0,True,True
+2447,image_04847,image_04847.jpg,jpg/image_04847.jpg,90.0,hippeastrum,train,hippeastrum,90.0,True,True
+2444,image_04848,image_04848.jpg,jpg/image_04848.jpg,90.0,hippeastrum,train,hippeastrum,90.0,True,True
+2442,image_04849,image_04849.jpg,jpg/image_04849.jpg,90.0,hippeastrum,train,sword lily,90.0,False,True
+2463,image_04850,image_04850.jpg,jpg/image_04850.jpg,90.0,hippeastrum,train,hippeastrum,90.0,True,True
+2462,image_04851,image_04851.jpg,jpg/image_04851.jpg,90.0,hippeastrum,train,sword lily,90.0,False,True
+2452,image_04859,image_04859.jpg,jpg/image_04859.jpg,90.0,hippeastrum,train,hippeastrum,90.0,True,True
+2446,image_04870,image_04870.jpg,jpg/image_04870.jpg,90.0,hippeastrum,train,sword lily,90.0,False,True
+2440,image_04872,image_04872.jpg,jpg/image_04872.jpg,90.0,hippeastrum,train,hippeastrum,90.0,True,True
+2456,image_04878,image_04878.jpg,jpg/image_04878.jpg,90.0,hippeastrum,train,hippeastrum,90.0,True,True
+2426,image_04881,image_04881.jpg,jpg/image_04881.jpg,90.0,hippeastrum,train,hippeastrum,90.0,True,True
+2458,image_04882,image_04882.jpg,jpg/image_04882.jpg,90.0,hippeastrum,train,hippeastrum,90.0,True,True
+2454,image_04885,image_04885.jpg,jpg/image_04885.jpg,90.0,hippeastrum,train,hippeastrum,90.0,True,True
+2441,image_04891,image_04891.jpg,jpg/image_04891.jpg,90.0,hippeastrum,train,hippeastrum,90.0,True,True
+2434,image_04892,image_04892.jpg,jpg/image_04892.jpg,90.0,hippeastrum,train,hippeastrum,90.0,True,True
+2436,image_04895,image_04895.jpg,jpg/image_04895.jpg,90.0,hippeastrum,train,sword lily,90.0,False,True
+2490,image_04898,image_04898.jpg,jpg/image_04898.jpg,19.0,giant white arum lily,train,giant white arum lily,19.0,True,True
+2465,image_04908,image_04908.jpg,jpg/image_04908.jpg,19.0,giant white arum lily,train,giant white arum lily,19.0,True,True
+2470,image_04910,image_04910.jpg,jpg/image_04910.jpg,19.0,giant white arum lily,train,giant white arum lily,19.0,True,True
+2473,image_04920,image_04920.jpg,jpg/image_04920.jpg,19.0,giant white arum lily,train,giant white arum lily,19.0,True,True
+2484,image_04921,image_04921.jpg,jpg/image_04921.jpg,19.0,giant white arum lily,train,giant white arum lily,19.0,True,True
+2483,image_04927,image_04927.jpg,jpg/image_04927.jpg,19.0,giant white arum lily,train,thorn apple,19.0,False,True
+2482,image_04929,image_04929.jpg,jpg/image_04929.jpg,19.0,giant white arum lily,train,giant white arum lily,19.0,True,True
+2487,image_04931,image_04931.jpg,jpg/image_04931.jpg,19.0,giant white arum lily,train,giant white arum lily,19.0,True,True
+2485,image_04937,image_04937.jpg,jpg/image_04937.jpg,19.0,giant white arum lily,train,giant white arum lily,19.0,True,True
+2476,image_04940,image_04940.jpg,jpg/image_04940.jpg,19.0,giant white arum lily,train,giant white arum lily,19.0,True,True
+2466,image_04941,image_04941.jpg,jpg/image_04941.jpg,19.0,giant white arum lily,train,giant white arum lily,19.0,True,True
+2472,image_04945,image_04945.jpg,jpg/image_04945.jpg,19.0,giant white arum lily,train,giant white arum lily,19.0,True,True
+2489,image_04948,image_04948.jpg,jpg/image_04948.jpg,19.0,giant white arum lily,train,giant white arum lily,19.0,True,True
+2469,image_04950,image_04950.jpg,jpg/image_04950.jpg,19.0,giant white arum lily,train,giant white arum lily,19.0,True,True
+2486,image_04951,image_04951.jpg,jpg/image_04951.jpg,19.0,giant white arum lily,train,giant white arum lily,19.0,True,True
+2481,image_04952,image_04952.jpg,jpg/image_04952.jpg,19.0,giant white arum lily,train,giant white arum lily,19.0,True,True
+2498,image_04955,image_04955.jpg,jpg/image_04955.jpg,46.0,marigold,train,english marigold,46.0,False,True
+2499,image_04960,image_04960.jpg,jpg/image_04960.jpg,46.0,marigold,train,english marigold,46.0,False,True
+2506,image_04971,image_04971.jpg,jpg/image_04971.jpg,46.0,marigold,train,english marigold,46.0,False,True
+2514,image_04972,image_04972.jpg,jpg/image_04972.jpg,46.0,marigold,train,english marigold,46.0,False,True
+2501,image_04977,image_04977.jpg,jpg/image_04977.jpg,46.0,marigold,train,english marigold,46.0,False,True
+2505,image_04980,image_04980.jpg,jpg/image_04980.jpg,46.0,marigold,train,english marigold,46.0,False,True
+2503,image_04981,image_04981.jpg,jpg/image_04981.jpg,46.0,marigold,train,english marigold,46.0,False,True
+2515,image_04983,image_04983.jpg,jpg/image_04983.jpg,46.0,marigold,train,english marigold,46.0,False,True
+2513,image_04992,image_04992.jpg,jpg/image_04992.jpg,46.0,marigold,train,english marigold,46.0,False,True
+2496,image_04995,image_04995.jpg,jpg/image_04995.jpg,46.0,marigold,train,english marigold,46.0,False,True
+2521,image_04997,image_04997.jpg,jpg/image_04997.jpg,46.0,marigold,train,english marigold,46.0,False,True
+2507,image_05002,image_05002.jpg,jpg/image_05002.jpg,46.0,marigold,train,english marigold,46.0,False,True
+2493,image_05004,image_05004.jpg,jpg/image_05004.jpg,46.0,marigold,train,english marigold,46.0,False,True
+2522,image_05013,image_05013.jpg,jpg/image_05013.jpg,46.0,marigold,train,english marigold,46.0,False,True
+2517,image_05017,image_05017.jpg,jpg/image_05017.jpg,46.0,marigold,train,english marigold,46.0,False,True
+2541,image_05026,image_05026.jpg,jpg/image_05026.jpg,58.0,orange dahlia,train,orange dahlia,58.0,True,True
+2547,image_05028,image_05028.jpg,jpg/image_05028.jpg,58.0,orange dahlia,train,orange dahlia,58.0,True,True
+2537,image_05036,image_05036.jpg,jpg/image_05036.jpg,58.0,orange dahlia,train,orange dahlia,58.0,True,True
+2545,image_05040,image_05040.jpg,jpg/image_05040.jpg,58.0,orange dahlia,train,orange dahlia,58.0,True,True
+2556,image_05047,image_05047.jpg,jpg/image_05047.jpg,58.0,orange dahlia,train,orange dahlia,58.0,True,True
+2530,image_05059,image_05059.jpg,jpg/image_05059.jpg,58.0,orange dahlia,train,orange dahlia,58.0,True,True
+2527,image_05061,image_05061.jpg,jpg/image_05061.jpg,58.0,orange dahlia,train,orange dahlia,58.0,True,True
+2539,image_05066,image_05066.jpg,jpg/image_05066.jpg,58.0,orange dahlia,train,orange dahlia,58.0,True,True
+2526,image_05067,image_05067.jpg,jpg/image_05067.jpg,58.0,orange dahlia,train,orange dahlia,58.0,True,True
+2540,image_05068,image_05068.jpg,jpg/image_05068.jpg,58.0,orange dahlia,train,orange dahlia,58.0,True,True
+2531,image_05075,image_05075.jpg,jpg/image_05075.jpg,58.0,orange dahlia,train,orange dahlia,58.0,True,True
+2550,image_05080,image_05080.jpg,jpg/image_05080.jpg,58.0,orange dahlia,train,orange dahlia,58.0,True,True
+2549,image_05081,image_05081.jpg,jpg/image_05081.jpg,58.0,orange dahlia,train,orange dahlia,58.0,True,True
+2548,image_05085,image_05085.jpg,jpg/image_05085.jpg,58.0,orange dahlia,train,orange dahlia,58.0,True,True
+2572,image_05091,image_05091.jpg,jpg/image_05091.jpg,1.0,hard-leaved pocket orchid,train,hard-leaved pocket orchid,1.0,True,True
+2564,image_05092,image_05092.jpg,jpg/image_05092.jpg,1.0,hard-leaved pocket orchid,train,hard-leaved pocket orchid,1.0,True,True
+2584,image_05097,image_05097.jpg,jpg/image_05097.jpg,1.0,hard-leaved pocket orchid,train,hard-leaved pocket orchid,1.0,True,True
+2560,image_05099,image_05099.jpg,jpg/image_05099.jpg,1.0,hard-leaved pocket orchid,train,hard-leaved pocket orchid,1.0,True,True
+2582,image_05108,image_05108.jpg,jpg/image_05108.jpg,1.0,hard-leaved pocket orchid,train,hard-leaved pocket orchid,1.0,True,True
+2576,image_05111,image_05111.jpg,jpg/image_05111.jpg,1.0,hard-leaved pocket orchid,train,hard-leaved pocket orchid,1.0,True,True
+2561,image_05122,image_05122.jpg,jpg/image_05122.jpg,1.0,hard-leaved pocket orchid,train,hard-leaved pocket orchid,1.0,True,True
+2588,image_05126,image_05126.jpg,jpg/image_05126.jpg,1.0,hard-leaved pocket orchid,train,ball moss,1.0,False,True
+2583,image_05131,image_05131.jpg,jpg/image_05131.jpg,1.0,hard-leaved pocket orchid,train,hard-leaved pocket orchid,1.0,True,True
+2565,image_05132,image_05132.jpg,jpg/image_05132.jpg,1.0,hard-leaved pocket orchid,train,hard-leaved pocket orchid,1.0,True,True
+2563,image_05140,image_05140.jpg,jpg/image_05140.jpg,1.0,hard-leaved pocket orchid,train,hard-leaved pocket orchid,1.0,True,True
+2566,image_05141,image_05141.jpg,jpg/image_05141.jpg,1.0,hard-leaved pocket orchid,train,hard-leaved pocket orchid,1.0,True,True
+2577,image_05142,image_05142.jpg,jpg/image_05142.jpg,1.0,hard-leaved pocket orchid,train,hard-leaved pocket orchid,1.0,True,True
+2592,image_05151,image_05151.jpg,jpg/image_05151.jpg,4.0,english marigold,train,english marigold,4.0,True,True
+2607,image_05152,image_05152.jpg,jpg/image_05152.jpg,4.0,english marigold,train,marigold,4.0,False,True
+2598,image_05163,image_05163.jpg,jpg/image_05163.jpg,4.0,english marigold,train,marigold,4.0,False,True
+2597,image_05168,image_05168.jpg,jpg/image_05168.jpg,4.0,english marigold,train,marigold,4.0,False,True
+2613,image_05175,image_05175.jpg,jpg/image_05175.jpg,4.0,english marigold,train,marigold,4.0,False,True
+2595,image_05181,image_05181.jpg,jpg/image_05181.jpg,4.0,english marigold,train,marigold,4.0,False,True
+2594,image_05184,image_05184.jpg,jpg/image_05184.jpg,4.0,english marigold,train,marigold,4.0,False,True
+2620,image_05187,image_05187.jpg,jpg/image_05187.jpg,4.0,english marigold,train,barbeton daisy,4.0,False,True
+2608,image_05192,image_05192.jpg,jpg/image_05192.jpg,4.0,english marigold,train,marigold,4.0,False,True
+2600,image_05201,image_05201.jpg,jpg/image_05201.jpg,4.0,english marigold,train,marigold,4.0,False,True
+2648,image_05215,image_05215.jpg,jpg/image_05215.jpg,27.0,stemless gentian,train,bolero deep blue,27.0,False,True
+2643,image_05221,image_05221.jpg,jpg/image_05221.jpg,27.0,stemless gentian,train,stemless gentian,27.0,True,True
+2631,image_05222,image_05222.jpg,jpg/image_05222.jpg,27.0,stemless gentian,train,stemless gentian,27.0,True,True
+2638,image_05223,image_05223.jpg,jpg/image_05223.jpg,27.0,stemless gentian,train,stemless gentian,27.0,True,True
+2646,image_05226,image_05226.jpg,jpg/image_05226.jpg,27.0,stemless gentian,train,stemless gentian,27.0,True,True
+2649,image_05228,image_05228.jpg,jpg/image_05228.jpg,27.0,stemless gentian,train,stemless gentian,27.0,True,True
+2644,image_05239,image_05239.jpg,jpg/image_05239.jpg,27.0,stemless gentian,train,stemless gentian,27.0,True,True
+2625,image_05240,image_05240.jpg,jpg/image_05240.jpg,27.0,stemless gentian,train,stemless gentian,27.0,True,True
+2630,image_05247,image_05247.jpg,jpg/image_05247.jpg,27.0,stemless gentian,train,stemless gentian,27.0,True,True
+2654,image_05250,image_05250.jpg,jpg/image_05250.jpg,27.0,stemless gentian,train,stemless gentian,27.0,True,True
+2642,image_05252,image_05252.jpg,jpg/image_05252.jpg,27.0,stemless gentian,train,stemless gentian,27.0,True,True
+2624,image_05253,image_05253.jpg,jpg/image_05253.jpg,27.0,stemless gentian,train,stemless gentian,27.0,True,True
+2622,image_05256,image_05256.jpg,jpg/image_05256.jpg,27.0,stemless gentian,train,stemless gentian,27.0,True,True
+2634,image_05257,image_05257.jpg,jpg/image_05257.jpg,27.0,stemless gentian,train,stemless gentian,27.0,True,True
+2633,image_05258,image_05258.jpg,jpg/image_05258.jpg,27.0,stemless gentian,train,bolero deep blue,27.0,False,True
+2623,image_05266,image_05266.jpg,jpg/image_05266.jpg,27.0,stemless gentian,train,stemless gentian,27.0,True,True
+2647,image_05271,image_05271.jpg,jpg/image_05271.jpg,27.0,stemless gentian,train,stemless gentian,27.0,True,True
+2652,image_05277,image_05277.jpg,jpg/image_05277.jpg,27.0,stemless gentian,train,stemless gentian,27.0,True,True
+2668,image_05285,image_05285.jpg,jpg/image_05285.jpg,69.0,tree poppy,train,tree poppy,69.0,True,True
+2666,image_05288,image_05288.jpg,jpg/image_05288.jpg,69.0,tree poppy,train,tree poppy,69.0,True,True
+2677,image_05290,image_05290.jpg,jpg/image_05290.jpg,69.0,tree poppy,train,tree poppy,69.0,True,True
+2684,image_05292,image_05292.jpg,jpg/image_05292.jpg,69.0,tree poppy,train,cape flower,69.0,False,True
+2679,image_05294,image_05294.jpg,jpg/image_05294.jpg,69.0,tree poppy,train,tree poppy,69.0,True,True
+2671,image_05298,image_05298.jpg,jpg/image_05298.jpg,69.0,tree poppy,train,tree poppy,69.0,True,True
+2676,image_05300,image_05300.jpg,jpg/image_05300.jpg,69.0,tree poppy,train,tree poppy,69.0,True,True
+2683,image_05303,image_05303.jpg,jpg/image_05303.jpg,69.0,tree poppy,train,tree poppy,69.0,True,True
+2662,image_05316,image_05316.jpg,jpg/image_05316.jpg,69.0,tree poppy,train,tree poppy,69.0,True,True
+2674,image_05320,image_05320.jpg,jpg/image_05320.jpg,69.0,tree poppy,train,tree poppy,69.0,True,True
+2673,image_05323,image_05323.jpg,jpg/image_05323.jpg,69.0,tree poppy,train,tree poppy,69.0,True,True
+2665,image_05332,image_05332.jpg,jpg/image_05332.jpg,69.0,tree poppy,train,tree poppy,69.0,True,True
+2670,image_05335,image_05335.jpg,jpg/image_05335.jpg,69.0,tree poppy,train,tree poppy,69.0,True,True
+2703,image_05342,image_05342.jpg,jpg/image_05342.jpg,21.0,pincushion flower,train,pincushion flower,21.0,True,True
+2713,image_05346,image_05346.jpg,jpg/image_05346.jpg,21.0,pincushion flower,train,pincushion flower,21.0,True,True
+2699,image_05347,image_05347.jpg,jpg/image_05347.jpg,21.0,pincushion flower,train,pincushion flower,21.0,True,True
+2689,image_05352,image_05352.jpg,jpg/image_05352.jpg,21.0,pincushion flower,train,pincushion flower,21.0,True,True
+2692,image_05355,image_05355.jpg,jpg/image_05355.jpg,21.0,pincushion flower,train,pincushion flower,21.0,True,True
+2698,image_05359,image_05359.jpg,jpg/image_05359.jpg,21.0,pincushion flower,train,pincushion flower,21.0,True,True
+2700,image_05360,image_05360.jpg,jpg/image_05360.jpg,21.0,pincushion flower,train,pincushion flower,21.0,True,True
+2697,image_05363,image_05363.jpg,jpg/image_05363.jpg,21.0,pincushion flower,train,pincushion flower,21.0,True,True
+2704,image_05366,image_05366.jpg,jpg/image_05366.jpg,21.0,pincushion flower,train,pincushion flower,21.0,True,True
+2709,image_05369,image_05369.jpg,jpg/image_05369.jpg,21.0,pincushion flower,train,pincushion flower,21.0,True,True
+2705,image_05372,image_05372.jpg,jpg/image_05372.jpg,21.0,pincushion flower,train,pincushion flower,21.0,True,True
+2691,image_05373,image_05373.jpg,jpg/image_05373.jpg,21.0,pincushion flower,train,bolero deep blue,21.0,False,True
+2695,image_05375,image_05375.jpg,jpg/image_05375.jpg,21.0,pincushion flower,train,pincushion flower,21.0,True,True
+2687,image_05387,image_05387.jpg,jpg/image_05387.jpg,21.0,pincushion flower,train,pincushion flower,21.0,True,True
+2686,image_05390,image_05390.jpg,jpg/image_05390.jpg,21.0,pincushion flower,train,bolero deep blue,21.0,False,True
+2702,image_05392,image_05392.jpg,jpg/image_05392.jpg,21.0,pincushion flower,train,pincushion flower,21.0,True,True
+2701,image_05393,image_05393.jpg,jpg/image_05393.jpg,21.0,pincushion flower,train,pincushion flower,21.0,True,True
+2690,image_05395,image_05395.jpg,jpg/image_05395.jpg,21.0,pincushion flower,train,pincushion flower,21.0,True,True
+2743,image_05399,image_05399.jpg,jpg/image_05399.jpg,53.0,sunflower,train,sunflower,53.0,True,True
+2740,image_05404,image_05404.jpg,jpg/image_05404.jpg,53.0,sunflower,train,sunflower,53.0,True,True
+2741,image_05406,image_05406.jpg,jpg/image_05406.jpg,53.0,sunflower,train,sunflower,53.0,True,True
+2719,image_05414,image_05414.jpg,jpg/image_05414.jpg,53.0,sunflower,train,sunflower,53.0,True,True
+2720,image_05416,image_05416.jpg,jpg/image_05416.jpg,53.0,sunflower,train,sunflower,53.0,True,True
+2739,image_05420,image_05420.jpg,jpg/image_05420.jpg,53.0,sunflower,train,sunflower,53.0,True,True
+2729,image_05421,image_05421.jpg,jpg/image_05421.jpg,53.0,sunflower,train,sunflower,53.0,True,True
+2718,image_05425,image_05425.jpg,jpg/image_05425.jpg,53.0,sunflower,train,sunflower,53.0,True,True
+2725,image_05429,image_05429.jpg,jpg/image_05429.jpg,53.0,sunflower,train,sunflower,53.0,True,True
+2734,image_05435,image_05435.jpg,jpg/image_05435.jpg,53.0,sunflower,train,sunflower,53.0,True,True
+2724,image_05439,image_05439.jpg,jpg/image_05439.jpg,53.0,sunflower,train,sunflower,53.0,True,True
+2736,image_05444,image_05444.jpg,jpg/image_05444.jpg,53.0,sunflower,train,sunflower,53.0,True,True
+2745,image_05453,image_05453.jpg,jpg/image_05453.jpg,53.0,sunflower,train,sunflower,53.0,True,True
+2728,image_05454,image_05454.jpg,jpg/image_05454.jpg,53.0,sunflower,train,sunflower,53.0,True,True
+2727,image_05457,image_05457.jpg,jpg/image_05457.jpg,53.0,sunflower,train,sunflower,53.0,True,True
+2730,image_05459,image_05459.jpg,jpg/image_05459.jpg,53.0,sunflower,train,sunflower,53.0,True,True
+2746,image_05464,image_05464.jpg,jpg/image_05464.jpg,86.0,magnolia,train,magnolia,86.0,True,True
+2759,image_05465,image_05465.jpg,jpg/image_05465.jpg,86.0,magnolia,train,magnolia,86.0,True,True
+2769,image_05475,image_05475.jpg,jpg/image_05475.jpg,86.0,magnolia,train,sword lily,86.0,False,True
+2750,image_05476,image_05476.jpg,jpg/image_05476.jpg,86.0,magnolia,train,magnolia,86.0,True,True
+2752,image_05477,image_05477.jpg,jpg/image_05477.jpg,86.0,magnolia,train,magnolia,86.0,True,True
+2775,image_05482,image_05482.jpg,jpg/image_05482.jpg,86.0,magnolia,train,magnolia,86.0,True,True
+2761,image_05486,image_05486.jpg,jpg/image_05486.jpg,86.0,magnolia,train,magnolia,86.0,True,True
+2760,image_05487,image_05487.jpg,jpg/image_05487.jpg,86.0,magnolia,train,cape flower,86.0,False,True
+2771,image_05489,image_05489.jpg,jpg/image_05489.jpg,86.0,magnolia,train,magnolia,86.0,True,True
+2753,image_05491,image_05491.jpg,jpg/image_05491.jpg,86.0,magnolia,train,magnolia,86.0,True,True
+2770,image_05496,image_05496.jpg,jpg/image_05496.jpg,86.0,magnolia,train,magnolia,86.0,True,True
+2773,image_05497,image_05497.jpg,jpg/image_05497.jpg,86.0,magnolia,train,magnolia,86.0,True,True
+2772,image_05506,image_05506.jpg,jpg/image_05506.jpg,86.0,magnolia,train,magnolia,86.0,True,True
+2749,image_05514,image_05514.jpg,jpg/image_05514.jpg,86.0,magnolia,train,magnolia,86.0,True,True
+2747,image_05515,image_05515.jpg,jpg/image_05515.jpg,86.0,magnolia,train,magnolia,86.0,True,True
+2768,image_05516,image_05516.jpg,jpg/image_05516.jpg,86.0,magnolia,train,magnolia,86.0,True,True
+2748,image_05517,image_05517.jpg,jpg/image_05517.jpg,86.0,magnolia,train,magnolia,86.0,True,True
+2774,image_05518,image_05518.jpg,jpg/image_05518.jpg,86.0,magnolia,train,magnolia,86.0,True,True
+2795,image_05525,image_05525.jpg,jpg/image_05525.jpg,65.0,osteospermum,train,osteospermum,65.0,True,True
+2800,image_05526,image_05526.jpg,jpg/image_05526.jpg,65.0,osteospermum,train,mexican aster,65.0,False,True
+2783,image_05527,image_05527.jpg,jpg/image_05527.jpg,65.0,osteospermum,train,mexican aster,65.0,False,True
+2793,image_05528,image_05528.jpg,jpg/image_05528.jpg,65.0,osteospermum,train,mexican aster,65.0,False,True
+2779,image_05531,image_05531.jpg,jpg/image_05531.jpg,65.0,osteospermum,train,mexican aster,65.0,False,True
+2787,image_05533,image_05533.jpg,jpg/image_05533.jpg,65.0,osteospermum,train,mexican aster,65.0,False,True
+2788,image_05536,image_05536.jpg,jpg/image_05536.jpg,65.0,osteospermum,train,mexican aster,65.0,False,True
+2780,image_05539,image_05539.jpg,jpg/image_05539.jpg,65.0,osteospermum,train,mexican aster,65.0,False,True
+2807,image_05541,image_05541.jpg,jpg/image_05541.jpg,65.0,osteospermum,train,osteospermum,65.0,True,True
+2786,image_05548,image_05548.jpg,jpg/image_05548.jpg,65.0,osteospermum,train,osteospermum,65.0,True,True
+2781,image_05550,image_05550.jpg,jpg/image_05550.jpg,65.0,osteospermum,train,mexican aster,65.0,False,True
+2782,image_05551,image_05551.jpg,jpg/image_05551.jpg,65.0,osteospermum,train,osteospermum,65.0,True,True
+2785,image_05552,image_05552.jpg,jpg/image_05552.jpg,65.0,osteospermum,train,mexican aster,65.0,False,True
+2792,image_05553,image_05553.jpg,jpg/image_05553.jpg,65.0,osteospermum,train,mexican aster,65.0,False,True
+2778,image_05554,image_05554.jpg,jpg/image_05554.jpg,65.0,osteospermum,train,osteospermum,65.0,True,True
+2784,image_05556,image_05556.jpg,jpg/image_05556.jpg,65.0,osteospermum,train,osteospermum,65.0,True,True
+2799,image_05557,image_05557.jpg,jpg/image_05557.jpg,65.0,osteospermum,train,osteospermum,65.0,True,True
+2797,image_05558,image_05558.jpg,jpg/image_05558.jpg,65.0,osteospermum,train,mexican aster,65.0,False,True
+2798,image_05559,image_05559.jpg,jpg/image_05559.jpg,65.0,osteospermum,train,osteospermum,65.0,True,True
+2790,image_05560,image_05560.jpg,jpg/image_05560.jpg,65.0,osteospermum,train,osteospermum,65.0,True,True
+2803,image_05561,image_05561.jpg,jpg/image_05561.jpg,65.0,osteospermum,train,mexican aster,65.0,False,True
+2796,image_05562,image_05562.jpg,jpg/image_05562.jpg,65.0,osteospermum,train,osteospermum,65.0,True,True
+2806,image_05569,image_05569.jpg,jpg/image_05569.jpg,65.0,osteospermum,train,mexican aster,65.0,False,True
+2805,image_05574,image_05574.jpg,jpg/image_05574.jpg,65.0,osteospermum,train,osteospermum,65.0,True,True
+2789,image_05577,image_05577.jpg,jpg/image_05577.jpg,65.0,osteospermum,train,osteospermum,65.0,True,True
+2804,image_05580,image_05580.jpg,jpg/image_05580.jpg,65.0,osteospermum,train,osteospermum,65.0,True,True
+2794,image_05583,image_05583.jpg,jpg/image_05583.jpg,65.0,osteospermum,train,mexican aster,65.0,False,True
+2815,image_05588,image_05588.jpg,jpg/image_05588.jpg,31.0,garden phlox,train,garden phlox,31.0,True,True
+2825,image_05592,image_05592.jpg,jpg/image_05592.jpg,31.0,garden phlox,train,garden phlox,31.0,True,True
+2819,image_05593,image_05593.jpg,jpg/image_05593.jpg,31.0,garden phlox,train,garden phlox,31.0,True,True
+2821,image_05595,image_05595.jpg,jpg/image_05595.jpg,31.0,garden phlox,train,mallow,31.0,False,True
+2812,image_05609,image_05609.jpg,jpg/image_05609.jpg,31.0,garden phlox,train,garden phlox,31.0,True,True
+2816,image_05612,image_05612.jpg,jpg/image_05612.jpg,31.0,garden phlox,train,garden phlox,31.0,True,True
+2809,image_05619,image_05619.jpg,jpg/image_05619.jpg,31.0,garden phlox,train,garden phlox,31.0,True,True
+2817,image_05620,image_05620.jpg,jpg/image_05620.jpg,31.0,garden phlox,train,mexican petunia,31.0,False,True
+2820,image_05623,image_05623.jpg,jpg/image_05623.jpg,31.0,garden phlox,train,silverbush,31.0,False,True
+2810,image_05624,image_05624.jpg,jpg/image_05624.jpg,31.0,garden phlox,train,garden phlox,31.0,True,True
+2811,image_05626,image_05626.jpg,jpg/image_05626.jpg,31.0,garden phlox,train,garden phlox,31.0,True,True
+2813,image_05628,image_05628.jpg,jpg/image_05628.jpg,31.0,garden phlox,train,garden phlox,31.0,True,True
+2855,image_05629,image_05629.jpg,jpg/image_05629.jpg,3.0,sweet pea,train,sweet pea,3.0,True,True
+2844,image_05632,image_05632.jpg,jpg/image_05632.jpg,3.0,sweet pea,train,sweet pea,3.0,True,True
+2831,image_05636,image_05636.jpg,jpg/image_05636.jpg,3.0,sweet pea,train,sweet pea,3.0,True,True
+2832,image_05641,image_05641.jpg,jpg/image_05641.jpg,3.0,sweet pea,train,sweet pea,3.0,True,True
+2848,image_05645,image_05645.jpg,jpg/image_05645.jpg,3.0,sweet pea,train,sweet pea,3.0,True,True
+2837,image_05652,image_05652.jpg,jpg/image_05652.jpg,3.0,sweet pea,train,sweet pea,3.0,True,True
+2856,image_05657,image_05657.jpg,jpg/image_05657.jpg,3.0,sweet pea,train,sweet pea,3.0,True,True
+2840,image_05666,image_05666.jpg,jpg/image_05666.jpg,3.0,sweet pea,train,canterbury bells,3.0,False,True
+2830,image_05667,image_05667.jpg,jpg/image_05667.jpg,3.0,sweet pea,train,sweet pea,3.0,True,True
+2836,image_05669,image_05669.jpg,jpg/image_05669.jpg,3.0,sweet pea,train,sweet pea,3.0,True,True
+2853,image_05676,image_05676.jpg,jpg/image_05676.jpg,3.0,sweet pea,train,sweet pea,3.0,True,True
+2852,image_05678,image_05678.jpg,jpg/image_05678.jpg,3.0,sweet pea,train,sweet pea,3.0,True,True
+2847,image_05679,image_05679.jpg,jpg/image_05679.jpg,3.0,sweet pea,train,sweet pea,3.0,True,True
+2842,image_05681,image_05681.jpg,jpg/image_05681.jpg,3.0,sweet pea,train,sweet pea,3.0,True,True
+2851,image_05684,image_05684.jpg,jpg/image_05684.jpg,3.0,sweet pea,train,sweet pea,3.0,True,True
+2858,image_05685,image_05685.jpg,jpg/image_05685.jpg,41.0,daffodil,train,sword lily,41.0,False,True
+2886,image_05687,image_05687.jpg,jpg/image_05687.jpg,41.0,daffodil,train,daffodil,41.0,True,True
+2862,image_05695,image_05695.jpg,jpg/image_05695.jpg,41.0,daffodil,train,daffodil,41.0,True,True
+2874,image_05697,image_05697.jpg,jpg/image_05697.jpg,41.0,daffodil,train,daffodil,41.0,True,True
+2865,image_05699,image_05699.jpg,jpg/image_05699.jpg,41.0,daffodil,train,daffodil,41.0,True,True
+2873,image_05700,image_05700.jpg,jpg/image_05700.jpg,41.0,daffodil,train,daffodil,41.0,True,True
+2863,image_05701,image_05701.jpg,jpg/image_05701.jpg,41.0,daffodil,train,daffodil,41.0,True,True
+2880,image_05706,image_05706.jpg,jpg/image_05706.jpg,41.0,daffodil,train,daffodil,41.0,True,True
+2882,image_05707,image_05707.jpg,jpg/image_05707.jpg,41.0,daffodil,train,daffodil,41.0,True,True
+2877,image_05711,image_05711.jpg,jpg/image_05711.jpg,41.0,daffodil,train,daffodil,41.0,True,True
+2867,image_05713,image_05713.jpg,jpg/image_05713.jpg,41.0,daffodil,train,daffodil,41.0,True,True
+2864,image_05721,image_05721.jpg,jpg/image_05721.jpg,41.0,daffodil,train,daffodil,41.0,True,True
+2883,image_05722,image_05722.jpg,jpg/image_05722.jpg,41.0,daffodil,train,daffodil,41.0,True,True
+2875,image_05727,image_05727.jpg,jpg/image_05727.jpg,41.0,daffodil,train,daffodil,41.0,True,True
+2878,image_05733,image_05733.jpg,jpg/image_05733.jpg,41.0,daffodil,train,daffodil,41.0,True,True
+2869,image_05734,image_05734.jpg,jpg/image_05734.jpg,41.0,daffodil,train,daffodil,41.0,True,True
+2876,image_05742,image_05742.jpg,jpg/image_05742.jpg,41.0,daffodil,train,daffodil,41.0,True,True
+2908,image_05746,image_05746.jpg,jpg/image_05746.jpg,12.0,king protea,train,king protea,12.0,True,True
+2897,image_05749,image_05749.jpg,jpg/image_05749.jpg,12.0,king protea,train,king protea,12.0,True,True
+2902,image_05750,image_05750.jpg,jpg/image_05750.jpg,12.0,king protea,train,king protea,12.0,True,True
+2909,image_05755,image_05755.jpg,jpg/image_05755.jpg,12.0,king protea,train,king protea,12.0,True,True
+2905,image_05756,image_05756.jpg,jpg/image_05756.jpg,12.0,king protea,train,king protea,12.0,True,True
+2910,image_05759,image_05759.jpg,jpg/image_05759.jpg,12.0,king protea,train,king protea,12.0,True,True
+2889,image_05760,image_05760.jpg,jpg/image_05760.jpg,12.0,king protea,train,king protea,12.0,True,True
+2893,image_05761,image_05761.jpg,jpg/image_05761.jpg,12.0,king protea,train,king protea,12.0,True,True
+2892,image_05768,image_05768.jpg,jpg/image_05768.jpg,12.0,king protea,train,king protea,12.0,True,True
+2899,image_05769,image_05769.jpg,jpg/image_05769.jpg,12.0,king protea,train,king protea,12.0,True,True
+2901,image_05778,image_05778.jpg,jpg/image_05778.jpg,12.0,king protea,train,king protea,12.0,True,True
+2904,image_05780,image_05780.jpg,jpg/image_05780.jpg,12.0,king protea,train,thorn apple,12.0,False,True
+2894,image_05784,image_05784.jpg,jpg/image_05784.jpg,12.0,king protea,train,king protea,12.0,True,True
+2906,image_05787,image_05787.jpg,jpg/image_05787.jpg,12.0,king protea,train,king protea,12.0,True,True
+2890,image_05790,image_05790.jpg,jpg/image_05790.jpg,12.0,king protea,train,king protea,12.0,True,True
+2895,image_05791,image_05791.jpg,jpg/image_05791.jpg,12.0,king protea,train,king protea,12.0,True,True
+2911,image_05792,image_05792.jpg,jpg/image_05792.jpg,12.0,king protea,train,king protea,12.0,True,True
+2926,image_05793,image_05793.jpg,jpg/image_05793.jpg,37.0,great masterwort,train,great masterwort,37.0,True,True
+2925,image_05797,image_05797.jpg,jpg/image_05797.jpg,37.0,great masterwort,train,great masterwort,37.0,True,True
+2929,image_05799,image_05799.jpg,jpg/image_05799.jpg,37.0,great masterwort,train,great masterwort,37.0,True,True
+2938,image_05804,image_05804.jpg,jpg/image_05804.jpg,37.0,great masterwort,train,great masterwort,37.0,True,True
+2937,image_05807,image_05807.jpg,jpg/image_05807.jpg,37.0,great masterwort,train,great masterwort,37.0,True,True
+2919,image_05808,image_05808.jpg,jpg/image_05808.jpg,37.0,great masterwort,train,great masterwort,37.0,True,True
+2930,image_05822,image_05822.jpg,jpg/image_05822.jpg,37.0,great masterwort,train,great masterwort,37.0,True,True
+2915,image_05825,image_05825.jpg,jpg/image_05825.jpg,37.0,great masterwort,train,great masterwort,37.0,True,True
+2939,image_05828,image_05828.jpg,jpg/image_05828.jpg,37.0,great masterwort,train,great masterwort,37.0,True,True
+2924,image_05829,image_05829.jpg,jpg/image_05829.jpg,37.0,great masterwort,train,great masterwort,37.0,True,True
+2920,image_05830,image_05830.jpg,jpg/image_05830.jpg,37.0,great masterwort,train,great masterwort,37.0,True,True
+2916,image_05835,image_05835.jpg,jpg/image_05835.jpg,37.0,great masterwort,train,great masterwort,37.0,True,True
+2935,image_05836,image_05836.jpg,jpg/image_05836.jpg,37.0,great masterwort,train,great masterwort,37.0,True,True
+2932,image_05845,image_05845.jpg,jpg/image_05845.jpg,37.0,great masterwort,train,great masterwort,37.0,True,True
+2914,image_05847,image_05847.jpg,jpg/image_05847.jpg,37.0,great masterwort,train,great masterwort,37.0,True,True
+2921,image_05848,image_05848.jpg,jpg/image_05848.jpg,37.0,great masterwort,train,great masterwort,37.0,True,True
+2965,image_05850,image_05850.jpg,jpg/image_05850.jpg,62.0,black-eyed susan,train,black-eyed susan,62.0,True,True
+2957,image_05853,image_05853.jpg,jpg/image_05853.jpg,62.0,black-eyed susan,train,black-eyed susan,62.0,True,True
+2966,image_05860,image_05860.jpg,jpg/image_05860.jpg,62.0,black-eyed susan,train,black-eyed susan,62.0,True,True
+2961,image_05861,image_05861.jpg,jpg/image_05861.jpg,62.0,black-eyed susan,train,black-eyed susan,62.0,True,True
+2941,image_05865,image_05865.jpg,jpg/image_05865.jpg,62.0,black-eyed susan,train,black-eyed susan,62.0,True,True
+2944,image_05868,image_05868.jpg,jpg/image_05868.jpg,62.0,black-eyed susan,train,black-eyed susan,62.0,True,True
+2962,image_05870,image_05870.jpg,jpg/image_05870.jpg,62.0,black-eyed susan,train,black-eyed susan,62.0,True,True
+2945,image_05882,image_05882.jpg,jpg/image_05882.jpg,62.0,black-eyed susan,train,black-eyed susan,62.0,True,True
+2960,image_05884,image_05884.jpg,jpg/image_05884.jpg,62.0,black-eyed susan,train,black-eyed susan,62.0,True,True
+2963,image_05886,image_05886.jpg,jpg/image_05886.jpg,62.0,black-eyed susan,train,black-eyed susan,62.0,True,True
+2948,image_05890,image_05890.jpg,jpg/image_05890.jpg,62.0,black-eyed susan,train,black-eyed susan,62.0,True,True
+2942,image_05894,image_05894.jpg,jpg/image_05894.jpg,62.0,black-eyed susan,train,black-eyed susan,62.0,True,True
+2953,image_05895,image_05895.jpg,jpg/image_05895.jpg,62.0,black-eyed susan,train,black-eyed susan,62.0,True,True
+2959,image_05897,image_05897.jpg,jpg/image_05897.jpg,62.0,black-eyed susan,train,black-eyed susan,62.0,True,True
+2954,image_05898,image_05898.jpg,jpg/image_05898.jpg,62.0,black-eyed susan,train,black-eyed susan,62.0,True,True
+2943,image_05900,image_05900.jpg,jpg/image_05900.jpg,62.0,black-eyed susan,train,black-eyed susan,62.0,True,True
+2976,image_05905,image_05905.jpg,jpg/image_05905.jpg,67.0,bearded iris,train,bearded iris,67.0,True,True
+2967,image_05906,image_05906.jpg,jpg/image_05906.jpg,67.0,bearded iris,train,bearded iris,67.0,True,True
+2969,image_05914,image_05914.jpg,jpg/image_05914.jpg,67.0,bearded iris,train,bearded iris,67.0,True,True
+2987,image_05915,image_05915.jpg,jpg/image_05915.jpg,67.0,bearded iris,train,bearded iris,67.0,True,True
+2992,image_05917,image_05917.jpg,jpg/image_05917.jpg,67.0,bearded iris,train,bearded iris,67.0,True,True
+2982,image_05918,image_05918.jpg,jpg/image_05918.jpg,67.0,bearded iris,train,bearded iris,67.0,True,True
+2971,image_05919,image_05919.jpg,jpg/image_05919.jpg,67.0,bearded iris,train,bearded iris,67.0,True,True
+2986,image_05922,image_05922.jpg,jpg/image_05922.jpg,67.0,bearded iris,train,bearded iris,67.0,True,True
+2980,image_05925,image_05925.jpg,jpg/image_05925.jpg,67.0,bearded iris,train,bearded iris,67.0,True,True
+2972,image_05931,image_05931.jpg,jpg/image_05931.jpg,67.0,bearded iris,train,bearded iris,67.0,True,True
+2984,image_05934,image_05934.jpg,jpg/image_05934.jpg,67.0,bearded iris,train,bearded iris,67.0,True,True
+2988,image_05935,image_05935.jpg,jpg/image_05935.jpg,67.0,bearded iris,train,bearded iris,67.0,True,True
+2983,image_05939,image_05939.jpg,jpg/image_05939.jpg,67.0,bearded iris,train,bearded iris,67.0,True,True
+2981,image_05941,image_05941.jpg,jpg/image_05941.jpg,67.0,bearded iris,train,bearded iris,67.0,True,True
+2991,image_05946,image_05946.jpg,jpg/image_05946.jpg,67.0,bearded iris,train,bearded iris,67.0,True,True
+3013,image_05957,image_05957.jpg,jpg/image_05957.jpg,68.0,windflower,train,japanese anemone,68.0,False,True
+3009,image_05968,image_05968.jpg,jpg/image_05968.jpg,68.0,windflower,train,japanese anemone,68.0,False,True
+3000,image_05973,image_05973.jpg,jpg/image_05973.jpg,68.0,windflower,train,japanese anemone,68.0,False,True
+3018,image_06003,image_06003.jpg,jpg/image_06003.jpg,68.0,windflower,train,windflower,68.0,True,True
+3019,image_06007,image_06007.jpg,jpg/image_06007.jpg,68.0,windflower,train,japanese anemone,68.0,False,True
+2999,image_06010,image_06010.jpg,jpg/image_06010.jpg,68.0,windflower,train,windflower,68.0,True,True
+3041,image_06011,image_06011.jpg,jpg/image_06011.jpg,92.0,ball moss,train,prince of wales feathers,92.0,False,True
+3040,image_06012,image_06012.jpg,jpg/image_06012.jpg,92.0,ball moss,train,prince of wales feathers,92.0,False,True
+3036,image_06014,image_06014.jpg,jpg/image_06014.jpg,92.0,ball moss,train,prince of wales feathers,92.0,False,True
+3021,image_06015,image_06015.jpg,jpg/image_06015.jpg,92.0,ball moss,train,prince of wales feathers,92.0,False,True
+3033,image_06030,image_06030.jpg,jpg/image_06030.jpg,92.0,ball moss,train,bolero deep blue,92.0,False,True
+3029,image_06042,image_06042.jpg,jpg/image_06042.jpg,92.0,ball moss,train,prince of wales feathers,92.0,False,True
+3039,image_06048,image_06048.jpg,jpg/image_06048.jpg,92.0,ball moss,train,prince of wales feathers,92.0,False,True
+3049,image_06050,image_06050.jpg,jpg/image_06050.jpg,13.0,spear thistle,train,spear thistle,13.0,True,True
+3056,image_06052,image_06052.jpg,jpg/image_06052.jpg,13.0,spear thistle,train,spear thistle,13.0,True,True
+3050,image_06053,image_06053.jpg,jpg/image_06053.jpg,13.0,spear thistle,train,spear thistle,13.0,True,True
+3048,image_06059,image_06059.jpg,jpg/image_06059.jpg,13.0,spear thistle,train,spear thistle,13.0,True,True
+3067,image_06061,image_06061.jpg,jpg/image_06061.jpg,13.0,spear thistle,train,spear thistle,13.0,True,True
+3045,image_06062,image_06062.jpg,jpg/image_06062.jpg,13.0,spear thistle,train,spear thistle,13.0,True,True
+3052,image_06065,image_06065.jpg,jpg/image_06065.jpg,13.0,spear thistle,train,spear thistle,13.0,True,True
+3047,image_06066,image_06066.jpg,jpg/image_06066.jpg,13.0,spear thistle,train,spear thistle,13.0,True,True
+3066,image_06069,image_06069.jpg,jpg/image_06069.jpg,13.0,spear thistle,train,spear thistle,13.0,True,True
+3053,image_06070,image_06070.jpg,jpg/image_06070.jpg,13.0,spear thistle,train,spear thistle,13.0,True,True
+3063,image_06073,image_06073.jpg,jpg/image_06073.jpg,13.0,spear thistle,train,spear thistle,13.0,True,True
+3054,image_06074,image_06074.jpg,jpg/image_06074.jpg,13.0,spear thistle,train,spear thistle,13.0,True,True
+3065,image_06085,image_06085.jpg,jpg/image_06085.jpg,13.0,spear thistle,train,spear thistle,13.0,True,True
+3046,image_06087,image_06087.jpg,jpg/image_06087.jpg,13.0,spear thistle,train,spear thistle,13.0,True,True
+3055,image_06088,image_06088.jpg,jpg/image_06088.jpg,13.0,spear thistle,train,spear thistle,13.0,True,True
+3059,image_06095,image_06095.jpg,jpg/image_06095.jpg,13.0,spear thistle,train,spear thistle,13.0,True,True
+3077,image_06105,image_06105.jpg,jpg/image_06105.jpg,63.0,silverbush,train,windflower,63.0,False,True
+3081,image_06112,image_06112.jpg,jpg/image_06112.jpg,63.0,silverbush,train,silverbush,63.0,True,True
+3089,image_06116,image_06116.jpg,jpg/image_06116.jpg,63.0,silverbush,train,silverbush,63.0,True,True
+3084,image_06117,image_06117.jpg,jpg/image_06117.jpg,63.0,silverbush,train,windflower,63.0,False,True
+3078,image_06119,image_06119.jpg,jpg/image_06119.jpg,63.0,silverbush,train,cape flower,63.0,False,True
+3083,image_06120,image_06120.jpg,jpg/image_06120.jpg,63.0,silverbush,train,cape flower,63.0,False,True
+3070,image_06121,image_06121.jpg,jpg/image_06121.jpg,63.0,silverbush,train,windflower,63.0,False,True
+3090,image_06122,image_06122.jpg,jpg/image_06122.jpg,63.0,silverbush,train,silverbush,63.0,True,True
+3076,image_06123,image_06123.jpg,jpg/image_06123.jpg,63.0,silverbush,train,cape flower,63.0,False,True
+3087,image_06128,image_06128.jpg,jpg/image_06128.jpg,63.0,silverbush,train,silverbush,63.0,True,True
+3079,image_06129,image_06129.jpg,jpg/image_06129.jpg,63.0,silverbush,train,silverbush,63.0,True,True
+3093,image_06134,image_06134.jpg,jpg/image_06134.jpg,63.0,silverbush,train,mallow,63.0,False,True
+3068,image_06136,image_06136.jpg,jpg/image_06136.jpg,63.0,silverbush,train,silverbush,63.0,True,True
+3073,image_06141,image_06141.jpg,jpg/image_06141.jpg,63.0,silverbush,train,mallow,63.0,False,True
+3115,image_06154,image_06154.jpg,jpg/image_06154.jpg,18.0,balloon flower,train,balloon flower,18.0,True,True
+3100,image_06157,image_06157.jpg,jpg/image_06157.jpg,18.0,balloon flower,train,balloon flower,18.0,True,True
+3103,image_06158,image_06158.jpg,jpg/image_06158.jpg,18.0,balloon flower,train,windflower,18.0,False,True
+3098,image_06161,image_06161.jpg,jpg/image_06161.jpg,18.0,balloon flower,train,balloon flower,18.0,True,True
+3108,image_06163,image_06163.jpg,jpg/image_06163.jpg,18.0,balloon flower,train,balloon flower,18.0,True,True
+3095,image_06166,image_06166.jpg,jpg/image_06166.jpg,18.0,balloon flower,train,balloon flower,18.0,True,True
+3104,image_06170,image_06170.jpg,jpg/image_06170.jpg,18.0,balloon flower,train,balloon flower,18.0,True,True
+3109,image_06171,image_06171.jpg,jpg/image_06171.jpg,18.0,balloon flower,train,balloon flower,18.0,True,True
+3110,image_06173,image_06173.jpg,jpg/image_06173.jpg,18.0,balloon flower,train,balloon flower,18.0,True,True
+3097,image_06174,image_06174.jpg,jpg/image_06174.jpg,18.0,balloon flower,train,balloon flower,18.0,True,True
+3112,image_06176,image_06176.jpg,jpg/image_06176.jpg,18.0,balloon flower,train,balloon flower,18.0,True,True
+3113,image_06178,image_06178.jpg,jpg/image_06178.jpg,18.0,balloon flower,train,canterbury bells,18.0,False,True
+3102,image_06182,image_06182.jpg,jpg/image_06182.jpg,18.0,balloon flower,train,balloon flower,18.0,True,True
+3094,image_06184,image_06184.jpg,jpg/image_06184.jpg,18.0,balloon flower,train,balloon flower,18.0,True,True
+3117,image_06186,image_06186.jpg,jpg/image_06186.jpg,18.0,balloon flower,train,balloon flower,18.0,True,True
+3114,image_06191,image_06191.jpg,jpg/image_06191.jpg,18.0,balloon flower,train,balloon flower,18.0,True,True
+3099,image_06194,image_06194.jpg,jpg/image_06194.jpg,18.0,balloon flower,train,balloon flower,18.0,True,True
+3107,image_06196,image_06196.jpg,jpg/image_06196.jpg,18.0,balloon flower,train,balloon flower,18.0,True,True
+3133,image_06201,image_06201.jpg,jpg/image_06201.jpg,48.0,oxeye daisy,train,barbeton daisy,48.0,False,True
+3127,image_06204,image_06204.jpg,jpg/image_06204.jpg,48.0,oxeye daisy,train,oxeye daisy,48.0,True,True
+3124,image_06212,image_06212.jpg,jpg/image_06212.jpg,48.0,oxeye daisy,train,barbeton daisy,48.0,False,True
+3126,image_06215,image_06215.jpg,jpg/image_06215.jpg,48.0,oxeye daisy,train,oxeye daisy,48.0,True,True
+3125,image_06218,image_06218.jpg,jpg/image_06218.jpg,48.0,oxeye daisy,train,oxeye daisy,48.0,True,True
+3120,image_06219,image_06219.jpg,jpg/image_06219.jpg,48.0,oxeye daisy,train,barbeton daisy,48.0,False,True
+3136,image_06222,image_06222.jpg,jpg/image_06222.jpg,48.0,oxeye daisy,train,oxeye daisy,48.0,True,True
+3121,image_06223,image_06223.jpg,jpg/image_06223.jpg,48.0,oxeye daisy,train,oxeye daisy,48.0,True,True
+3123,image_06226,image_06226.jpg,jpg/image_06226.jpg,48.0,oxeye daisy,train,oxeye daisy,48.0,True,True
+3134,image_06228,image_06228.jpg,jpg/image_06228.jpg,48.0,oxeye daisy,train,barbeton daisy,48.0,False,True
+3139,image_06230,image_06230.jpg,jpg/image_06230.jpg,48.0,oxeye daisy,train,oxeye daisy,48.0,True,True
+3131,image_06234,image_06234.jpg,jpg/image_06234.jpg,48.0,oxeye daisy,train,barbeton daisy,48.0,False,True
+3135,image_06239,image_06239.jpg,jpg/image_06239.jpg,48.0,oxeye daisy,train,oxeye daisy,48.0,True,True
+3129,image_06240,image_06240.jpg,jpg/image_06240.jpg,48.0,oxeye daisy,train,barbeton daisy,48.0,False,True
+3138,image_06241,image_06241.jpg,jpg/image_06241.jpg,48.0,oxeye daisy,train,oxeye daisy,48.0,True,True
+3130,image_06244,image_06244.jpg,jpg/image_06244.jpg,48.0,oxeye daisy,train,oxeye daisy,48.0,True,True
+3147,image_06247,image_06247.jpg,jpg/image_06247.jpg,60.0,cautleya spicata,train,cautleya spicata,60.0,True,True
+3155,image_06248,image_06248.jpg,jpg/image_06248.jpg,60.0,cautleya spicata,train,cautleya spicata,60.0,True,True
+3164,image_06251,image_06251.jpg,jpg/image_06251.jpg,60.0,cautleya spicata,train,cautleya spicata,60.0,True,True
+3163,image_06256,image_06256.jpg,jpg/image_06256.jpg,60.0,cautleya spicata,train,cautleya spicata,60.0,True,True
+3161,image_06257,image_06257.jpg,jpg/image_06257.jpg,60.0,cautleya spicata,train,cautleya spicata,60.0,True,True
+3148,image_06258,image_06258.jpg,jpg/image_06258.jpg,60.0,cautleya spicata,train,cautleya spicata,60.0,True,True
+3152,image_06261,image_06261.jpg,jpg/image_06261.jpg,60.0,cautleya spicata,train,cautleya spicata,60.0,True,True
+3145,image_06265,image_06265.jpg,jpg/image_06265.jpg,60.0,cautleya spicata,train,cautleya spicata,60.0,True,True
+3143,image_06268,image_06268.jpg,jpg/image_06268.jpg,60.0,cautleya spicata,train,cautleya spicata,60.0,True,True
+3166,image_06273,image_06273.jpg,jpg/image_06273.jpg,60.0,cautleya spicata,train,cautleya spicata,60.0,True,True
+3157,image_06274,image_06274.jpg,jpg/image_06274.jpg,60.0,cautleya spicata,train,cautleya spicata,60.0,True,True
+3146,image_06278,image_06278.jpg,jpg/image_06278.jpg,60.0,cautleya spicata,train,cautleya spicata,60.0,True,True
+3162,image_06281,image_06281.jpg,jpg/image_06281.jpg,60.0,cautleya spicata,train,cautleya spicata,60.0,True,True
+3149,image_06294,image_06294.jpg,jpg/image_06294.jpg,60.0,cautleya spicata,train,cautleya spicata,60.0,True,True
+3154,image_06296,image_06296.jpg,jpg/image_06296.jpg,60.0,cautleya spicata,train,cautleya spicata,60.0,True,True
+3173,image_06301,image_06301.jpg,jpg/image_06301.jpg,49.0,common dandelion,train,common dandelion,49.0,True,True
+3201,image_06306,image_06306.jpg,jpg/image_06306.jpg,49.0,common dandelion,train,common dandelion,49.0,True,True
+3191,image_06307,image_06307.jpg,jpg/image_06307.jpg,49.0,common dandelion,train,common dandelion,49.0,True,True
+3209,image_06312,image_06312.jpg,jpg/image_06312.jpg,49.0,common dandelion,train,common dandelion,49.0,True,True
+3190,image_06314,image_06314.jpg,jpg/image_06314.jpg,49.0,common dandelion,train,common dandelion,49.0,True,True
+3180,image_06316,image_06316.jpg,jpg/image_06316.jpg,49.0,common dandelion,train,common dandelion,49.0,True,True
+3171,image_06331,image_06331.jpg,jpg/image_06331.jpg,49.0,common dandelion,train,common dandelion,49.0,True,True
+3231,image_06347,image_06347.jpg,jpg/image_06347.jpg,14.0,yellow iris,train,yellow iris,14.0,True,True
+3222,image_06350,image_06350.jpg,jpg/image_06350.jpg,14.0,yellow iris,train,yellow iris,14.0,True,True
+3235,image_06351,image_06351.jpg,jpg/image_06351.jpg,14.0,yellow iris,train,yellow iris,14.0,True,True
+3226,image_06356,image_06356.jpg,jpg/image_06356.jpg,14.0,yellow iris,train,yellow iris,14.0,True,True
+3229,image_06358,image_06358.jpg,jpg/image_06358.jpg,14.0,yellow iris,train,yellow iris,14.0,True,True
+3234,image_06360,image_06360.jpg,jpg/image_06360.jpg,14.0,yellow iris,train,yellow iris,14.0,True,True
+3236,image_06364,image_06364.jpg,jpg/image_06364.jpg,14.0,yellow iris,train,yellow iris,14.0,True,True
+3232,image_06366,image_06366.jpg,jpg/image_06366.jpg,14.0,yellow iris,train,yellow iris,14.0,True,True
+3216,image_06370,image_06370.jpg,jpg/image_06370.jpg,14.0,yellow iris,train,yellow iris,14.0,True,True
+3225,image_06372,image_06372.jpg,jpg/image_06372.jpg,14.0,yellow iris,train,yellow iris,14.0,True,True
+3233,image_06376,image_06376.jpg,jpg/image_06376.jpg,14.0,yellow iris,train,yellow iris,14.0,True,True
+3220,image_06377,image_06377.jpg,jpg/image_06377.jpg,14.0,yellow iris,train,yellow iris,14.0,True,True
+3224,image_06378,image_06378.jpg,jpg/image_06378.jpg,14.0,yellow iris,train,yellow iris,14.0,True,True
+3219,image_06381,image_06381.jpg,jpg/image_06381.jpg,14.0,yellow iris,train,yellow iris,14.0,True,True
+3217,image_06382,image_06382.jpg,jpg/image_06382.jpg,14.0,yellow iris,train,yellow iris,14.0,True,True
+3214,image_06387,image_06387.jpg,jpg/image_06387.jpg,14.0,yellow iris,train,yellow iris,14.0,True,True
+3245,image_06395,image_06395.jpg,jpg/image_06395.jpg,8.0,monkshood,train,monkshood,8.0,True,True
+3252,image_06396,image_06396.jpg,jpg/image_06396.jpg,8.0,monkshood,train,monkshood,8.0,True,True
+3258,image_06398,image_06398.jpg,jpg/image_06398.jpg,8.0,monkshood,train,monkshood,8.0,True,True
+3241,image_06404,image_06404.jpg,jpg/image_06404.jpg,8.0,monkshood,train,monkshood,8.0,True,True
+3243,image_06405,image_06405.jpg,jpg/image_06405.jpg,8.0,monkshood,train,monkshood,8.0,True,True
+3256,image_06406,image_06406.jpg,jpg/image_06406.jpg,8.0,monkshood,train,monkshood,8.0,True,True
+3247,image_06409,image_06409.jpg,jpg/image_06409.jpg,8.0,monkshood,train,canterbury bells,8.0,False,True
+3257,image_06411,image_06411.jpg,jpg/image_06411.jpg,8.0,monkshood,train,monkshood,8.0,True,True
+3238,image_06415,image_06415.jpg,jpg/image_06415.jpg,8.0,monkshood,train,canterbury bells,8.0,False,True
+3249,image_06416,image_06416.jpg,jpg/image_06416.jpg,8.0,monkshood,train,monkshood,8.0,True,True
+3237,image_06418,image_06418.jpg,jpg/image_06418.jpg,8.0,monkshood,train,monkshood,8.0,True,True
+3254,image_06433,image_06433.jpg,jpg/image_06433.jpg,8.0,monkshood,train,monkshood,8.0,True,True
+3259,image_06434,image_06434.jpg,jpg/image_06434.jpg,8.0,monkshood,train,monkshood,8.0,True,True
+3246,image_06435,image_06435.jpg,jpg/image_06435.jpg,8.0,monkshood,train,monkshood,8.0,True,True
+3250,image_06436,image_06436.jpg,jpg/image_06436.jpg,8.0,monkshood,train,monkshood,8.0,True,True
+3248,image_06437,image_06437.jpg,jpg/image_06437.jpg,8.0,monkshood,train,monkshood,8.0,True,True
+3253,image_06438,image_06438.jpg,jpg/image_06438.jpg,8.0,monkshood,train,monkshood,8.0,True,True
+3244,image_06440,image_06440.jpg,jpg/image_06440.jpg,8.0,monkshood,train,monkshood,8.0,True,True
+3282,image_06442,image_06442.jpg,jpg/image_06442.jpg,32.0,love in the mist,train,love in the mist,32.0,True,True
+3272,image_06447,image_06447.jpg,jpg/image_06447.jpg,32.0,love in the mist,train,love in the mist,32.0,True,True
+3275,image_06450,image_06450.jpg,jpg/image_06450.jpg,32.0,love in the mist,train,love in the mist,32.0,True,True
+3280,image_06451,image_06451.jpg,jpg/image_06451.jpg,32.0,love in the mist,train,alpine sea holly,32.0,False,True
+3264,image_06452,image_06452.jpg,jpg/image_06452.jpg,32.0,love in the mist,train,love in the mist,32.0,True,True
+3262,image_06454,image_06454.jpg,jpg/image_06454.jpg,32.0,love in the mist,train,love in the mist,32.0,True,True
+3269,image_06460,image_06460.jpg,jpg/image_06460.jpg,32.0,love in the mist,train,love in the mist,32.0,True,True
+3260,image_06461,image_06461.jpg,jpg/image_06461.jpg,32.0,love in the mist,train,cape flower,32.0,False,True
+3270,image_06463,image_06463.jpg,jpg/image_06463.jpg,32.0,love in the mist,train,love in the mist,32.0,True,True
+3281,image_06467,image_06467.jpg,jpg/image_06467.jpg,32.0,love in the mist,train,love in the mist,32.0,True,True
+3277,image_06473,image_06473.jpg,jpg/image_06473.jpg,32.0,love in the mist,train,love in the mist,32.0,True,True
+3279,image_06474,image_06474.jpg,jpg/image_06474.jpg,32.0,love in the mist,train,bolero deep blue,32.0,False,True
+3271,image_06476,image_06476.jpg,jpg/image_06476.jpg,32.0,love in the mist,train,love in the mist,32.0,True,True
+3274,image_06477,image_06477.jpg,jpg/image_06477.jpg,32.0,love in the mist,train,love in the mist,32.0,True,True
+3266,image_06478,image_06478.jpg,jpg/image_06478.jpg,32.0,love in the mist,train,love in the mist,32.0,True,True
+3263,image_06481,image_06481.jpg,jpg/image_06481.jpg,32.0,love in the mist,train,love in the mist,32.0,True,True
+3278,image_06483,image_06483.jpg,jpg/image_06483.jpg,32.0,love in the mist,train,love in the mist,32.0,True,True
+3276,image_06484,image_06484.jpg,jpg/image_06484.jpg,32.0,love in the mist,train,love in the mist,32.0,True,True
+3261,image_06485,image_06485.jpg,jpg/image_06485.jpg,32.0,love in the mist,train,love in the mist,32.0,True,True
+3290,image_06489,image_06489.jpg,jpg/image_06489.jpg,25.0,corn poppy,train,corn poppy,25.0,True,True
+3299,image_06490,image_06490.jpg,jpg/image_06490.jpg,25.0,corn poppy,train,corn poppy,25.0,True,True
+3298,image_06493,image_06493.jpg,jpg/image_06493.jpg,25.0,corn poppy,train,corn poppy,25.0,True,True
+3293,image_06494,image_06494.jpg,jpg/image_06494.jpg,25.0,corn poppy,train,corn poppy,25.0,True,True
+3296,image_06495,image_06495.jpg,jpg/image_06495.jpg,25.0,corn poppy,train,corn poppy,25.0,True,True
+3291,image_06497,image_06497.jpg,jpg/image_06497.jpg,25.0,corn poppy,train,corn poppy,25.0,True,True
+3301,image_06498,image_06498.jpg,jpg/image_06498.jpg,25.0,corn poppy,train,corn poppy,25.0,True,True
+3295,image_06499,image_06499.jpg,jpg/image_06499.jpg,25.0,corn poppy,train,corn poppy,25.0,True,True
+3288,image_06500,image_06500.jpg,jpg/image_06500.jpg,25.0,corn poppy,train,corn poppy,25.0,True,True
+3283,image_06505,image_06505.jpg,jpg/image_06505.jpg,25.0,corn poppy,train,corn poppy,25.0,True,True
+3302,image_06506,image_06506.jpg,jpg/image_06506.jpg,25.0,corn poppy,train,corn poppy,25.0,True,True
+3285,image_06507,image_06507.jpg,jpg/image_06507.jpg,25.0,corn poppy,train,corn poppy,25.0,True,True
+3300,image_06509,image_06509.jpg,jpg/image_06509.jpg,25.0,corn poppy,train,corn poppy,25.0,True,True
+3289,image_06510,image_06510.jpg,jpg/image_06510.jpg,25.0,corn poppy,train,tree poppy,25.0,False,True
+3286,image_06516,image_06516.jpg,jpg/image_06516.jpg,25.0,corn poppy,train,corn poppy,25.0,True,True
+3284,image_06521,image_06521.jpg,jpg/image_06521.jpg,25.0,corn poppy,train,corn poppy,25.0,True,True
+3294,image_06524,image_06524.jpg,jpg/image_06524.jpg,25.0,corn poppy,train,tree poppy,25.0,False,True
+3292,image_06526,image_06526.jpg,jpg/image_06526.jpg,25.0,corn poppy,train,corn poppy,25.0,True,True
+3195,image_06535,image_06535.jpg,jpg/image_06535.jpg,49.0,common dandelion,train,common dandelion,49.0,True,True
+3189,image_06540,image_06540.jpg,jpg/image_06540.jpg,49.0,common dandelion,train,common dandelion,49.0,True,True
+3187,image_06544,image_06544.jpg,jpg/image_06544.jpg,49.0,common dandelion,train,common dandelion,49.0,True,True
+3196,image_06547,image_06547.jpg,jpg/image_06547.jpg,49.0,common dandelion,train,common dandelion,49.0,True,True
+3192,image_06549,image_06549.jpg,jpg/image_06549.jpg,49.0,common dandelion,train,common dandelion,49.0,True,True
+3193,image_06554,image_06554.jpg,jpg/image_06554.jpg,49.0,common dandelion,train,common dandelion,49.0,True,True
+3167,image_06559,image_06559.jpg,jpg/image_06559.jpg,49.0,common dandelion,train,common dandelion,49.0,True,True
+3176,image_06562,image_06562.jpg,jpg/image_06562.jpg,49.0,common dandelion,train,common dandelion,49.0,True,True
+3199,image_06564,image_06564.jpg,jpg/image_06564.jpg,49.0,common dandelion,train,common dandelion,49.0,True,True
+3316,image_06575,image_06575.jpg,jpg/image_06575.jpg,24.0,grape hyacinth,train,grape hyacinth,24.0,True,True
+3303,image_06579,image_06579.jpg,jpg/image_06579.jpg,24.0,grape hyacinth,train,grape hyacinth,24.0,True,True
+3313,image_06580,image_06580.jpg,jpg/image_06580.jpg,24.0,grape hyacinth,train,grape hyacinth,24.0,True,True
+3305,image_06582,image_06582.jpg,jpg/image_06582.jpg,24.0,grape hyacinth,train,grape hyacinth,24.0,True,True
+3311,image_06583,image_06583.jpg,jpg/image_06583.jpg,24.0,grape hyacinth,train,grape hyacinth,24.0,True,True
+3309,image_06589,image_06589.jpg,jpg/image_06589.jpg,24.0,grape hyacinth,train,grape hyacinth,24.0,True,True
+3315,image_06592,image_06592.jpg,jpg/image_06592.jpg,24.0,grape hyacinth,train,grape hyacinth,24.0,True,True
+3306,image_06597,image_06597.jpg,jpg/image_06597.jpg,24.0,grape hyacinth,train,grape hyacinth,24.0,True,True
+3317,image_06598,image_06598.jpg,jpg/image_06598.jpg,24.0,grape hyacinth,train,grape hyacinth,24.0,True,True
+3318,image_06599,image_06599.jpg,jpg/image_06599.jpg,24.0,grape hyacinth,train,grape hyacinth,24.0,True,True
+3304,image_06602,image_06602.jpg,jpg/image_06602.jpg,24.0,grape hyacinth,train,grape hyacinth,24.0,True,True
+3312,image_06603,image_06603.jpg,jpg/image_06603.jpg,24.0,grape hyacinth,train,grape hyacinth,24.0,True,True
+3307,image_06604,image_06604.jpg,jpg/image_06604.jpg,24.0,grape hyacinth,train,grape hyacinth,24.0,True,True
+3308,image_06606,image_06606.jpg,jpg/image_06606.jpg,24.0,grape hyacinth,train,grape hyacinth,24.0,True,True
+3319,image_06609,image_06609.jpg,jpg/image_06609.jpg,24.0,grape hyacinth,train,grape hyacinth,24.0,True,True
+3320,image_06611,image_06611.jpg,jpg/image_06611.jpg,24.0,grape hyacinth,train,grape hyacinth,24.0,True,True
+3330,image_06634,image_06634.jpg,jpg/image_06634.jpg,2.0,canterbury bells,train,sweet pea,2.0,False,True
+3338,image_06639,image_06639.jpg,jpg/image_06639.jpg,2.0,canterbury bells,train,canterbury bells,2.0,True,True
+3326,image_06647,image_06647.jpg,jpg/image_06647.jpg,2.0,canterbury bells,train,sweet pea,2.0,False,True
+3341,image_06650,image_06650.jpg,jpg/image_06650.jpg,2.0,canterbury bells,train,bolero deep blue,2.0,False,True
+3331,image_06651,image_06651.jpg,jpg/image_06651.jpg,2.0,canterbury bells,train,hard-leaved pocket orchid,2.0,False,True
+3353,image_06652,image_06652.jpg,jpg/image_06652.jpg,15.0,globe-flower,train,globe-flower,15.0,True,True
+3345,image_06653,image_06653.jpg,jpg/image_06653.jpg,15.0,globe-flower,train,globe-flower,15.0,True,True
+3354,image_06657,image_06657.jpg,jpg/image_06657.jpg,15.0,globe-flower,train,globe-flower,15.0,True,True
+3349,image_06664,image_06664.jpg,jpg/image_06664.jpg,15.0,globe-flower,train,tree poppy,15.0,False,True
+3346,image_06671,image_06671.jpg,jpg/image_06671.jpg,15.0,globe-flower,train,globe-flower,15.0,True,True
+3344,image_06672,image_06672.jpg,jpg/image_06672.jpg,15.0,globe-flower,train,tree poppy,15.0,False,True
+3360,image_06676,image_06676.jpg,jpg/image_06676.jpg,15.0,globe-flower,train,globe-flower,15.0,True,True
+3361,image_06686,image_06686.jpg,jpg/image_06686.jpg,15.0,globe-flower,train,globe-flower,15.0,True,True
+3348,image_06689,image_06689.jpg,jpg/image_06689.jpg,15.0,globe-flower,train,globe-flower,15.0,True,True
+3369,image_06693,image_06693.jpg,jpg/image_06693.jpg,78.0,toad lily,train,toad lily,78.0,True,True
+3368,image_06694,image_06694.jpg,jpg/image_06694.jpg,78.0,toad lily,train,toad lily,78.0,True,True
+3363,image_06697,image_06697.jpg,jpg/image_06697.jpg,78.0,toad lily,train,toad lily,78.0,True,True
+3377,image_06698,image_06698.jpg,jpg/image_06698.jpg,78.0,toad lily,train,toad lily,78.0,True,True
+3380,image_06702,image_06702.jpg,jpg/image_06702.jpg,78.0,toad lily,train,toad lily,78.0,True,True
+3373,image_06703,image_06703.jpg,jpg/image_06703.jpg,78.0,toad lily,train,toad lily,78.0,True,True
+3364,image_06707,image_06707.jpg,jpg/image_06707.jpg,78.0,toad lily,train,toad lily,78.0,True,True
+3370,image_06710,image_06710.jpg,jpg/image_06710.jpg,78.0,toad lily,train,toad lily,78.0,True,True
+3366,image_06711,image_06711.jpg,jpg/image_06711.jpg,78.0,toad lily,train,toad lily,78.0,True,True
+3378,image_06713,image_06713.jpg,jpg/image_06713.jpg,78.0,toad lily,train,toad lily,78.0,True,True
+3367,image_06714,image_06714.jpg,jpg/image_06714.jpg,78.0,toad lily,train,toad lily,78.0,True,True
+3379,image_06720,image_06720.jpg,jpg/image_06720.jpg,78.0,toad lily,train,toad lily,78.0,True,True
+3371,image_06726,image_06726.jpg,jpg/image_06726.jpg,78.0,toad lily,train,toad lily,78.0,True,True
+3382,image_06727,image_06727.jpg,jpg/image_06727.jpg,78.0,toad lily,train,toad lily,78.0,True,True
+3381,image_06728,image_06728.jpg,jpg/image_06728.jpg,78.0,toad lily,train,toad lily,78.0,True,True
+3374,image_06729,image_06729.jpg,jpg/image_06729.jpg,78.0,toad lily,train,toad lily,78.0,True,True
+3389,image_06734,image_06734.jpg,jpg/image_06734.jpg,0.0,pink primrose,train,pink primrose,0.0,True,True
+3386,image_06742,image_06742.jpg,jpg/image_06742.jpg,0.0,pink primrose,train,mallow,0.0,False,True
+3383,image_06749,image_06749.jpg,jpg/image_06749.jpg,0.0,pink primrose,train,tree mallow,0.0,False,True
+3398,image_06754,image_06754.jpg,jpg/image_06754.jpg,0.0,pink primrose,train,pink primrose,0.0,True,True
+3384,image_06758,image_06758.jpg,jpg/image_06758.jpg,0.0,pink primrose,train,tree mallow,0.0,False,True
+3387,image_06766,image_06766.jpg,jpg/image_06766.jpg,0.0,pink primrose,train,mallow,0.0,False,True
+3394,image_06767,image_06767.jpg,jpg/image_06767.jpg,0.0,pink primrose,train,pink primrose,0.0,True,True
+3395,image_06768,image_06768.jpg,jpg/image_06768.jpg,0.0,pink primrose,train,pink primrose,0.0,True,True
+3385,image_06770,image_06770.jpg,jpg/image_06770.jpg,0.0,pink primrose,train,mallow,0.0,False,True
+3388,image_06771,image_06771.jpg,jpg/image_06771.jpg,0.0,pink primrose,train,mallow,0.0,False,True
+3414,image_06775,image_06775.jpg,jpg/image_06775.jpg,20.0,fire lily,train,fire lily,20.0,True,True
+3418,image_06777,image_06777.jpg,jpg/image_06777.jpg,20.0,fire lily,train,fire lily,20.0,True,True
+3412,image_06782,image_06782.jpg,jpg/image_06782.jpg,20.0,fire lily,train,fire lily,20.0,True,True
+3403,image_06785,image_06785.jpg,jpg/image_06785.jpg,20.0,fire lily,train,fire lily,20.0,True,True
+3420,image_06788,image_06788.jpg,jpg/image_06788.jpg,20.0,fire lily,train,fire lily,20.0,True,True
+3422,image_06791,image_06791.jpg,jpg/image_06791.jpg,20.0,fire lily,train,fire lily,20.0,True,True
+3417,image_06792,image_06792.jpg,jpg/image_06792.jpg,20.0,fire lily,train,trumpet creeper,20.0,False,True
+3415,image_06794,image_06794.jpg,jpg/image_06794.jpg,20.0,fire lily,train,siam tulip,20.0,False,True
+3404,image_06795,image_06795.jpg,jpg/image_06795.jpg,20.0,fire lily,train,trumpet creeper,20.0,False,True
+3419,image_06797,image_06797.jpg,jpg/image_06797.jpg,20.0,fire lily,train,fire lily,20.0,True,True
+3421,image_06805,image_06805.jpg,jpg/image_06805.jpg,20.0,fire lily,train,fire lily,20.0,True,True
+3407,image_06809,image_06809.jpg,jpg/image_06809.jpg,20.0,fire lily,train,fire lily,20.0,True,True
+3408,image_06811,image_06811.jpg,jpg/image_06811.jpg,20.0,fire lily,train,trumpet creeper,20.0,False,True
+3416,image_06812,image_06812.jpg,jpg/image_06812.jpg,20.0,fire lily,train,globe-flower,20.0,False,True
+3443,image_06815,image_06815.jpg,jpg/image_06815.jpg,23.0,red ginger,train,red ginger,23.0,True,True
+3435,image_06816,image_06816.jpg,jpg/image_06816.jpg,23.0,red ginger,train,red ginger,23.0,True,True
+3442,image_06818,image_06818.jpg,jpg/image_06818.jpg,23.0,red ginger,train,red ginger,23.0,True,True
+3434,image_06824,image_06824.jpg,jpg/image_06824.jpg,23.0,red ginger,train,red ginger,23.0,True,True
+3432,image_06832,image_06832.jpg,jpg/image_06832.jpg,23.0,red ginger,train,red ginger,23.0,True,True
+3431,image_06833,image_06833.jpg,jpg/image_06833.jpg,23.0,red ginger,train,red ginger,23.0,True,True
+3441,image_06844,image_06844.jpg,jpg/image_06844.jpg,23.0,red ginger,train,red ginger,23.0,True,True
+3430,image_06847,image_06847.jpg,jpg/image_06847.jpg,23.0,red ginger,train,red ginger,23.0,True,True
+3428,image_06849,image_06849.jpg,jpg/image_06849.jpg,23.0,red ginger,train,red ginger,23.0,True,True
+3453,image_06858,image_06858.jpg,jpg/image_06858.jpg,26.0,prince of wales feathers,train,red ginger,26.0,False,True
+3452,image_06860,image_06860.jpg,jpg/image_06860.jpg,26.0,prince of wales feathers,train,marigold,26.0,False,True
+3448,image_06866,image_06866.jpg,jpg/image_06866.jpg,26.0,prince of wales feathers,train,red ginger,26.0,False,True
+3457,image_06867,image_06867.jpg,jpg/image_06867.jpg,26.0,prince of wales feathers,train,red ginger,26.0,False,True
+3455,image_06877,image_06877.jpg,jpg/image_06877.jpg,26.0,prince of wales feathers,train,red ginger,26.0,False,True
+3449,image_06881,image_06881.jpg,jpg/image_06881.jpg,26.0,prince of wales feathers,train,red ginger,26.0,False,True
+3451,image_06884,image_06884.jpg,jpg/image_06884.jpg,26.0,prince of wales feathers,train,marigold,26.0,False,True
+3447,image_06889,image_06889.jpg,jpg/image_06889.jpg,26.0,prince of wales feathers,train,red ginger,26.0,False,True
+3474,image_06890,image_06890.jpg,jpg/image_06890.jpg,30.0,carnation,train,carnation,30.0,True,True
+3483,image_06895,image_06895.jpg,jpg/image_06895.jpg,30.0,carnation,train,carnation,30.0,True,True
+3469,image_06896,image_06896.jpg,jpg/image_06896.jpg,30.0,carnation,train,carnation,30.0,True,True
+3488,image_06899,image_06899.jpg,jpg/image_06899.jpg,30.0,carnation,train,carnation,30.0,True,True
+3477,image_06903,image_06903.jpg,jpg/image_06903.jpg,30.0,carnation,train,carnation,30.0,True,True
+3464,image_06913,image_06913.jpg,jpg/image_06913.jpg,30.0,carnation,train,carnation,30.0,True,True
+3480,image_06916,image_06916.jpg,jpg/image_06916.jpg,30.0,carnation,train,carnation,30.0,True,True
+3471,image_06920,image_06920.jpg,jpg/image_06920.jpg,30.0,carnation,train,carnation,30.0,True,True
+3472,image_06923,image_06923.jpg,jpg/image_06923.jpg,30.0,carnation,train,carnation,30.0,True,True
+3484,image_06928,image_06928.jpg,jpg/image_06928.jpg,30.0,carnation,train,carnation,30.0,True,True
+3495,image_06946,image_06946.jpg,jpg/image_06946.jpg,33.0,mexican aster,train,barbeton daisy,33.0,False,True
+3502,image_06959,image_06959.jpg,jpg/image_06959.jpg,33.0,mexican aster,train,mexican aster,33.0,True,True
+3505,image_06963,image_06963.jpg,jpg/image_06963.jpg,33.0,mexican aster,train,windflower,33.0,False,True
+3500,image_06965,image_06965.jpg,jpg/image_06965.jpg,33.0,mexican aster,train,mexican aster,33.0,True,True
+3519,image_06969,image_06969.jpg,jpg/image_06969.jpg,34.0,alpine sea holly,train,alpine sea holly,34.0,True,True
+3516,image_06973,image_06973.jpg,jpg/image_06973.jpg,34.0,alpine sea holly,train,alpine sea holly,34.0,True,True
+3529,image_06978,image_06978.jpg,jpg/image_06978.jpg,34.0,alpine sea holly,train,alpine sea holly,34.0,True,True
+3531,image_06981,image_06981.jpg,jpg/image_06981.jpg,34.0,alpine sea holly,train,alpine sea holly,34.0,True,True
+3517,image_06991,image_06991.jpg,jpg/image_06991.jpg,34.0,alpine sea holly,train,alpine sea holly,34.0,True,True
+3512,image_06993,image_06993.jpg,jpg/image_06993.jpg,34.0,alpine sea holly,train,alpine sea holly,34.0,True,True
+3513,image_06996,image_06996.jpg,jpg/image_06996.jpg,34.0,alpine sea holly,train,alpine sea holly,34.0,True,True
+3510,image_07000,image_07000.jpg,jpg/image_07000.jpg,34.0,alpine sea holly,train,alpine sea holly,34.0,True,True
+3530,image_07002,image_07002.jpg,jpg/image_07002.jpg,34.0,alpine sea holly,train,alpine sea holly,34.0,True,True
+3521,image_07003,image_07003.jpg,jpg/image_07003.jpg,34.0,alpine sea holly,train,alpine sea holly,34.0,True,True
+3526,image_07004,image_07004.jpg,jpg/image_07004.jpg,34.0,alpine sea holly,train,alpine sea holly,34.0,True,True
+3511,image_07005,image_07005.jpg,jpg/image_07005.jpg,34.0,alpine sea holly,train,alpine sea holly,34.0,True,True
+3547,image_07008,image_07008.jpg,jpg/image_07008.jpg,38.0,siam tulip,train,siam tulip,38.0,True,True
+3546,image_07011,image_07011.jpg,jpg/image_07011.jpg,38.0,siam tulip,train,siam tulip,38.0,True,True
+3533,image_07013,image_07013.jpg,jpg/image_07013.jpg,38.0,siam tulip,train,siam tulip,38.0,True,True
+3549,image_07016,image_07016.jpg,jpg/image_07016.jpg,38.0,siam tulip,train,siam tulip,38.0,True,True
+3534,image_07024,image_07024.jpg,jpg/image_07024.jpg,38.0,siam tulip,train,siam tulip,38.0,True,True
+3540,image_07025,image_07025.jpg,jpg/image_07025.jpg,38.0,siam tulip,train,siam tulip,38.0,True,True
+3541,image_07034,image_07034.jpg,jpg/image_07034.jpg,38.0,siam tulip,train,sword lily,38.0,False,True
+3536,image_07037,image_07037.jpg,jpg/image_07037.jpg,38.0,siam tulip,train,siam tulip,38.0,True,True
+3552,image_07049,image_07049.jpg,jpg/image_07049.jpg,66.0,spring crocus,train,spring crocus,66.0,True,True
+3571,image_07051,image_07051.jpg,jpg/image_07051.jpg,66.0,spring crocus,train,spring crocus,66.0,True,True
+3567,image_07053,image_07053.jpg,jpg/image_07053.jpg,66.0,spring crocus,train,spring crocus,66.0,True,True
+3553,image_07061,image_07061.jpg,jpg/image_07061.jpg,66.0,spring crocus,train,spring crocus,66.0,True,True
+3564,image_07062,image_07062.jpg,jpg/image_07062.jpg,66.0,spring crocus,train,spring crocus,66.0,True,True
+3559,image_07063,image_07063.jpg,jpg/image_07063.jpg,66.0,spring crocus,train,spring crocus,66.0,True,True
+3566,image_07064,image_07064.jpg,jpg/image_07064.jpg,66.0,spring crocus,train,spring crocus,66.0,True,True
+3563,image_07065,image_07065.jpg,jpg/image_07065.jpg,66.0,spring crocus,train,spring crocus,66.0,True,True
+3562,image_07068,image_07068.jpg,jpg/image_07068.jpg,66.0,spring crocus,train,spring crocus,66.0,True,True
+3554,image_07069,image_07069.jpg,jpg/image_07069.jpg,66.0,spring crocus,train,spring crocus,66.0,True,True
+3570,image_07071,image_07071.jpg,jpg/image_07071.jpg,66.0,spring crocus,train,spring crocus,66.0,True,True
+3568,image_07072,image_07072.jpg,jpg/image_07072.jpg,66.0,spring crocus,train,spring crocus,66.0,True,True
+3560,image_07076,image_07076.jpg,jpg/image_07076.jpg,66.0,spring crocus,train,spring crocus,66.0,True,True
+3565,image_07080,image_07080.jpg,jpg/image_07080.jpg,66.0,spring crocus,train,spring crocus,66.0,True,True
+3555,image_07082,image_07082.jpg,jpg/image_07082.jpg,66.0,spring crocus,train,spring crocus,66.0,True,True
+3556,image_07085,image_07085.jpg,jpg/image_07085.jpg,66.0,spring crocus,train,spring crocus,66.0,True,True
+3584,image_07086,image_07086.jpg,jpg/image_07086.jpg,9.0,globe thistle,train,globe thistle,9.0,True,True
+3574,image_07088,image_07088.jpg,jpg/image_07088.jpg,9.0,globe thistle,train,globe thistle,9.0,True,True
+3578,image_07089,image_07089.jpg,jpg/image_07089.jpg,9.0,globe thistle,train,globe thistle,9.0,True,True
+3592,image_07090,image_07090.jpg,jpg/image_07090.jpg,9.0,globe thistle,train,globe thistle,9.0,True,True
+3590,image_07092,image_07092.jpg,jpg/image_07092.jpg,9.0,globe thistle,train,globe thistle,9.0,True,True
+3577,image_07093,image_07093.jpg,jpg/image_07093.jpg,9.0,globe thistle,train,globe thistle,9.0,True,True
+3575,image_07094,image_07094.jpg,jpg/image_07094.jpg,9.0,globe thistle,train,globe thistle,9.0,True,True
+3581,image_07095,image_07095.jpg,jpg/image_07095.jpg,9.0,globe thistle,train,globe thistle,9.0,True,True
+3591,image_07096,image_07096.jpg,jpg/image_07096.jpg,9.0,globe thistle,train,globe thistle,9.0,True,True
+3573,image_07102,image_07102.jpg,jpg/image_07102.jpg,9.0,globe thistle,train,globe thistle,9.0,True,True
+3582,image_07107,image_07107.jpg,jpg/image_07107.jpg,9.0,globe thistle,train,globe thistle,9.0,True,True
+3589,image_07109,image_07109.jpg,jpg/image_07109.jpg,9.0,globe thistle,train,globe thistle,9.0,True,True
+3594,image_07119,image_07119.jpg,jpg/image_07119.jpg,9.0,globe thistle,train,globe thistle,9.0,True,True
+3579,image_07120,image_07120.jpg,jpg/image_07120.jpg,9.0,globe thistle,train,globe thistle,9.0,True,True
+3605,image_07133,image_07133.jpg,jpg/image_07133.jpg,44.0,bolero deep blue,train,siam tulip,44.0,False,True
+3603,image_07156,image_07156.jpg,jpg/image_07156.jpg,44.0,bolero deep blue,train,pink primrose,44.0,False,True
+3622,image_07162,image_07162.jpg,jpg/image_07162.jpg,5.0,tiger lily,train,tiger lily,5.0,True,True
+3626,image_07163,image_07163.jpg,jpg/image_07163.jpg,5.0,tiger lily,train,tiger lily,5.0,True,True
+3636,image_07166,image_07166.jpg,jpg/image_07166.jpg,5.0,tiger lily,train,tiger lily,5.0,True,True
+3634,image_07169,image_07169.jpg,jpg/image_07169.jpg,5.0,tiger lily,train,tiger lily,5.0,True,True
+3618,image_07171,image_07171.jpg,jpg/image_07171.jpg,5.0,tiger lily,train,tiger lily,5.0,True,True
+3629,image_07172,image_07172.jpg,jpg/image_07172.jpg,5.0,tiger lily,train,tiger lily,5.0,True,True
+3628,image_07173,image_07173.jpg,jpg/image_07173.jpg,5.0,tiger lily,train,tiger lily,5.0,True,True
+3621,image_07178,image_07178.jpg,jpg/image_07178.jpg,5.0,tiger lily,train,tiger lily,5.0,True,True
+3633,image_07179,image_07179.jpg,jpg/image_07179.jpg,5.0,tiger lily,train,tiger lily,5.0,True,True
+3635,image_07180,image_07180.jpg,jpg/image_07180.jpg,5.0,tiger lily,train,tiger lily,5.0,True,True
+3631,image_07193,image_07193.jpg,jpg/image_07193.jpg,5.0,tiger lily,train,tiger lily,5.0,True,True
+3627,image_07195,image_07195.jpg,jpg/image_07195.jpg,5.0,tiger lily,train,tiger lily,5.0,True,True
+3624,image_07196,image_07196.jpg,jpg/image_07196.jpg,5.0,tiger lily,train,tiger lily,5.0,True,True
+3656,image_07200,image_07200.jpg,jpg/image_07200.jpg,6.0,moon orchid,train,moon orchid,6.0,True,True
+3643,image_07203,image_07203.jpg,jpg/image_07203.jpg,6.0,moon orchid,train,moon orchid,6.0,True,True
+3645,image_07209,image_07209.jpg,jpg/image_07209.jpg,6.0,moon orchid,train,moon orchid,6.0,True,True
+3651,image_07212,image_07212.jpg,jpg/image_07212.jpg,6.0,moon orchid,train,moon orchid,6.0,True,True
+3646,image_07213,image_07213.jpg,jpg/image_07213.jpg,6.0,moon orchid,train,moon orchid,6.0,True,True
+3637,image_07214,image_07214.jpg,jpg/image_07214.jpg,6.0,moon orchid,train,moon orchid,6.0,True,True
+3647,image_07218,image_07218.jpg,jpg/image_07218.jpg,6.0,moon orchid,train,moon orchid,6.0,True,True
+3641,image_07221,image_07221.jpg,jpg/image_07221.jpg,6.0,moon orchid,train,moon orchid,6.0,True,True
+3644,image_07223,image_07223.jpg,jpg/image_07223.jpg,6.0,moon orchid,train,moon orchid,6.0,True,True
+3652,image_07225,image_07225.jpg,jpg/image_07225.jpg,6.0,moon orchid,train,moon orchid,6.0,True,True
+3653,image_07227,image_07227.jpg,jpg/image_07227.jpg,6.0,moon orchid,train,moon orchid,6.0,True,True
+3649,image_07228,image_07228.jpg,jpg/image_07228.jpg,6.0,moon orchid,train,moon orchid,6.0,True,True
+3678,image_07238,image_07238.jpg,jpg/image_07238.jpg,56.0,gaura,train,gaura,56.0,True,True
+3670,image_07247,image_07247.jpg,jpg/image_07247.jpg,56.0,gaura,train,gaura,56.0,True,True
+3688,image_07252,image_07252.jpg,jpg/image_07252.jpg,56.0,gaura,train,gaura,56.0,True,True
+3680,image_07260,image_07260.jpg,jpg/image_07260.jpg,56.0,gaura,train,gaura,56.0,True,True
+3689,image_07262,image_07262.jpg,jpg/image_07262.jpg,56.0,gaura,train,gaura,56.0,True,True
+3677,image_07263,image_07263.jpg,jpg/image_07263.jpg,56.0,gaura,train,gaura,56.0,True,True
+3683,image_07264,image_07264.jpg,jpg/image_07264.jpg,56.0,gaura,train,gaura,56.0,True,True
+3718,image_07269,image_07269.jpg,jpg/image_07269.jpg,61.0,japanese anemone,train,japanese anemone,61.0,True,True
+3704,image_07278,image_07278.jpg,jpg/image_07278.jpg,61.0,japanese anemone,train,japanese anemone,61.0,True,True
+3698,image_07279,image_07279.jpg,jpg/image_07279.jpg,61.0,japanese anemone,train,japanese anemone,61.0,True,True
+3717,image_07281,image_07281.jpg,jpg/image_07281.jpg,61.0,japanese anemone,train,japanese anemone,61.0,True,True
+1913,image_07288,image_07288.jpg,jpg/image_07288.jpg,36.0,cape flower,train,sword lily,36.0,False,True
+3789,image_07320,image_07320.jpg,jpg/image_07320.jpg,93.0,foxglove,train,foxglove,93.0,True,True
+3775,image_07321,image_07321.jpg,jpg/image_07321.jpg,93.0,foxglove,train,foxglove,93.0,True,True
+3778,image_07331,image_07331.jpg,jpg/image_07331.jpg,93.0,foxglove,train,foxglove,93.0,True,True
+3797,image_07337,image_07337.jpg,jpg/image_07337.jpg,93.0,foxglove,train,foxglove,93.0,True,True
+3732,image_07349,image_07349.jpg,jpg/image_07349.jpg,93.0,foxglove,train,canterbury bells,93.0,False,True
+3738,image_07350,image_07350.jpg,jpg/image_07350.jpg,93.0,foxglove,train,foxglove,93.0,True,True
+3770,image_07351,image_07351.jpg,jpg/image_07351.jpg,93.0,foxglove,train,foxglove,93.0,True,True
+3719,image_07360,image_07360.jpg,jpg/image_07360.jpg,93.0,foxglove,train,foxglove,93.0,True,True
+3787,image_07367,image_07367.jpg,jpg/image_07367.jpg,93.0,foxglove,train,foxglove,93.0,True,True
+3731,image_07395,image_07395.jpg,jpg/image_07395.jpg,93.0,foxglove,train,foxglove,93.0,True,True
+3746,image_07396,image_07396.jpg,jpg/image_07396.jpg,93.0,foxglove,train,foxglove,93.0,True,True
+3771,image_07413,image_07413.jpg,jpg/image_07413.jpg,93.0,foxglove,train,foxglove,93.0,True,True
+3788,image_07420,image_07420.jpg,jpg/image_07420.jpg,93.0,foxglove,train,foxglove,93.0,True,True
+3772,image_07427,image_07427.jpg,jpg/image_07427.jpg,93.0,foxglove,train,foxglove,93.0,True,True
+3774,image_07434,image_07434.jpg,jpg/image_07434.jpg,93.0,foxglove,train,foxglove,93.0,True,True
+3763,image_07436,image_07436.jpg,jpg/image_07436.jpg,93.0,foxglove,train,foxglove,93.0,True,True
+3762,image_07455,image_07455.jpg,jpg/image_07455.jpg,93.0,foxglove,train,foxglove,93.0,True,True
+3851,image_07469,image_07469.jpg,jpg/image_07469.jpg,94.0,bougainvillea,train,bougainvillea,94.0,True,True
+3806,image_07474,image_07474.jpg,jpg/image_07474.jpg,94.0,bougainvillea,train,bougainvillea,94.0,True,True
+3840,image_07476,image_07476.jpg,jpg/image_07476.jpg,94.0,bougainvillea,train,mallow,94.0,False,True
+3859,image_07481,image_07481.jpg,jpg/image_07481.jpg,94.0,bougainvillea,train,pink primrose,94.0,False,True
+3841,image_07483,image_07483.jpg,jpg/image_07483.jpg,94.0,bougainvillea,train,mallow,94.0,False,True
+3812,image_07491,image_07491.jpg,jpg/image_07491.jpg,94.0,bougainvillea,train,bougainvillea,94.0,True,True
+3860,image_07505,image_07505.jpg,jpg/image_07505.jpg,94.0,bougainvillea,train,trumpet creeper,94.0,False,True
+3847,image_07508,image_07508.jpg,jpg/image_07508.jpg,94.0,bougainvillea,train,bougainvillea,94.0,True,True
+3825,image_07510,image_07510.jpg,jpg/image_07510.jpg,94.0,bougainvillea,train,trumpet creeper,94.0,False,True
+3827,image_07516,image_07516.jpg,jpg/image_07516.jpg,94.0,bougainvillea,train,bougainvillea,94.0,True,True
+3809,image_07520,image_07520.jpg,jpg/image_07520.jpg,94.0,bougainvillea,train,bougainvillea,94.0,True,True
+3828,image_07522,image_07522.jpg,jpg/image_07522.jpg,94.0,bougainvillea,train,bougainvillea,94.0,True,True
+3843,image_07534,image_07534.jpg,jpg/image_07534.jpg,94.0,bougainvillea,train,bougainvillea,94.0,True,True
+3834,image_07540,image_07540.jpg,jpg/image_07540.jpg,94.0,bougainvillea,train,bougainvillea,94.0,True,True
+3821,image_07545,image_07545.jpg,jpg/image_07545.jpg,94.0,bougainvillea,train,bougainvillea,94.0,True,True
+3822,image_07552,image_07552.jpg,jpg/image_07552.jpg,94.0,bougainvillea,train,bougainvillea,94.0,True,True
+3853,image_07554,image_07554.jpg,jpg/image_07554.jpg,94.0,bougainvillea,train,bougainvillea,94.0,True,True
+3855,image_07559,image_07559.jpg,jpg/image_07559.jpg,94.0,bougainvillea,train,bougainvillea,94.0,True,True
+3814,image_07565,image_07565.jpg,jpg/image_07565.jpg,94.0,bougainvillea,train,bougainvillea,94.0,True,True
+3844,image_07567,image_07567.jpg,jpg/image_07567.jpg,94.0,bougainvillea,train,bougainvillea,94.0,True,True
+3807,image_07575,image_07575.jpg,jpg/image_07575.jpg,94.0,bougainvillea,train,bolero deep blue,94.0,False,True
+3823,image_07582,image_07582.jpg,jpg/image_07582.jpg,94.0,bougainvillea,train,bougainvillea,94.0,True,True
+3903,image_07599,image_07599.jpg,jpg/image_07599.jpg,95.0,camellia,train,camellia,95.0,True,True
+3884,image_07601,image_07601.jpg,jpg/image_07601.jpg,95.0,camellia,train,camellia,95.0,True,True
+3900,image_07602,image_07602.jpg,jpg/image_07602.jpg,95.0,camellia,train,camellia,95.0,True,True
+3873,image_07616,image_07616.jpg,jpg/image_07616.jpg,95.0,camellia,train,camellia,95.0,True,True
+3905,image_07623,image_07623.jpg,jpg/image_07623.jpg,95.0,camellia,train,camellia,95.0,True,True
+3866,image_07624,image_07624.jpg,jpg/image_07624.jpg,95.0,camellia,train,camellia,95.0,True,True
+3872,image_07625,image_07625.jpg,jpg/image_07625.jpg,95.0,camellia,train,camellia,95.0,True,True
+3907,image_07626,image_07626.jpg,jpg/image_07626.jpg,95.0,camellia,train,camellia,95.0,True,True
+3898,image_07629,image_07629.jpg,jpg/image_07629.jpg,95.0,camellia,train,camellia,95.0,True,True
+3882,image_07635,image_07635.jpg,jpg/image_07635.jpg,95.0,camellia,train,camellia,95.0,True,True
+3885,image_07636,image_07636.jpg,jpg/image_07636.jpg,95.0,camellia,train,camellia,95.0,True,True
+3893,image_07637,image_07637.jpg,jpg/image_07637.jpg,95.0,camellia,train,camellia,95.0,True,True
+3869,image_07639,image_07639.jpg,jpg/image_07639.jpg,95.0,camellia,train,camellia,95.0,True,True
+3888,image_07658,image_07658.jpg,jpg/image_07658.jpg,95.0,camellia,train,camellia,95.0,True,True
+3908,image_07662,image_07662.jpg,jpg/image_07662.jpg,95.0,camellia,train,camellia,95.0,True,True
+3876,image_07668,image_07668.jpg,jpg/image_07668.jpg,95.0,camellia,train,camellia,95.0,True,True
+3913,image_07730,image_07730.jpg,jpg/image_07730.jpg,96.0,mallow,train,thorn apple,96.0,False,True
+3926,image_07733,image_07733.jpg,jpg/image_07733.jpg,96.0,mallow,train,globe-flower,96.0,False,True
+3925,image_07735,image_07735.jpg,jpg/image_07735.jpg,96.0,mallow,train,tree mallow,96.0,False,True
+3931,image_07745,image_07745.jpg,jpg/image_07745.jpg,96.0,mallow,train,globe-flower,96.0,False,True
+3964,image_07752,image_07752.jpg,jpg/image_07752.jpg,97.0,mexican petunia,train,mexican petunia,97.0,True,True
+3955,image_07761,image_07761.jpg,jpg/image_07761.jpg,97.0,mexican petunia,train,mexican petunia,97.0,True,True
+3960,image_07769,image_07769.jpg,jpg/image_07769.jpg,97.0,mexican petunia,train,pink primrose,97.0,False,True
+3947,image_07772,image_07772.jpg,jpg/image_07772.jpg,97.0,mexican petunia,train,mexican petunia,97.0,True,True
+3970,image_07777,image_07777.jpg,jpg/image_07777.jpg,97.0,mexican petunia,train,mexican petunia,97.0,True,True
+3961,image_07788,image_07788.jpg,jpg/image_07788.jpg,97.0,mexican petunia,train,mexican petunia,97.0,True,True
+3951,image_07795,image_07795.jpg,jpg/image_07795.jpg,97.0,mexican petunia,train,mexican petunia,97.0,True,True
+3944,image_07802,image_07802.jpg,jpg/image_07802.jpg,97.0,mexican petunia,train,mexican petunia,97.0,True,True
+3954,image_07804,image_07804.jpg,jpg/image_07804.jpg,97.0,mexican petunia,train,mexican petunia,97.0,True,True
+3945,image_07807,image_07807.jpg,jpg/image_07807.jpg,97.0,mexican petunia,train,mexican petunia,97.0,True,True
+3967,image_07814,image_07814.jpg,jpg/image_07814.jpg,97.0,mexican petunia,train,mexican petunia,97.0,True,True
+3957,image_07818,image_07818.jpg,jpg/image_07818.jpg,97.0,mexican petunia,train,mexican petunia,97.0,True,True
+3962,image_07826,image_07826.jpg,jpg/image_07826.jpg,97.0,mexican petunia,train,mexican petunia,97.0,True,True
+3950,image_07828,image_07828.jpg,jpg/image_07828.jpg,97.0,mexican petunia,train,mexican petunia,97.0,True,True
+3997,image_07834,image_07834.jpg,jpg/image_07834.jpg,98.0,bromelia,train,bromelia,98.0,True,True
+3986,image_07836,image_07836.jpg,jpg/image_07836.jpg,98.0,bromelia,train,bromelia,98.0,True,True
+4010,image_07837,image_07837.jpg,jpg/image_07837.jpg,98.0,bromelia,train,bromelia,98.0,True,True
+4003,image_07839,image_07839.jpg,jpg/image_07839.jpg,98.0,bromelia,train,bromelia,98.0,True,True
+4009,image_07841,image_07841.jpg,jpg/image_07841.jpg,98.0,bromelia,train,bromelia,98.0,True,True
+4012,image_07843,image_07843.jpg,jpg/image_07843.jpg,98.0,bromelia,train,bromelia,98.0,True,True
+3988,image_07846,image_07846.jpg,jpg/image_07846.jpg,98.0,bromelia,train,bromelia,98.0,True,True
+3995,image_07849,image_07849.jpg,jpg/image_07849.jpg,98.0,bromelia,train,bromelia,98.0,True,True
+4008,image_07858,image_07858.jpg,jpg/image_07858.jpg,98.0,bromelia,train,fire lily,98.0,False,True
+4011,image_07861,image_07861.jpg,jpg/image_07861.jpg,98.0,bromelia,train,fire lily,98.0,False,True
+4000,image_07862,image_07862.jpg,jpg/image_07862.jpg,98.0,bromelia,train,bromelia,98.0,True,True
+4007,image_07866,image_07866.jpg,jpg/image_07866.jpg,98.0,bromelia,train,bromelia,98.0,True,True
+4015,image_07867,image_07867.jpg,jpg/image_07867.jpg,98.0,bromelia,train,bromelia,98.0,True,True
+3985,image_07868,image_07868.jpg,jpg/image_07868.jpg,98.0,bromelia,train,bromelia,98.0,True,True
+3984,image_07876,image_07876.jpg,jpg/image_07876.jpg,98.0,bromelia,train,bromelia,98.0,True,True
+3993,image_07880,image_07880.jpg,jpg/image_07880.jpg,98.0,bromelia,train,bromelia,98.0,True,True
+3998,image_07884,image_07884.jpg,jpg/image_07884.jpg,98.0,bromelia,train,bromelia,98.0,True,True
+4014,image_07888,image_07888.jpg,jpg/image_07888.jpg,98.0,bromelia,train,bromelia,98.0,True,True
+3996,image_07892,image_07892.jpg,jpg/image_07892.jpg,98.0,bromelia,train,sword lily,98.0,False,True
+4024,image_07893,image_07893.jpg,jpg/image_07893.jpg,99.0,blanket flower,train,blanket flower,99.0,True,True
+4036,image_07895,image_07895.jpg,jpg/image_07895.jpg,99.0,blanket flower,train,blanket flower,99.0,True,True
+4035,image_07898,image_07898.jpg,jpg/image_07898.jpg,99.0,blanket flower,train,blanket flower,99.0,True,True
+4029,image_07902,image_07902.jpg,jpg/image_07902.jpg,99.0,blanket flower,train,blanket flower,99.0,True,True
+4026,image_07903,image_07903.jpg,jpg/image_07903.jpg,99.0,blanket flower,train,blanket flower,99.0,True,True
+4037,image_07904,image_07904.jpg,jpg/image_07904.jpg,99.0,blanket flower,train,blanket flower,99.0,True,True
+4020,image_07905,image_07905.jpg,jpg/image_07905.jpg,99.0,blanket flower,train,blanket flower,99.0,True,True
+4025,image_07907,image_07907.jpg,jpg/image_07907.jpg,99.0,blanket flower,train,blanket flower,99.0,True,True
+4032,image_07910,image_07910.jpg,jpg/image_07910.jpg,99.0,blanket flower,train,blanket flower,99.0,True,True
+4016,image_07916,image_07916.jpg,jpg/image_07916.jpg,99.0,blanket flower,train,blanket flower,99.0,True,True
+4038,image_07918,image_07918.jpg,jpg/image_07918.jpg,99.0,blanket flower,train,blanket flower,99.0,True,True
+4023,image_07924,image_07924.jpg,jpg/image_07924.jpg,99.0,blanket flower,train,blanket flower,99.0,True,True
+4022,image_07926,image_07926.jpg,jpg/image_07926.jpg,99.0,blanket flower,train,blanket flower,99.0,True,True
+4017,image_07928,image_07928.jpg,jpg/image_07928.jpg,99.0,blanket flower,train,blanket flower,99.0,True,True
+4019,image_07930,image_07930.jpg,jpg/image_07930.jpg,99.0,blanket flower,train,blanket flower,99.0,True,True
+4028,image_07937,image_07937.jpg,jpg/image_07937.jpg,99.0,blanket flower,train,blanket flower,99.0,True,True
+4046,image_07950,image_07950.jpg,jpg/image_07950.jpg,100.0,trumpet creeper,train,trumpet creeper,100.0,True,True
+4057,image_07976,image_07976.jpg,jpg/image_07976.jpg,100.0,trumpet creeper,train,trumpet creeper,100.0,True,True
+4052,image_07979,image_07979.jpg,jpg/image_07979.jpg,100.0,trumpet creeper,train,trumpet creeper,100.0,True,True
+4055,image_07980,image_07980.jpg,jpg/image_07980.jpg,100.0,trumpet creeper,train,trumpet creeper,100.0,True,True
+4049,image_07982,image_07982.jpg,jpg/image_07982.jpg,100.0,trumpet creeper,train,trumpet creeper,100.0,True,True
+4058,image_07987,image_07987.jpg,jpg/image_07987.jpg,100.0,trumpet creeper,train,trumpet creeper,100.0,True,True
+4050,image_07991,image_07991.jpg,jpg/image_07991.jpg,100.0,trumpet creeper,train,trumpet creeper,100.0,True,True
+4045,image_07999,image_07999.jpg,jpg/image_07999.jpg,100.0,trumpet creeper,train,trumpet creeper,100.0,True,True
+4082,image_08001,image_08001.jpg,jpg/image_08001.jpg,101.0,blackberry lily,train,blackberry lily,101.0,True,True
+4072,image_08003,image_08003.jpg,jpg/image_08003.jpg,101.0,blackberry lily,train,blackberry lily,101.0,True,True
+4084,image_08007,image_08007.jpg,jpg/image_08007.jpg,101.0,blackberry lily,train,blackberry lily,101.0,True,True
+4078,image_08008,image_08008.jpg,jpg/image_08008.jpg,101.0,blackberry lily,train,blackberry lily,101.0,True,True
+4069,image_08010,image_08010.jpg,jpg/image_08010.jpg,101.0,blackberry lily,train,blackberry lily,101.0,True,True
+4074,image_08011,image_08011.jpg,jpg/image_08011.jpg,101.0,blackberry lily,train,blackberry lily,101.0,True,True
+4083,image_08015,image_08015.jpg,jpg/image_08015.jpg,101.0,blackberry lily,train,blackberry lily,101.0,True,True
+4073,image_08017,image_08017.jpg,jpg/image_08017.jpg,101.0,blackberry lily,train,blackberry lily,101.0,True,True
+4087,image_08028,image_08028.jpg,jpg/image_08028.jpg,101.0,blackberry lily,train,blackberry lily,101.0,True,True
+4070,image_08029,image_08029.jpg,jpg/image_08029.jpg,101.0,blackberry lily,train,blackberry lily,101.0,True,True
+4086,image_08030,image_08030.jpg,jpg/image_08030.jpg,101.0,blackberry lily,train,fire lily,101.0,False,True
+4081,image_08031,image_08031.jpg,jpg/image_08031.jpg,101.0,blackberry lily,train,fire lily,101.0,False,True
+4092,image_08032,image_08032.jpg,jpg/image_08032.jpg,101.0,blackberry lily,train,blackberry lily,101.0,True,True
+4079,image_08033,image_08033.jpg,jpg/image_08033.jpg,101.0,blackberry lily,train,blackberry lily,101.0,True,True
+4071,image_08036,image_08036.jpg,jpg/image_08036.jpg,101.0,blackberry lily,train,blackberry lily,101.0,True,True
+4090,image_08037,image_08037.jpg,jpg/image_08037.jpg,101.0,blackberry lily,train,blackberry lily,101.0,True,True
+4075,image_08040,image_08040.jpg,jpg/image_08040.jpg,101.0,blackberry lily,train,blackberry lily,101.0,True,True
+4080,image_08045,image_08045.jpg,jpg/image_08045.jpg,101.0,blackberry lily,train,blackberry lily,101.0,True,True
+3438,image_08051,image_08051.jpg,jpg/image_08051.jpg,23.0,red ginger,train,red ginger,23.0,True,True
+2430,image_08054,image_08054.jpg,jpg/image_08054.jpg,90.0,hippeastrum,train,hippeastrum,90.0,True,True
+2457,image_08057,image_08057.jpg,jpg/image_08057.jpg,90.0,hippeastrum,train,hippeastrum,90.0,True,True
+3486,image_08067,image_08067.jpg,jpg/image_08067.jpg,30.0,carnation,train,carnation,30.0,True,True
+3479,image_08070,image_08070.jpg,jpg/image_08070.jpg,30.0,carnation,train,carnation,30.0,True,True
+3465,image_08071,image_08071.jpg,jpg/image_08071.jpg,30.0,carnation,train,carnation,30.0,True,True
+3473,image_08072,image_08072.jpg,jpg/image_08072.jpg,30.0,carnation,train,carnation,30.0,True,True
+3476,image_08074,image_08074.jpg,jpg/image_08074.jpg,30.0,carnation,train,carnation,30.0,True,True
+3485,image_08076,image_08076.jpg,jpg/image_08076.jpg,30.0,carnation,train,carnation,30.0,True,True
+3551,image_08080,image_08080.jpg,jpg/image_08080.jpg,38.0,siam tulip,train,siam tulip,38.0,True,True
+3518,image_08086,image_08086.jpg,jpg/image_08086.jpg,34.0,alpine sea holly,train,alpine sea holly,34.0,True,True
+3528,image_08087,image_08087.jpg,jpg/image_08087.jpg,34.0,alpine sea holly,train,alpine sea holly,34.0,True,True
+3514,image_08088,image_08088.jpg,jpg/image_08088.jpg,34.0,alpine sea holly,train,alpine sea holly,34.0,True,True
+2275,image_08089,image_08089.jpg,jpg/image_08089.jpg,70.0,gazania,train,gazania,70.0,True,True
+3593,image_08093,image_08093.jpg,jpg/image_08093.jpg,9.0,globe thistle,train,globe thistle,9.0,True,True
+3655,image_08102,image_08102.jpg,jpg/image_08102.jpg,6.0,moon orchid,train,moon orchid,6.0,True,True
+3654,image_08103,image_08103.jpg,jpg/image_08103.jpg,6.0,moon orchid,train,moon orchid,6.0,True,True
+3630,image_08106,image_08106.jpg,jpg/image_08106.jpg,5.0,tiger lily,train,tiger lily,5.0,True,True
+3623,image_08108,image_08108.jpg,jpg/image_08108.jpg,5.0,tiger lily,train,tiger lily,5.0,True,True
+3620,image_08110,image_08110.jpg,jpg/image_08110.jpg,5.0,tiger lily,train,tiger lily,5.0,True,True
+3665,image_08119,image_08119.jpg,jpg/image_08119.jpg,56.0,gaura,train,gaura,56.0,True,True
+3669,image_08121,image_08121.jpg,jpg/image_08121.jpg,56.0,gaura,train,gaura,56.0,True,True
+3668,image_08124,image_08124.jpg,jpg/image_08124.jpg,56.0,gaura,train,gaura,56.0,True,True
+3666,image_08125,image_08125.jpg,jpg/image_08125.jpg,56.0,gaura,train,gaura,56.0,True,True
+3687,image_08136,image_08136.jpg,jpg/image_08136.jpg,56.0,gaura,train,gaura,56.0,True,True
+3667,image_08137,image_08137.jpg,jpg/image_08137.jpg,56.0,gaura,train,gaura,56.0,True,True
+3659,image_08139,image_08139.jpg,jpg/image_08139.jpg,56.0,gaura,train,gaura,56.0,True,True
+3682,image_08140,image_08140.jpg,jpg/image_08140.jpg,56.0,gaura,train,gaura,56.0,True,True
+3663,image_08142,image_08142.jpg,jpg/image_08142.jpg,56.0,gaura,train,gaura,56.0,True,True
+3691,image_08152,image_08152.jpg,jpg/image_08152.jpg,61.0,japanese anemone,train,mallow,61.0,False,True
+3708,image_08157,image_08157.jpg,jpg/image_08157.jpg,61.0,japanese anemone,train,japanese anemone,61.0,True,True
+3713,image_08158,image_08158.jpg,jpg/image_08158.jpg,61.0,japanese anemone,train,japanese anemone,61.0,True,True
+3692,image_08167,image_08167.jpg,jpg/image_08167.jpg,61.0,japanese anemone,train,mallow,61.0,False,True
+3700,image_08170,image_08170.jpg,jpg/image_08170.jpg,61.0,japanese anemone,train,japanese anemone,61.0,True,True
+3707,image_08174,image_08174.jpg,jpg/image_08174.jpg,61.0,japanese anemone,train,japanese anemone,61.0,True,True
+3712,image_08177,image_08177.jpg,jpg/image_08177.jpg,61.0,japanese anemone,train,japanese anemone,61.0,True,True
+3693,image_08185,image_08185.jpg,jpg/image_08185.jpg,61.0,japanese anemone,train,japanese anemone,61.0,True,True
+3711,image_08187,image_08187.jpg,jpg/image_08187.jpg,61.0,japanese anemone,train,japanese anemone,61.0,True,True
+3699,image_08188,image_08188.jpg,jpg/image_08188.jpg,61.0,japanese anemone,train,japanese anemone,61.0,True,True

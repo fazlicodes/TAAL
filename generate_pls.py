@@ -6,6 +6,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import os
+from tqdm import tqdm
 import argparse
 from torch.utils.data import Dataset, DataLoader
 import time
@@ -30,6 +31,26 @@ class CustomDataset(Dataset):
         return image, target
 
 
+def select_top_k_probs(pred_df, k):
+    pseudo_df = pd.DataFrame()
+    for pred_label in set(pred_df.target):
+        sub_label_df = pred_df.loc[(pred_df.pred1 == pred_label)]
+        sub_label_df = sub_label_df.sort_values('prob1', ascending=False).iloc[0:k]
+
+
+        if len(sub_label_df) == 0:
+            sub_label_df = pred_df.loc[(pred_df.pred2 == pred_label)]
+            sub_label_df = sub_label_df.sort_values('prob2', ascending=False).iloc[0:k]
+            print(f'For label {pred_label}, {len(sub_label_df)} rows selected')
+            if len(sub_label_df) == 0:
+                sub_label_df = pred_df.loc[(pred_df.pred3 == pred_label)]
+                sub_label_df = sub_label_df.sort_values('prob3', ascending=False).iloc[0:k]
+                print(f'For label {pred_label}, {len(sub_label_df)} rows selected')
+                if len(sub_label_df) == 0:
+                    raise NotImplementedError
+        pseudo_df = pd.concat((pseudo_df, sub_label_df))
+    return pseudo_df
+
 def main(args):
     start_time = time.time()
     device = "cuda" if torch.cuda.is_available() else "cpu"
@@ -42,10 +63,15 @@ def main(args):
     ### Added for ZS classifier
     label_df = meta[['category_id', 'label']]
     label_df = label_df.drop_duplicates(subset=['label'])
+    # label_df['category_id'] = label_df['category_id'].apply(lambda x: int(x-1))
+
     cls2id = dict(zip(label_df.label, label_df.category_id))
 
     label_mapper = meta.drop_duplicates(subset=['label'])['label'].reset_index()
-    label_mapper.drop(columns=['index'], inplace=True)
+    try:
+        label_mapper.drop(columns=['index'], inplace=True)
+    except:
+        pass
     label_mapper['clip_label'] = label_mapper.label.apply(lambda x: x.replace('_', ' '))
 
     if args['dataset'] == 'imagenet':
@@ -56,6 +82,8 @@ def main(args):
         label_mapper['clip_label'] = label_mapper['clip_label'].apply(lambda x: 'a photo of a {}, a type of aircraft.'.format(x))
     elif args['dataset']=="caltech-101":
         label_mapper['clip_label'] = label_mapper['clip_label'].apply(lambda x: 'a photo of a {}.'.format(x))
+    elif args['dataset']=="resisc45":
+        label_mapper['clip_label'] = label_mapper['clip_label'].apply(lambda x: 'a centered satellite photo of {}.'.format(x))
     elif args['dataset']=="eurosat":
         label_mapper['clip_label'] = label_mapper['clip_label'].apply(lambda x: 'a centered satellite photo of {}.'.format(x))
     elif args['dataset']=="oxford_pets":
@@ -70,6 +98,10 @@ def main(args):
         label_mapper['clip_label'] = label_mapper['clip_label'].apply(lambda x: 'a photo of {}, a type of food.'.format(x))
     elif args['dataset']=="sun397":
         label_mapper['clip_label'] = label_mapper['clip_label'].apply(lambda x: 'a photo of a {}.'.format(x))
+    elif args['dataset']=="cifar10":
+        label_mapper['clip_label'] = label_mapper['clip_label'].apply(lambda x: 'a photo of a {}.'.format(x))
+    elif args['dataset']=="cifar100":
+        label_mapper['clip_label'] = label_mapper['clip_label'].apply(lambda x: 'a photo of a {}.'.format(x))
     elif args['dataset']=="stanford_cars":
         label_mapper['clip_label'] = label_mapper['clip_label'].apply(lambda x: 'a photo of a {}.'.format(x))
     else:
@@ -81,28 +113,31 @@ def main(args):
     N = sampled.shape[0]
 
     datasets_names = ['eurosat', 'ucm', 'aid', 'patternnet', 'resisc45', 'whurs19', 'mlrsnet', 'optimal31',
-                      'caltech-101', 'oxford_pets', 'oxford_flowers', 'imagenet','food101','stanford_cars']
+                      'caltech-101', 'oxford_pets', 'oxford_flowers', 'imagenet','food101','stanford_cars','sun397','cifar10','cifar100',
+                      'fgvc_aircraft','ucf101','dtd']
     map_datasets_name = ['EuroSAT', 'UCM', 'AID', 'PatternNet', 'RESISC45', 'WHURS19', 'MLRSNet', 'Optimal31',
-                         'Caltech101', 'OxfordPets', 'OxfordFlowers', 'ImageNet','Food101','StanfordCars']
+                         'Caltech101', 'OxfordPets', 'OxfordFlowers', 'ImageNet','Food101','StanfordCars','SUN397','CIFAR10','CIFAR100',
+                         'FGVCAircraft','UCF101','DescribableTextures']
     dataset = map_datasets_name[datasets_names.index(args['dataset'])]
 
     ### Load CLIP model
     model, preprocess = clip.load(args['model_subtype'], device=device, jit=False)
     classifier_weights = torch.load(f'embeddings/lafter_{dataset}_ZSembeddings.pt').squeeze()
-    classifier_weights = classifier_weights[list(cls2id.values())].to(device)
+    class_id = list(cls2id.values())
+    classifier_weights = classifier_weights[class_id].to(device)
 
     image_links = list(sampled.img_path)
     targets = list(sampled.label)
-    clip_labels = list(clip_to_target.keys())
 
     pred_df = pd.DataFrame()
     correct_list = []
-    batch_size = 5000 #27000  # Adjusted for better performance
+    batch_size = 500 #27000  # Adjusted for better performance
     dataset = CustomDataset(image_links, targets, preprocess, data_dir)
+    
     dataloader = DataLoader(dataset, batch_size=batch_size, shuffle=False, num_workers=4)
     model.eval()
-    for i, (batch_images, batch_targets) in enumerate(dataloader):
-        print(f'{i * batch_size / N * 100:.2f}% done')
+    print('Processing batches using DataLoader')
+    for i, (batch_images, batch_targets) in tqdm(enumerate(dataloader), total=len(dataloader)):
         batch_images = batch_images.to(device)
         batch_targets = np.array(batch_targets)
 
@@ -115,17 +150,8 @@ def main(args):
             label_probs = grouped_label_to_clip_ids.apply(lambda x: torch.index_select(prob, 0, torch.tensor(x)).sum().item())
             sorted_probs = label_probs.sort_values(ascending=False)
 
-            if len(clip_labels) > 2:
-                prob1, prob2, prob3 = sorted_probs[0:3].values
-                pred1, pred2, pred3 = sorted_probs[0:3].index
-            else:
-                prob1, prob2 = sorted_probs[0:2].values
-                pred1, pred2 = sorted_probs[0:2].index
-                prob3 = np.nan
-                pred3 = np.nan
-
-            rest_of_the_predictions = sorted_probs[1:].index
-            rest_of_the_prediction_probs = sorted_probs[1:].values
+            prob1, prob2, prob3 = sorted_probs[0:3].values
+            pred1, pred2, pred3 = sorted_probs[0:3].index
 
             pred_correct = batch_targets[b_index] == pred1
             correct_list.append(pred_correct)
@@ -139,14 +165,14 @@ def main(args):
                 'prob1': [prob1],
                 'prob2': [prob2],
                 'prob3': [prob3],
-                'rest_of_pred': [list(rest_of_the_predictions)],
-                'rest_of_pred_probs': [list(rest_of_the_prediction_probs)],
                 'correct': pred_correct,
                 'target': [batch_targets[b_index]]
             })
 
             pred_df = pd.concat([pred_df, df_temp], ignore_index=True)
-
+        
+    pred_df.to_csv('{}/{}_training_set_zs_preds.csv'.format(data_dir, args['dataset']))
+    # pred_df = pd.read_csv('{}/{}_training_set_zs_preds.csv'.format(data_dir, args['dataset']), index_col=0)
     acc_mean = 100 * np.mean(correct_list)
     print(f'Accuracy mean: {acc_mean:.2f}%')
 
@@ -156,27 +182,33 @@ def main(args):
 
     pred_df['img_path_trimmed'] = pred_df['img_path'].apply(lambda x: x.replace(data_dir, ''))
     label_to_category = dict(meta[['label', 'category_id']].drop_duplicates().values)
-    predicted_labels = set(pred_df.pred1)
-    sub_df = pred_df.copy()
-    sub_df = sub_df.rename(columns={'target': 'label'})
-
-    sub_df.to_csv('{}/{}_25_sampled_meta_faster_sub_df_{}_clip_{}shot.csv'.format(data_dir, args['dataset'], clip_model, 0))
 
     pseudo_df = pd.DataFrame()
-    breakpoint()
-    for pred_label in predicted_labels:
-        sub_label_df = pred_df.loc[(pred_df.pred1 == pred_label) & (pred_df.prob1 >= args['confidence_lower_bound'])]
+
+
+    for pred_label in set(pred_df.target):
+        sub_label_df = pred_df.loc[(pred_df.pred1 == pred_label)]
         sub_label_df = sub_label_df.sort_values('prob1', ascending=False).iloc[0:args['imgs_per_label']]
+
+
+        if len(sub_label_df) == 0:
+            sub_label_df = pred_df.loc[(pred_df.pred2 == pred_label)]
+            sub_label_df = sub_label_df.sort_values('prob2', ascending=False).iloc[0:args['imgs_per_label']]
+            sub_label_df['pred1'] = sub_label_df['pred2']
+            print(f'For label {pred_label}, {len(sub_label_df)} rows selected')
+            if len(sub_label_df) == 0:
+                sub_label_df = pred_df.loc[(pred_df.pred3 == pred_label)]
+                sub_label_df = sub_label_df.sort_values('prob3', ascending=False).iloc[0:args['imgs_per_label']]
+                sub_label_df['pred1'] = sub_label_df['pred3']
+                print(f'For label {pred_label}, {len(sub_label_df)} rows selected')
+                if len(sub_label_df) == 0:
+                    raise NotImplementedError
         pseudo_df = pd.concat((pseudo_df, sub_label_df))
-    pseudo_full = pseudo_df.rename(columns={'target': 'label'}).copy()
+
+    pseudo_full = pseudo_df.rename(columns={'target': 'label'}).copy() #Ground truth renamed as label
+    pseudo_full.to_csv('{}/{}_pseudo_selected_{}shot.csv'.format(data_dir, args['dataset'], args['imgs_per_label']))
     print(f'Accuracy of {args["imgs_per_label"]} pseudo labels chosen for adapter {(pseudo_full["correct"].sum()) / (len(pseudo_full))}')
     pseudo_full.drop_duplicates(subset='img_path', inplace=True)
-
-    list_of_classes_without_pseudolabel = set(pred_df.target) - predicted_labels
-
-    if len(list_of_classes_without_pseudolabel) > 0:
-        print(args['dataset'] + ' NEEDED EXTRA GUESSES')
-        raise NotImplementedError
 
     meta_train_replace = meta.loc[meta.img_path.isin(set(pseudo_full.img_path_trimmed))]
     pseudo_full.sort_values('img_path_trimmed', inplace=True)
@@ -185,6 +217,7 @@ def main(args):
     meta_train_replace.sort_values('img_path', inplace=True)
     meta_train_replace['label'] = pseudo_full['pseudolabel'].values
     meta_train_replace['category_id'] = meta_train_replace['label'].apply(lambda x: label_to_category[x])
+
 
     meta_test = meta.loc[~meta.img_set.isin(split_list)].copy()
 
@@ -199,7 +232,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--root_data_dir", type=str, default='data/')
     parser.add_argument('--dataset', default='eurosat',choices=['resisc45', 'aid', 'patternnet', 'whurs19', 'ucm', 'optimal31', 'mlrsnet',
-                                                                'eurosat', 'stanford_cars',
+                                                                'eurosat', 'stanford_cars','sun397','cifar10','cifar100','fgvc_aircraft','ucf101',
                                               'food101','caltech-101','oxford_pets', 'oxford_flowers', 'dtd', 'imagenet'], type=str)
     parser.add_argument("--model_subtype", type=str, choices=["ViT-B/32", "ViT-B/16", "ViT-L/14", "RN50"],
                         default="ViT-B/32", help="exact type of clip pretraining backbone")
